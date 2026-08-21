@@ -2,24 +2,24 @@ import type { Locale } from "../config";
 
 const en = {
   meta: {
-    title: "Your Money. Your Future. Your Access.",
+    title: "Banking, Explained Simply",
     description:
-      "Financial inclusion gives individuals and businesses access to banking, payments, savings, credit, and digital financial services. An educational guide for Egypt.",
+      "Never used a bank before? Learn what a bank does, how an account works, what digital payments are, and how financial inclusion is going in Egypt — all in plain language.",
   },
   hero: {
     badge: "An educational resource built on published data",
-    title: "Your Money. Your Future. Your Access.",
+    title: "Your First Step Into the World of Banking",
     subtitle:
-      "Financial inclusion gives individuals and businesses access to banking, payments, savings, credit, and digital financial services.",
-    primaryCta: "Discover Financial Inclusion",
-    secondaryCta: "Why Open a Bank Account?",
-    journeyLabel: "Where money can go",
+      "Not sure how banks work? You're in the right place. Learn the basics of banking, financial inclusion, digital payments, and managing your money — in simple language.",
+    primaryCta: "Start learning",
+    secondaryCta: "Why does banking matter?",
+    journeyLabel: "Where your money can go",
     journey: [
-      "Cash-only",
-      "Bank account",
-      "Digital payments",
-      "Savings",
-      "Financial opportunities",
+      "Cash only",
+      "A bank account",
+      "Paying by phone",
+      "Saving",
+      "More options",
     ],
   },
   message: {
@@ -405,24 +405,24 @@ export type HomeDict = typeof en;
 
 const ar: HomeDict = {
   meta: {
-    title: "أموالك. مستقبلك. وصولك.",
+    title: "التعامل مع البنوك ببساطة",
     description:
-      "يمنح الشمول المالي الأفراد والمشروعات إمكانية الوصول إلى الخدمات المصرفية والمدفوعات والادخار والائتمان والخدمات المالية الرقمية. دليل تعليمي لمصر.",
+      "أول مرة تتعامل مع بنك؟ اعرف ماذا يفعل البنك، وكيف يعمل الحساب، وما هي المدفوعات الرقمية، وأين وصل الشمول المالي في مصر — كل ذلك بلغة بسيطة.",
   },
   hero: {
     badge: "مورد تعليمي مبني على بيانات منشورة",
-    title: "أموالك. مستقبلك. وصولك.",
+    title: "خطوتك الأولى في عالم البنوك",
     subtitle:
-      "يمنح الشمول المالي الأفراد والمشروعات إمكانية الوصول إلى الخدمات المصرفية والمدفوعات والادخار والائتمان والخدمات المالية الرقمية.",
-    primaryCta: "اكتشف الشمول المالي",
-    secondaryCta: "لماذا تفتح حسابًا بنكيًا؟",
+      "مش عارف البنوك بتشتغل إزاي؟ أنت في المكان الصح. اتعلّم أساسيات التعامل مع البنوك، والشمول المالي، والمدفوعات الرقمية، وإدارة أموالك — بلغة بسيطة.",
+    primaryCta: "ابدأ التعلّم",
+    secondaryCta: "ليه التعامل مع البنوك مهم؟",
     journeyLabel: "إلى أين يمكن أن تصل أموالك",
     journey: [
       "نقدًا فقط",
       "حساب بنكي",
-      "مدفوعات رقمية",
-      "ادخار",
-      "فرص مالية",
+      "الدفع بالموبايل",
+      "الادخار",
+      "خيارات أكثر",
     ],
   },
   message: {

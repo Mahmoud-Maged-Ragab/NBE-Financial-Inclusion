@@ -12,6 +12,7 @@ export interface NavItem {
 }
 
 export const NAV_ITEMS: NavItem[] = [
+  { key: "basics", href: "/basics", group: "start" },
   { key: "understanding", href: "/understanding", group: "foundations" },
   { key: "banking", href: "/banking", group: "foundations" },
   { key: "egypt", href: "/egypt", group: "egypt" },
@@ -30,6 +31,7 @@ export const NAV_ITEMS: NavItem[] = [
 ];
 
 export const NAV_GROUPS: NavGroupKey[] = [
+  "start",
   "foundations",
   "egypt",
   "technology",
@@ -53,7 +55,8 @@ export const PRIMARY_NAV: {
   wideOnly?: boolean;
 }[] = [
   { href: "/", short: "home", wideOnly: true },
-  { href: "/understanding", short: "understanding" },
+  { href: "/basics", short: "basics" },
+  { href: "/understanding", short: "understanding", wideOnly: true },
   { href: "/egypt", short: "egypt" },
   { href: "/digital-finance", short: "digitalFinance" },
   { href: "/videos", short: "videos" },

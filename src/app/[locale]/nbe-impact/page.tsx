@@ -12,6 +12,8 @@ import { NBELogo } from "@/components/ui/NBELogo";
 import { AboutProject } from "@/components/ui/AboutProject";
 import { ICONS, type IconName } from "@/components/ui/icons";
 import {
+  EGYPT_ACCESS,
+  LATEST_NBE,
   NATIONAL_CONTEXT,
   NBE_INCLUSION_STATS,
   NBE_INCLUSIVE_BANKING,
@@ -71,6 +73,66 @@ export default async function NbeImpactPage({
         </div>
       </section>
 
+      {/* -------- Latest NBE numbers -------- */}
+      <Section id="latest">
+        <Reveal>
+          <SectionHeader
+            eyebrow={t.recent.eyebrow}
+            title={t.recent.title}
+            description={t.recent.description}
+          />
+        </Reveal>
+        <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          {LATEST_NBE.map((stat, i) => (
+            <Reveal key={stat.label.en} delay={(i % 3) * 80}>
+              <ImpactStatCard
+                stat={stat}
+                locale={locale}
+                latestLabel={t.latestLabel}
+                emphasis={i === 0}
+              />
+            </Reveal>
+          ))}
+        </div>
+        <Reveal delay={140}>
+          <p className="mt-8 max-w-3xl text-sm leading-relaxed text-ink-500">
+            {t.recent.note}
+          </p>
+        </Reveal>
+      </Section>
+
+      {/* -------- Egypt-wide access, from Bulletin No. 2 -------- */}
+      <Section muted id="how-egypt-pays">
+        <Reveal>
+          <SectionHeader
+            eyebrow={t.access.eyebrow}
+            title={t.access.title}
+            description={t.access.description}
+          />
+        </Reveal>
+        <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          {EGYPT_ACCESS.map((stat, i) => (
+            <Reveal key={stat.label.en} delay={(i % 3) * 80}>
+              <ImpactStatCard
+                stat={stat}
+                locale={locale}
+                latestLabel={t.latestLabel}
+              />
+            </Reveal>
+          ))}
+        </div>
+        <Reveal delay={140}>
+          <div className="mt-8 max-w-3xl rounded-xl border border-ink-200 bg-white p-6">
+            <h3 className="text-base font-semibold text-ink-900">
+              {t.access.meaning}
+            </h3>
+            <p className="mt-2 leading-relaxed text-ink-700">
+              {t.access.meaningBody}
+            </p>
+          </div>
+        </Reveal>
+      </Section>
+
       {/* -------- Programme results, 2023 -------- */}
       <Section>
         <Reveal>
@@ -83,10 +145,15 @@ export default async function NbeImpactPage({
         <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {NBE_INCLUSION_STATS.map((stat, i) => (
             <Reveal key={stat.label.en} delay={(i % 3) * 80}>
-              <ImpactStatCard stat={stat} locale={locale} emphasis={i === 0} />
+              <ImpactStatCard stat={stat} locale={locale} />
             </Reveal>
           ))}
         </div>
+        <Reveal delay={140}>
+          <p className="mt-8 max-w-3xl text-sm leading-relaxed text-ink-500">
+            {t.programmes.caveat}
+          </p>
+        </Reveal>
       </Section>
 
       {/* -------- Network -------- */}
@@ -311,7 +378,10 @@ export default async function NbeImpactPage({
           <Reveal delay={100}>
             <div className="flex flex-col gap-4">
               <SourceBadge source="nbeEsg2023" />
-              <SourceBadge source="nbeBulletin2025" />
+              <SourceBadge source="nbeAnnual2023" />
+              <SourceBadge source="nbeBulletin2026" />
+              <SourceBadge source="nbeBulletin2No2026" />
+              <SourceBadge source="cbeInclusion2026" />
               <Link
                 href={localePath(locale, "/sources")}
                 className="mt-2 text-sm font-medium text-brand-700 underline underline-offset-4"

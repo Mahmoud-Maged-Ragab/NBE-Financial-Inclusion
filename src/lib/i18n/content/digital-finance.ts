@@ -247,6 +247,16 @@ const en = {
     label: "A caution.",
     body: "Digital finance removes cost and distance. It does not remove poverty, and it introduces risks of its own — fraud, exclusion of those without connectivity or confidence, and dependence on systems that can fail. The 90.1% of unbanked Egyptian adults who cite insufficient funds are not describing a problem that an app solves.",
   },
+  nowLatest: {
+    label: "Latest NBE data",
+    eyebrow: "Where Egypt is now",
+    title: "More People Are Paying With a Phone or a Card",
+    description:
+      "Cash is not going away, but it is no longer the only option for most people. These are country-wide figures published by the Central Bank of Egypt and reprinted in NBE Economic Bulletin No. 2 – 2026.",
+    meaning: "What this means for you",
+    meaningBody:
+      "You do not need to be first. Wallets, cards and machines are now common enough that paying without cash is an ordinary thing to do, in most places, most of the time.",
+  },
   rails: {
     eyebrow: "The instruments",
     title: "What digital finance is made of",
@@ -544,6 +554,16 @@ const ar: DigitalFinanceDict = {
   caution: {
     label: "تنبيه.",
     body: "التمويل الرقمي يزيل التكلفة والمسافة. لكنه لا يزيل الفقر، ويأتي بمخاطره الخاصة — الاحتيال، واستبعاد من يفتقرون للاتصال أو الثقة، والاعتماد على أنظمة قد تتعطل. أما الـ90.1% من البالغين خارج النظام المصرفي في مصر الذين يذكرون عدم كفاية المال، فهم لا يصفون مشكلة يحلها تطبيق.",
+  },
+  nowLatest: {
+    label: "أحدث بيانات البنك الأهلي المصري",
+    eyebrow: "أين وصلت مصر الآن",
+    title: "المزيد من الناس يدفعون بالموبايل أو بالبطاقة",
+    description:
+      "النقود لن تختفي، لكنها لم تعد الخيار الوحيد أمام معظم الناس. وهذه أرقام على مستوى مصر كلها صادرة عن البنك المركزي المصري ومعاد نشرها في النشرة الاقتصادية للبنك الأهلي العدد الثاني 2026.",
+    meaning: "ماذا يعني هذا لك",
+    meaningBody:
+      "لست مضطرًا أن تكون الأول. فالمحافظ والبطاقات والماكينات باتت منتشرة بما يكفي ليصبح الدفع بدون نقود أمرًا عاديًا، في معظم الأماكن ومعظم الأوقات.",
   },
   rails: {
     eyebrow: "الأدوات",

@@ -105,7 +105,7 @@ export default async function WomenPage({
             <p className="mt-6 leading-relaxed text-ink-700">{t.trend.body1}</p>
             <p className="mt-4 leading-relaxed text-ink-700">{t.trend.body2}</p>
             <div className="mt-6 flex flex-wrap gap-2">
-              <SourceBadge source="cbeInclusion2025" />
+              <SourceBadge source="cbeInclusion2026" />
               <SourceBadge source="findexApi" />
             </div>
           </Reveal>

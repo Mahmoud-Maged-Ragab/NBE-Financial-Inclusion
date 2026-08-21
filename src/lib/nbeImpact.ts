@@ -14,9 +14,22 @@ import type { Locale } from "./i18n/config";
  *    Egypt indicators that NBE reprints in its Economic Bulletin; they
  *    describe the whole country and are NOT NBE achievements.
  *
+ * Data freshness, checked August 2026:
+ *  - National indicators use the CBE's June 2026 announcement — the newest
+ *    published anywhere.
+ *  - NBE's own balance sheet and awards use NBE's March 2026 bulletin
+ *    (position at September 2025; awards for 2025).
+ *  - NBE's programme-level results are still 2023. That is the most recent
+ *    year NBE has published this level of detail for; no 2024 or 2025 ESG or
+ *    annual report was found. Those figures are labelled 2023 rather than
+ *    presented as current.
+ *
  * Primary sources:
- *  - 2023 National Bank of Egypt Progress ESG Report  (`nbeEsg2023`)
- *  - NBE Economic Bulletin, 2nd issue / June 2025     (`nbeBulletin2025`)
+ *  - 2023 NBE Progress ESG Report                  (`nbeEsg2023`)
+ *  - NBE Annual Report 2023                        (`nbeAnnual2023`)
+ *  - NBE Economic Bulletin, June 2025              (`nbeBulletin2025`)
+ *  - NBE Economic Bulletin, March 2026             (`nbeBulletin2026`)
+ *  - CBE financial inclusion indicators, June 2026 (`cbeInclusion2026`)
  */
 
 type L = Record<Locale, string>;
@@ -25,6 +38,12 @@ type L = Record<Locale, string>;
 export interface DatedStat extends Stat {
   /** Year or period the figure refers to, shown beside the number. */
   year: string;
+  /**
+   * Taken from one of the 2026 bulletins or the 2026 CBE release, so the UI
+   * marks it as the latest available. The year field still states the exact
+   * period the figure describes, which is often earlier than 2026.
+   */
+  latest?: boolean;
 }
 
 /* ------------------------------------------------------------------
@@ -97,6 +116,32 @@ export const NBE_INCLUSION_STATS: DatedStat[] = [
       ar: "تم دمجهم في القطاع المالي الرسمي من خلال طرح بطاقات ميزة الموحدة مسبقة الدفع.",
     },
     source: "nbeEsg2023",
+  },
+  {
+    value: 10000,
+    year: "2023",
+    label: {
+      en: "Citizens reached with the World Food Programme",
+      ar: "مواطن تم الوصول إليهم مع برنامج الأغذية العالمي",
+    },
+    detail: {
+      en: "Awareness sessions across 35 villages in 5 governorates, reported in NBE's Annual Report 2023.",
+      ar: "جلسات توعية في 35 قرية بـ5 محافظات، وفق التقرير السنوي للبنك لعام 2023.",
+    },
+    source: "nbeAnnual2023",
+  },
+  {
+    value: 12000,
+    year: "2023",
+    label: {
+      en: "Students at universities and educational institutes",
+      ar: "طالب في الجامعات والمعاهد التعليمية",
+    },
+    detail: {
+      en: "A wider count than the 4,000-student university literacy programme, including the Sabek Helmk presidential initiative.",
+      ar: "عدد أوسع من برنامج التثقيف الجامعي البالغ 4,000 طالب، ويشمل المبادرة الرئاسية «سابق حلمك».",
+    },
+    source: "nbeAnnual2023",
   },
   {
     value: 42000,
@@ -228,49 +273,243 @@ export const NBE_INCLUSIVE_BANKING: DatedStat[] = [
 
 export const NATIONAL_CONTEXT: DatedStat[] = [
   {
-    value: 74.8,
+    value: 79,
     unit: "%",
-    decimals: 1,
-    year: "2024",
+    year: "June 2026",
     label: {
-      en: "Financial inclusion rate in Egypt",
-      ar: "معدل الشمول المالي في مصر",
+      en: "of adults in Egypt have an active account",
+      ar: "من البالغين في مصر لديهم حساب نشط",
     },
     detail: {
-      en: "Around 52 million of 69.6 million adults aged 15+, up from 70.7% at the end of 2023.",
-      ar: "نحو 52 مليونًا من إجمالي 69.6 مليون بالغ من عمر 15 عامًا فأكثر، ارتفاعًا من 70.7% في نهاية 2023.",
+      en: "56.4 million people out of 71.4 million aged 15 and above. An active account can be a bank account, an Egypt Post account, a mobile wallet or a prepaid card.",
+      ar: "56.4 مليون شخص من إجمالي 71.4 مليون من عمر 15 عامًا فأكثر. والحساب النشط قد يكون حسابًا بنكيًا أو حسابًا بالبريد المصري أو محفظة إلكترونية أو بطاقة مسبقة الدفع.",
     },
-    source: "nbeBulletin2025",
+    source: "cbeInclusion2026",
   },
   {
-    value: 68.8,
+    value: 72.5,
     unit: "%",
     decimals: 1,
-    year: "2024",
+    year: "June 2026",
     label: {
-      en: "Women's financial inclusion rate",
-      ar: "معدل الشمول المالي للمرأة",
+      en: "of women have an active account",
+      ar: "من النساء لديهن حساب نشط",
     },
     detail: {
-      en: "23.3 million of 33.9 million women — a 295% rise in the number included since 2016.",
-      ar: "23.3 مليون من إجمالي 33.9 مليون امرأة — بزيادة 295% في عدد المشمولات منذ 2016.",
+      en: "Up from 19.1% in 2016 — the number of women included has grown by 327%.",
+      ar: "ارتفاعًا من 19.1% في 2016 — بزيادة 327% في عدد النساء المشمولات.",
     },
-    source: "nbeBulletin2025",
+    source: "cbeInclusion2026",
   },
   {
-    value: 53.1,
+    value: 58,
     unit: "%",
-    decimals: 1,
-    year: "2024",
+    year: "June 2026",
     label: {
-      en: "Youth financial inclusion rate",
-      ar: "معدل الشمول المالي للشباب",
+      en: "of young people have an active account",
+      ar: "من الشباب لديهم حساب نشط",
     },
     detail: {
-      en: "Ages 15 to 35, covering 39.4 million people — a 65% rise in the number included since 2020.",
-      ar: "من عمر 15 إلى 35 عامًا، ويشمل 39.4 مليون شخص — بزيادة 65% في العدد المشمول منذ 2020.",
+      en: "Ages 15 to 35, up from 36.3% in 2020 — a rise of 85%.",
+      ar: "من عمر 15 إلى 35 عامًا، ارتفاعًا من 36.3% في 2020 — بزيادة 85%.",
     },
-    source: "nbeBulletin2025",
+    source: "cbeInclusion2026",
+  },
+];
+
+/* ------------------------------------------------------------------
+   NBE's own position and recognition — the most recent NBE publication
+   ------------------------------------------------------------------ */
+
+export const LATEST_NBE: DatedStat[] = [
+  {
+    value: 1,
+    unit: "st",
+    year: "Q1 2026",
+    latest: true,
+    label: {
+      en: "in Egypt for large business financing",
+      ar: "الأول في مصر في تمويل المشروعات الكبرى",
+    },
+    detail: {
+      en: "When a project is too big for one bank, several lend together. NBE arranged more of these than any other bank in Egypt — 12 deals worth EGP 141.5 billion in the first three months of 2026.",
+      ar: "حين يكون المشروع أكبر من قدرة بنك واحد، تشترك عدة بنوك في تمويله. وقد رتّب البنك الأهلي من هذه الصفقات أكثر من أي بنك آخر في مصر — 12 صفقة بقيمة 141.5 مليار جنيه في الأشهر الثلاثة الأولى من 2026.",
+    },
+    source: "nbeBulletin2No2026",
+  },
+  {
+    value: 1,
+    unit: "st",
+    year: "2026",
+    latest: true,
+    label: {
+      en: "most valuable banking brand in Egypt",
+      ar: "أقوى علامة مصرفية قيمةً في مصر",
+    },
+    detail: {
+      en: "Ranked top of Egypt's banking brands by Brand Finance, which values brands worldwide. Three Egyptian banks made its global top 500.",
+      ar: "جاء في صدارة العلامات المصرفية في مصر وفق Brand Finance المتخصصة في تقييم العلامات التجارية عالميًا. وقد ضمت قائمتها لأكبر 500 علامة مصرفية ثلاثة بنوك مصرية.",
+    },
+    source: "nbeBulletin2No2026",
+  },
+  {
+    value: 5.63,
+    unit: "T",
+    decimals: 2,
+    year: "Sept 2025",
+    latest: true,
+    label: {
+      en: "EGP that customers keep with NBE",
+      ar: "تريليون جنيه يحتفظ بها العملاء لدى البنك",
+    },
+    detail: {
+      en: "Money people and businesses have deposited, up from EGP 4.69 trillion a year earlier. A bigger deposit base means more people are using a bank rather than holding cash.",
+      ar: "أموال أودعها الأفراد والمشروعات، ارتفاعًا من 4.69 تريليون جنيه قبل عام. واتساع قاعدة الودائع يعني أن مزيدًا من الناس يستخدمون البنك بدلًا من الاحتفاظ بالنقود.",
+    },
+    source: "nbeBulletin2No2026",
+  },
+  {
+    value: 8.93,
+    unit: "T",
+    decimals: 2,
+    year: "Sept 2025",
+    latest: true,
+    label: { en: "EGP in total assets", ar: "تريليون جنيه إجمالي الأصول" },
+    detail: {
+      en: "Everything the bank owns and is owed, up from EGP 7.39 trillion a year earlier. It is the usual measure of how large a bank is.",
+      ar: "كل ما يملكه البنك وما له من مستحقات، ارتفاعًا من 7.39 تريليون جنيه قبل عام. وهو المقياس المعتاد لحجم البنك.",
+    },
+    source: "nbeBulletin2No2026",
+  },
+  {
+    value: 20,
+    unit: "M+",
+    year: "2023",
+    label: { en: "customers bank with NBE", ar: "مليون عميل يتعاملون مع البنك" },
+    detail: {
+      en: "NBE describes this as the largest customer base of any Egyptian bank. It has not published an updated count since 2023.",
+      ar: "يصف البنك هذه القاعدة بأنها الأكبر بين البنوك المصرية. ولم ينشر عددًا محدثًا منذ 2023.",
+    },
+    source: "nbeAnnual2023",
+  },
+  {
+    value: 1,
+    unit: "st",
+    year: "2025",
+    label: {
+      en: "Excellence in Financial Inclusion — Egypt",
+      ar: "التميز في الشمول المالي — مصر",
+    },
+    detail: {
+      en: "An award NBE reports receiving from World Economic Magazine for 2025, alongside Best Bank for ESG — Egypt 2025.",
+      ar: "جائزة يفيد البنك بحصوله عليها من World Economic Magazine عن عام 2025، إلى جانب جائزة أفضل بنك في معايير الاستدامة — مصر 2025.",
+    },
+    source: "nbeBulletin2026",
+  },
+];
+
+/* ------------------------------------------------------------------
+   Egypt's financial plumbing — Central Bank of Egypt figures for
+   December 2025, reprinted in NBE Economic Bulletin No. 2 - 2026.
+   Country-wide, NOT NBE's own numbers.
+   ------------------------------------------------------------------ */
+
+/** The payments-facing subset, shown on the Digital Finance page. */
+export const EGYPT_PAYMENTS_ACCESS = (): DatedStat[] =>
+  EGYPT_ACCESS.filter((s) =>
+    ["mobile wallets registered in Egypt", "EGP moved through mobile wallets", "ATMs across Egypt", "people in Egypt hold a prepaid card"].includes(
+      s.label.en,
+    ),
+  );
+
+export const EGYPT_ACCESS: DatedStat[] = [
+  {
+    value: 50.4,
+    unit: "M",
+    decimals: 1,
+    year: "2025",
+    latest: true,
+    label: {
+      en: "mobile wallets registered in Egypt",
+      ar: "محفظة إلكترونية مسجلة في مصر",
+    },
+    detail: {
+      en: "A wallet holds money against your phone number. Egypt had 15.2 million of them in 2019, so the number has more than tripled.",
+      ar: "المحفظة تحفظ أموالك مقابل رقم هاتفك. وكان عددها في مصر 15.2 مليون محفظة عام 2019، أي أن العدد تضاعف أكثر من ثلاث مرات.",
+    },
+    source: "nbeBulletin2No2026",
+  },
+  {
+    value: 4,
+    unit: "T",
+    year: "2025",
+    latest: true,
+    label: {
+      en: "EGP moved through mobile wallets",
+      ar: "تريليون جنيه تحركت عبر المحافظ الإلكترونية",
+    },
+    detail: {
+      en: "The total value people sent, received and spent from their wallets during 2025. Paying by phone is no longer unusual.",
+      ar: "إجمالي ما أرسله الناس واستقبلوه وأنفقوه من محافظهم خلال 2025. فالدفع بالهاتف لم يعد أمرًا غير معتاد.",
+    },
+    source: "nbeBulletin2No2026",
+  },
+  {
+    value: 26160,
+    year: "Dec 2025",
+    latest: true,
+    label: { en: "ATMs across Egypt", ar: "ماكينة صراف آلي في مصر" },
+    detail: {
+      en: "Alongside 4,787 bank branches and 1.35 million card machines in shops. More places to reach your money means fewer reasons to keep cash at home.",
+      ar: "إلى جانب 4,787 فرعًا بنكيًا و1.35 مليون ماكينة دفع في المحال. وكلما زادت أماكن الوصول إلى أموالك قلّت أسباب الاحتفاظ بالنقود في البيت.",
+    },
+    source: "nbeBulletin2No2026",
+  },
+  {
+    value: 21.6,
+    unit: "M",
+    decimals: 1,
+    year: "Dec 2025",
+    latest: true,
+    label: {
+      en: "people in Egypt hold a prepaid card",
+      ar: "شخص في مصر يملكون بطاقة مسبقة الدفع",
+    },
+    detail: {
+      en: "Plus 19.7 million with a debit card and 4.8 million with a credit card. A prepaid card is often a person's first card.",
+      ar: "إضافة إلى 19.7 مليون يملكون بطاقة خصم و4.8 مليون يملكون بطاقة ائتمان. والبطاقة مسبقة الدفع غالبًا ما تكون أول بطاقة يمتلكها الشخص.",
+    },
+    source: "nbeBulletin2No2026",
+  },
+  {
+    value: 390,
+    unit: "%",
+    year: "2015–2025",
+    latest: true,
+    label: {
+      en: "growth in bank lending to small businesses",
+      ar: "نمو إقراض البنوك للمشروعات الصغيرة",
+    },
+    detail: {
+      en: "How much more banks lend to micro, small and medium businesses than they did ten years earlier.",
+      ar: "مقدار الزيادة في إقراض البنوك للمشروعات متناهية الصغر والصغيرة والمتوسطة مقارنة بعشر سنوات مضت.",
+    },
+    source: "nbeBulletin2No2026",
+  },
+  {
+    value: 107,
+    unit: "B",
+    year: "2025",
+    latest: true,
+    label: {
+      en: "EGP in microfinance across Egypt",
+      ar: "مليار جنيه تمويل متناهي الصغر في مصر",
+    },
+    detail: {
+      en: "Small loans for people starting or running very small businesses, from banks and non-bank lenders together.",
+      ar: "قروض صغيرة لمن يبدأون أو يديرون مشروعات متناهية الصغر، من البنوك وغير البنوك معًا.",
+    },
+    source: "nbeBulletin2No2026",
   },
 ];
 
@@ -347,16 +586,52 @@ export const NBE_TIMELINE: TimelineEntry[] = [
     source: "nbeEsg2023",
   },
   {
-    year: "2024–2025",
+    year: "2024",
     title: {
-      en: "National indicators keep climbing",
-      ar: "المؤشرات القومية تواصل الارتفاع",
+      en: "Three in four adults are included",
+      ar: "ثلاثة من كل أربعة بالغين مشمولون",
     },
     body: {
-      en: "NBE's June 2025 Economic Bulletin reports Egypt's financial inclusion rate at 74.8% at the end of 2024. This is a Central Bank of Egypt national indicator, not an NBE result.",
-      ar: "تفيد النشرة الاقتصادية للبنك الأهلي في يونيو 2025 بأن معدل الشمول المالي في مصر بلغ 74.8% في نهاية 2024. وهذا مؤشر قومي صادر عن البنك المركزي المصري وليس نتيجة خاصة بالبنك الأهلي.",
+      en: "NBE's June 2025 bulletin puts Egypt's financial inclusion rate at 74.8% at the end of 2024, up from 70.7% a year earlier. This is a Central Bank of Egypt national indicator, not an NBE result.",
+      ar: "تضع نشرة البنك الأهلي في يونيو 2025 معدل الشمول المالي في مصر عند 74.8% في نهاية 2024، ارتفاعًا من 70.7% قبل عام. وهذا مؤشر قومي للبنك المركزي المصري وليس نتيجة خاصة بالبنك الأهلي.",
     },
     source: "nbeBulletin2025",
+  },
+  {
+    year: "2025",
+    title: {
+      en: "Recognition for financial inclusion work",
+      ar: "تقدير لجهود الشمول المالي",
+    },
+    body: {
+      en: "NBE reports receiving Excellence in Financial Inclusion — Egypt 2025 and Best Bank for ESG — Egypt 2025 from World Economic Magazine. Its customer deposits stood at EGP 5.63 trillion in September 2025.",
+      ar: "يفيد البنك بحصوله على جائزتي التميز في الشمول المالي — مصر 2025 وأفضل بنك في معايير الاستدامة — مصر 2025 من World Economic Magazine. وبلغت ودائع عملائه 5.63 تريليون جنيه في سبتمبر 2025.",
+    },
+    source: "nbeBulletin2026",
+  },
+  {
+    year: "Q1 2026",
+    title: {
+      en: "First for large business financing",
+      ar: "الأول في تمويل المشروعات الكبرى",
+    },
+    body: {
+      en: "NBE reports ranking first in Egypt for syndicated loans in the first quarter of 2026 on Bloomberg's league tables, arranging 12 deals worth EGP 141.5 billion. Brand Finance also ranks it Egypt's most valuable banking brand for 2026.",
+      ar: "يفيد البنك الأهلي بأنه جاء الأول في مصر في القروض المشتركة خلال الربع الأول من 2026 وفق جداول بلومبرج، برتيب 12 صفقة بقيمة 141.5 مليار جنيه. كما صنّفته Brand Finance أقوى علامة مصرفية قيمةً في مصر لعام 2026.",
+    },
+    source: "nbeBulletin2No2026",
+  },
+  {
+    year: "June 2026",
+    title: {
+      en: "Egypt reaches 79%",
+      ar: "مصر تصل إلى 79%",
+    },
+    body: {
+      en: "The Central Bank of Egypt reports that 56.4 million of 71.4 million adults now hold an active account — 79%. It is also preparing a second National Financial Inclusion Strategy for 2026 to 2030. Again, a national indicator rather than an NBE result.",
+      ar: "يفيد البنك المركزي المصري بأن 56.4 مليون من إجمالي 71.4 مليون بالغ باتوا يملكون حسابًا نشطًا — أي 79%. كما يُعِدّ استراتيجية وطنية ثانية للشمول المالي للفترة من 2026 إلى 2030. وهذا أيضًا مؤشر قومي لا نتيجة خاصة بالبنك الأهلي.",
+    },
+    source: "cbeInclusion2026",
   },
 ];
 

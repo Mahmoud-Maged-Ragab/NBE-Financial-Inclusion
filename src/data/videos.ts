@@ -540,6 +540,42 @@ export function getEmbedUrl(video: Video): string | null {
   return `https://www.youtube-nocookie.com/embed/${id}?rel=0&modestbranding=1`;
 }
 
+/**
+ * Publishers a first-time visitor in Egypt is most likely to trust and
+ * recognise. Lower sorts first.
+ */
+const PUBLISHER_RANK = new Map<string, number>([
+  ["National Bank of Egypt (NBE)", 0],
+  ["Central Bank of Egypt", 1],
+]);
+
+/** Topics that answer a beginner's first questions. Lower sorts first. */
+const CATEGORY_RANK: Record<VideoCategory, number> = {
+  financialInclusion: 0,
+  banking: 1,
+  digitalPayments: 2,
+  financialLiteracy: 3,
+  youth: 4,
+  women: 5,
+  fintech: 6,
+  digitalCurrency: 7,
+};
+
+/**
+ * Ordering for someone who is new to all of this: videos they can understand
+ * first (their own language), from the institutions closest to them, on the
+ * most basic topics. Used by the library and the home page preview so both
+ * lead with the same thing.
+ */
+export function beginnerRank(video: Video, locale: VideoLanguage): number {
+  const language = video.language === locale ? 0 : 1;
+  const publisher = PUBLISHER_RANK.get(video.publisher) ?? 2;
+  const featured = video.featured ? 0 : 1;
+  return (
+    language * 1000 + featured * 500 + publisher * 100 + CATEGORY_RANK[video.category]
+  );
+}
+
 /** Poster frame for a card, derived from the video id unless overridden. */
 export function getThumbnail(video: Video): string | null {
   if (video.thumbnail) return video.thumbnail;

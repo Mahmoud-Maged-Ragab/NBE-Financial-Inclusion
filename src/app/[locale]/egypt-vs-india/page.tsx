@@ -302,7 +302,7 @@ export default async function EgyptVsIndiaPage({
         <Reveal delay={140}>
           <div className="mt-8 flex flex-wrap gap-2">
             <SourceBadge source="findexApi" />
-            <SourceBadge source="cbeInclusion2025" />
+            <SourceBadge source="cbeInclusion2026" />
             <SourceBadge source="pmjdy" />
           </div>
         </Reveal>

@@ -115,7 +115,7 @@ const en = {
       },
       {
         t: "Egypt starts from a different structure",
-        b: "Egypt's inclusion measure already counts mobile wallets and prepaid cards, and its Central Bank reports 77.6% inclusion on that basis. The two countries are not simply at different points on one path.",
+        b: "Egypt's inclusion measure already counts mobile wallets and prepaid cards, and its Central Bank reports 79% inclusion on that basis. The two countries are not simply at different points on one path.",
       },
       {
         t: "Both still have real gaps",
@@ -248,7 +248,7 @@ const ar: EgyptVsIndiaDict = {
       },
       {
         t: "مصر تنطلق من بنية مختلفة",
-        b: "مقياس الشمول في مصر يحتسب بالفعل المحافظ الإلكترونية والبطاقات مسبقة الدفع، ويفيد بنكها المركزي بنسبة شمول 77.6% على هذا الأساس. فالبلدان ليسا ببساطة عند نقطتين مختلفتين على مسار واحد.",
+        b: "مقياس الشمول في مصر يحتسب بالفعل المحافظ الإلكترونية والبطاقات مسبقة الدفع، ويفيد بنكها المركزي بنسبة شمول 79% على هذا الأساس. فالبلدان ليسا ببساطة عند نقطتين مختلفتين على مسار واحد.",
       },
       {
         t: "ما زالت لدى الاثنين فجوات حقيقية",

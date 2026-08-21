@@ -1,6 +1,6 @@
 import Link from "next/link";
 import type { Metadata } from "next";
-import { ArrowRight, Quote } from "lucide-react";
+import { ArrowRight, Quote, ShieldCheck, X } from "lucide-react";
 import { EgyptHeroArt } from "@/components/ui/EgyptHeroArt";
 import {
   Container,
@@ -18,16 +18,16 @@ import { BeforeAfter, type BeforeAfterRow } from "@/components/ui/BeforeAfter";
 import { JourneyStrip, type JourneyStep } from "@/components/ui/JourneyStrip";
 import { TrustSection } from "@/components/ui/TrustSection";
 import { AboutProject } from "@/components/ui/AboutProject";
-import { TeamGrid } from "@/components/ui/TeamGrid";
 import { VideoLibrary } from "@/components/ui/VideoLibrary";
 import { ImpactStatCard } from "@/components/ui/ImpactStatCard";
+import { StepList, type Step } from "@/components/ui/StepList";
+import { Faq } from "@/components/ui/Faq";
 import { CTA } from "@/components/ui/PageHero";
 import { AnimatedCounter } from "@/components/ui/AnimatedCounter";
 import { SourceBadge } from "@/components/ui/SourceBadge";
 import { CONTEXT, EGYPT_HEADLINE } from "@/lib/data";
-import { TEAM_MEMBERS, TEAM_PREVIEW_COUNT } from "@/lib/teamMembers";
-import { VIDEOS } from "@/data/videos";
-import { NBE_INCLUSION_STATS } from "@/lib/nbeImpact";
+import { beginnerRank, VIDEOS } from "@/data/videos";
+import { LATEST_NBE } from "@/lib/nbeImpact";
 import { getContent, getCommon, requireLocale } from "@/lib/i18n/dictionary";
 import { languageAlternates, localePath } from "@/lib/i18n/config";
 
@@ -55,21 +55,14 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
   const { locale: raw } = await params;
   const locale = requireLocale(raw);
   const t = getContent(locale, "home");
-  const team = getContent(locale, "team");
   const videos = getContent(locale, "videos");
   const nbe = getContent(locale, "nbeImpact");
+  const basics = getContent(locale, "basics");
   const c = getCommon(locale);
 
-  /**
-   * Three videos for the home preview: the featured explainer in the reader's
-   * language first, then the next videos spoken in that language.
-   */
+  /** Three videos for the home preview, in the same beginner-first order. */
   const homeVideos = [...VIDEOS]
-    .sort((a, b) => {
-      const score = (v: typeof a) =>
-        (v.language === locale ? 0 : 2) + (v.featured ? -1 : 0);
-      return score(a) - score(b);
-    })
+    .sort((a, b) => beginnerRank(a, locale) - beginnerRank(b, locale))
     .slice(0, 3);
 
   const journey: JourneyStep[] = t.hero.journey.map((label, i) => ({
@@ -130,6 +123,35 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
         </Container>
       </section>
 
+      {/* ---------------- New to banking? ---------------- */}
+      <Section muted id="new-to-banking">
+        <Reveal>
+          <SectionHeader
+            eyebrow={basics.startHere.eyebrow}
+            title={basics.preview.title}
+            description={basics.preview.description}
+            align="center"
+          />
+        </Reveal>
+        <Reveal delay={100} className="mt-12">
+          <StepList steps={basics.startHere.steps as Step[]} />
+        </Reveal>
+        <Reveal delay={140}>
+          <div className="mt-10 flex justify-center">
+            <Link
+              href={localePath(locale, "/basics")}
+              className="group inline-flex items-center justify-center gap-2 rounded-lg bg-brand-700 px-6 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-brand-800"
+            >
+              {basics.startHere.cta}
+              <ArrowRight
+                aria-hidden="true"
+                className="size-4 transition-transform duration-300 group-hover:translate-x-1 rtl:rotate-180 rtl:group-hover:-translate-x-1"
+              />
+            </Link>
+          </div>
+        </Reveal>
+      </Section>
+
       {/* ---------------- Core message ---------------- */}
       <section className="border-b border-ink-200 bg-white">
         <Container className="py-14 sm:py-16">
@@ -148,7 +170,7 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
       </section>
 
       {/* ---------------- Why open a bank account ---------------- */}
-      <Section muted id="why-a-bank-account">
+      <Section id="why-a-bank-account">
         <Reveal>
           <SectionHeader
             eyebrow={t.why.eyebrow}
@@ -172,7 +194,7 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
       </Section>
 
       {/* ---------------- Imagine without an account ---------------- */}
-      <Section>
+      <Section muted>
         <Reveal>
           <SectionHeader
             eyebrow={t.imagine.eyebrow}
@@ -190,6 +212,36 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
             switchLabel={t.imagine.switchLabel}
           />
         </Reveal>
+      </Section>
+
+      {/* ---------------- Financial inclusion, in one line ---------------- */}
+      <Section>
+        <div className="mx-auto max-w-4xl text-center">
+          <Reveal>
+            <p className="text-xs font-semibold tracking-[0.14em] text-brand-600 uppercase">
+              {basics.inclusion.eyebrow}
+            </p>
+            <h2 className="mt-3 text-3xl font-semibold tracking-tight text-balance text-ink-900 sm:text-4xl">
+              {basics.inclusion.title}
+            </h2>
+            <p className="mt-6 text-xl leading-relaxed text-balance text-ink-900">
+              {basics.inclusion.simple}
+            </p>
+            <p className="mt-4 leading-relaxed text-pretty text-ink-600">
+              {basics.inclusion.includes}
+            </p>
+          </Reveal>
+          <Reveal delay={120}>
+            <div className="mx-auto mt-8 max-w-2xl rounded-xl border border-ink-200 bg-white p-6 text-start">
+              <h3 className="text-base font-semibold text-ink-900">
+                {basics.inclusion.whyTitle}
+              </h3>
+              <p className="mt-2 leading-relaxed text-ink-700">
+                {basics.inclusion.why}
+              </p>
+            </div>
+          </Reveal>
+        </div>
       </Section>
 
       {/* ---------------- What is financial inclusion ---------------- */}
@@ -297,6 +349,144 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
         </div>
       </Section>
 
+      {/* ---------------- NBE impact preview ---------------- */}
+      <Section>
+        <Reveal>
+          <SectionHeader
+            eyebrow={nbe.preview.eyebrow}
+            title={nbe.preview.title}
+            description={nbe.preview.description}
+            align="center"
+          />
+        </Reveal>
+
+        <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          {LATEST_NBE.slice(0, 3).map((stat, i) => (
+            <Reveal key={stat.label.en} delay={i * 80}>
+              <ImpactStatCard
+                stat={stat}
+                locale={locale}
+                latestLabel={nbe.latestLabel}
+                emphasis={i === 0}
+              />
+            </Reveal>
+          ))}
+        </div>
+
+        <Reveal delay={140}>
+          <div className="mt-10 flex justify-center">
+            <Link
+              href={localePath(locale, "/nbe-impact")}
+              className="group inline-flex items-center justify-center gap-2 rounded-lg border border-ink-200 bg-white px-6 py-3.5 text-sm font-semibold text-brand-700 transition-colors hover:border-brand-300 hover:bg-brand-50"
+            >
+              {nbe.preview.cta}
+              <ArrowRight
+                aria-hidden="true"
+                className="size-4 transition-transform duration-300 group-hover:translate-x-1 rtl:rotate-180 rtl:group-hover:-translate-x-1"
+              />
+            </Link>
+          </div>
+        </Reveal>
+      </Section>
+
+      {/* ---------------- Staying safe ---------------- */}
+      <Section muted>
+        <div className="grid gap-10 lg:grid-cols-[1fr_1.2fr] lg:gap-16">
+          <Reveal>
+            <SectionHeader
+              eyebrow={basics.safety.eyebrow}
+              title={basics.safety.title}
+              description={basics.safety.description}
+            />
+            <Link
+              href={localePath(locale, "/basics") + "#safety"}
+              className="group mt-8 inline-flex items-center gap-2 text-sm font-semibold text-brand-700"
+            >
+              {basics.safety.watchTitle}
+              <ArrowRight
+                aria-hidden="true"
+                className="size-3.5 transition-transform duration-300 group-hover:translate-x-0.5 rtl:rotate-180 rtl:group-hover:-translate-x-0.5"
+              />
+            </Link>
+          </Reveal>
+
+          <Reveal delay={100}>
+            <div className="rounded-xl border-2 border-brand-700 bg-brand-700 p-7 text-white">
+              <h3 className="flex items-center gap-2.5 text-lg font-semibold">
+                <ShieldCheck aria-hidden="true" className="size-5 text-gold-300" />
+                {basics.safety.neverTitle}
+              </h3>
+              <ul className="mt-5 grid gap-3 sm:grid-cols-2">
+                {basics.safety.never.map((item) => (
+                  <li key={item} className="flex items-start gap-2.5 text-sm">
+                    <X
+                      aria-hidden="true"
+                      className="mt-0.5 size-4 shrink-0 text-gold-300"
+                    />
+                    <span className="text-brand-50">{item}</span>
+                  </li>
+                ))}
+              </ul>
+              <p className="mt-6 border-t border-white/15 pt-5 text-sm leading-relaxed text-brand-100">
+                {basics.safety.neverNote}
+              </p>
+            </div>
+          </Reveal>
+        </div>
+      </Section>
+
+      {/* ---------------- Quick questions ---------------- */}
+      <Section>
+        <div className="grid gap-10 lg:grid-cols-[1fr_1.5fr] lg:gap-16">
+          <Reveal>
+            <SectionHeader
+              eyebrow={basics.faq.eyebrow}
+              title={basics.faq.title}
+              description={basics.faq.description}
+            />
+          </Reveal>
+          <Reveal delay={100}>
+            <Faq items={basics.faq.items.slice(0, 6)} />
+          </Reveal>
+        </div>
+      </Section>
+
+      {/* ---------------- Videos preview ---------------- */}
+      <Section muted>
+        <Reveal>
+          <SectionHeader
+            eyebrow={videos.preview.eyebrow}
+            title={videos.preview.title}
+            description={videos.preview.description}
+            align="center"
+          />
+        </Reveal>
+
+        <div className="mt-12">
+          <VideoLibrary
+            videos={homeVideos}
+            locale={locale}
+            dict={videos}
+            compact
+          />
+        </div>
+
+        <Reveal delay={120}>
+          <div className="mt-10 flex justify-center">
+            <Link
+              href={localePath(locale, "/videos")}
+              className="group inline-flex items-center justify-center gap-2 rounded-lg bg-brand-700 px-6 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-brand-800"
+            >
+              {videos.preview.cta}
+              <ArrowRight
+                aria-hidden="true"
+                className="size-4 transition-transform duration-300 group-hover:translate-x-1 rtl:rotate-180 rtl:group-hover:-translate-x-1"
+              />
+            </Link>
+          </div>
+        </Reveal>
+      </Section>
+
       {/* ---------------- Trust ---------------- */}
       <TrustSection muted={false} />
 
@@ -344,78 +534,12 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
         </div>
       </Section>
 
-      {/* ---------------- Videos preview ---------------- */}
-      <Section muted>
-        <Reveal>
-          <SectionHeader
-            eyebrow={videos.preview.eyebrow}
-            title={videos.preview.title}
-            description={videos.preview.description}
-            align="center"
-          />
-        </Reveal>
-
-        <div className="mt-12">
-          <VideoLibrary
-            videos={homeVideos}
-            locale={locale}
-            dict={videos}
-            compact
-          />
-        </div>
-
-        <Reveal delay={120}>
-          <div className="mt-10 flex justify-center">
-            <Link
-              href={localePath(locale, "/videos")}
-              className="group inline-flex items-center justify-center gap-2 rounded-lg bg-brand-700 px-6 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-brand-800"
-            >
-              {videos.preview.cta}
-              <ArrowRight
-                aria-hidden="true"
-                className="size-4 transition-transform duration-300 group-hover:translate-x-1 rtl:rotate-180 rtl:group-hover:-translate-x-1"
-              />
-            </Link>
-          </div>
-        </Reveal>
-      </Section>
-
-      {/* ---------------- NBE impact preview ---------------- */}
-      <Section>
-        <Reveal>
-          <SectionHeader
-            eyebrow={nbe.preview.eyebrow}
-            title={nbe.preview.title}
-            description={nbe.preview.description}
-            align="center"
-          />
-        </Reveal>
-
-        <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {NBE_INCLUSION_STATS.slice(0, 3).map((stat, i) => (
-            <Reveal key={stat.label.en} delay={i * 80}>
-              <ImpactStatCard stat={stat} locale={locale} emphasis={i === 0} />
-            </Reveal>
-          ))}
-        </div>
-
-        <Reveal delay={140}>
-          <div className="mt-10 flex justify-center">
-            <Link
-              href={localePath(locale, "/nbe-impact")}
-              className="group inline-flex items-center justify-center gap-2 rounded-lg border border-ink-200 bg-white px-6 py-3.5 text-sm font-semibold text-brand-700 transition-colors hover:border-brand-300 hover:bg-brand-50"
-            >
-              {nbe.preview.cta}
-              <ArrowRight
-                aria-hidden="true"
-                className="size-4 transition-transform duration-300 group-hover:translate-x-1 rtl:rotate-180 rtl:group-hover:-translate-x-1"
-              />
-            </Link>
-          </div>
-        </Reveal>
-      </Section>
-
       {/* ---------------- Team preview ---------------- */}
+      {/* Commented out. To bring it back, restore these imports:
+            import { TeamGrid } from "@/components/ui/TeamGrid";
+            import { TEAM_MEMBERS, TEAM_PREVIEW_COUNT } from "@/lib/teamMembers";
+          and this line in the component:
+            const team = getContent(locale, "team"); */}
       {/* <Section muted id="team">
         <Reveal>
           <SectionHeader
@@ -455,7 +579,7 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
         </Reveal>
       </Section> */}
 
-      <AboutProject muted />
+      <AboutProject />
 
       <CTA
         title={t.finalCta.title}

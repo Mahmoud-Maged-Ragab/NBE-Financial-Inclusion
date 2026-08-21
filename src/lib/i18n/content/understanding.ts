@@ -10,7 +10,7 @@ const en = {
     eyebrow: "Foundations",
     title: "Understanding financial inclusion",
     description:
-      "Before looking at Egypt specifically, it is worth being precise about what the term means, what it does not mean, and why two reputable institutions can publish very different numbers for the same country in the same year.",
+      "Financial inclusion is a simple idea with a careful definition. This page explains what it means, what it does not mean, and why two trusted institutions can publish very different numbers for the same country in the same year.",
   },
   definition: {
     eyebrow: "Definition",
@@ -24,7 +24,7 @@ const en = {
       { term: "Access", gloss: "means the service can be reached." },
       {
         term: "Affordable",
-        gloss: "means it is worth holding on the income a person actually has.",
+        gloss: "means it is worth having on the income a person actually earns.",
       },
       {
         term: "Needs",
@@ -33,7 +33,7 @@ const en = {
       },
       {
         term: "Responsible",
-        gloss: "means the provider is still there, and still solvent, in ten years.",
+        gloss: "means the provider will still be there, and still able to pay, in ten years.",
       },
     ],
   },
@@ -104,9 +104,9 @@ const en = {
       "Throughout this site you will see two headline figures for Egypt that look contradictory. They are not. They measure different things, and both are correct on their own terms.",
     supply: {
       tag: "Supply side",
-      value: "77.6%",
+      value: "79%",
       title: "Central Bank of Egypt",
-      body: "Counts Egyptians aged 15 and above who hold an active transactional account of any kind — bank accounts, Egypt Post accounts, mobile wallets and prepaid cards — using records reported by the institutions themselves. On this basis 54.7 million of 70.5 million eligible citizens were included as of December 2025.",
+      body: "Counts Egyptians aged 15 and above who hold an active account of any kind — bank accounts, Egypt Post accounts, mobile wallets and prepaid cards — using records reported by the institutions themselves. On this basis 56.4 million of 71.4 million eligible citizens were included as at June 2026.",
       points: [
         "Broad definition of what counts as an account",
         "Drawn from institutional records, not interviews",
@@ -149,7 +149,7 @@ const ar: UnderstandingDict = {
     eyebrow: "الأساسيات",
     title: "فهم الشمول المالي",
     description:
-      "قبل النظر إلى مصر تحديدًا، من المفيد أن نكون دقيقين في معنى المصطلح، وما لا يعنيه، ولماذا قد تنشر مؤسستان مرموقتان أرقامًا شديدة الاختلاف عن البلد نفسه في العام نفسه.",
+      "الشمول المالي فكرة بسيطة لها تعريف دقيق. تشرح هذه الصفحة ما يعنيه، وما لا يعنيه، ولماذا قد تنشر مؤسستان موثوقتان أرقامًا مختلفة تمامًا عن البلد نفسه في العام نفسه.",
   },
   definition: {
     eyebrow: "التعريف",
@@ -242,9 +242,9 @@ const ar: UnderstandingDict = {
       "ستجد في هذا الموقع رقمين رئيسيين لمصر يبدوان متناقضين. وهما ليسا كذلك. فكل منهما يقيس شيئًا مختلفًا، وكلاهما صحيح وفق تعريفه.",
     supply: {
       tag: "من جانب العرض",
-      value: "77.6%",
+      value: "79%",
       title: "البنك المركزي المصري",
-      body: "يحصي المصريين من عمر 15 عامًا فأكثر ممن يملكون حساب معاملات نشطًا من أي نوع — حسابات بنكية، وحسابات البريد المصري، ومحافظ إلكترونية، وبطاقات مسبقة الدفع — استنادًا إلى سجلات المؤسسات نفسها. وعلى هذا الأساس شمل النظام 54.7 مليون من أصل 70.5 مليون مواطن مؤهل حتى ديسمبر 2025.",
+      body: "يحصي المصريين من عمر 15 عامًا فأكثر ممن يملكون حسابًا نشطًا من أي نوع — حسابات بنكية أو حسابات البريد المصري أو محافظ إلكترونية أو بطاقات مسبقة الدفع — بالاعتماد على سجلات تُبلغ عنها المؤسسات نفسها. وعلى هذا الأساس كان 56.4 مليون من إجمالي 71.4 مليون مواطن مؤهل مشمولين حتى يونيو 2026.",
       points: [
         "تعريف واسع لما يُعد حسابًا",
         "مستمد من سجلات المؤسسات لا من المقابلات",

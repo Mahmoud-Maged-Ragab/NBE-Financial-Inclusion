@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { NAV_GROUPS, NAV_ITEMS } from "@/lib/nav";
-import { Logo } from "@/components/ui/Logo";
 import { NBELogo } from "@/components/ui/NBELogo";
 import { localePath, type Locale } from "@/lib/i18n/config";
 import type { CommonDict } from "@/lib/i18n/content/common";
@@ -17,8 +16,10 @@ export function SiteFooter({
       <div className="mx-auto w-full max-w-6xl px-5 py-14 sm:px-8">
         <div className="grid gap-10 lg:grid-cols-[1.2fr_2fr]">
           <div>
+            {/* The NBE mark appears once in this footer, in the attribution
+                block below. Repeating it here would read as NBE publishing
+                the site rather than interns building it. */}
             <div className="flex items-center gap-2.5">
-              <Logo className="size-8" />
               <span className="text-sm leading-tight font-semibold text-white">
                 {dict.site.name}
                 <span className="block text-xs font-normal text-ink-400">

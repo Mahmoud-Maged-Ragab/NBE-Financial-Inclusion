@@ -122,7 +122,7 @@ export default async function UnderstandingPage({
 
         <div className="mt-12 grid gap-6 lg:grid-cols-2">
           {[
-            { d: t.measurement.supply, accent: true, src: "cbeInclusion2025" },
+            { d: t.measurement.supply, accent: true, src: "cbeInclusion2026" },
             { d: t.measurement.demand, accent: false, src: "findex2025" },
           ].map((panel, i) => (
             <Reveal key={panel.d.title} delay={i * 100}>
@@ -162,7 +162,7 @@ export default async function UnderstandingPage({
                 </ul>
                 <div className="mt-5">
                   <SourceBadge
-                    source={panel.src as "cbeInclusion2025" | "findex2025"}
+                    source={panel.src as "cbeInclusion2026" | "findex2025"}
                   />
                 </div>
               </Card>

@@ -19,11 +19,13 @@ const en = {
       technology: "Technology",
       people: "People",
       outlook: "Outlook",
+      start: "Start here",
       learn: "Learn & watch",
       about: "About",
     },
     short: {
       home: "Home",
+      basics: "Banking Basics",
       understanding: "Financial Inclusion",
       banking: "Banking",
       egypt: "Egypt",
@@ -81,6 +83,10 @@ const en = {
     sources: {
       label: "Sources",
       blurb: "Every figure on this site, traced to its origin.",
+    },
+    basics: {
+      label: "Banking Basics",
+      blurb: "Never used a bank? Start with the plain-language explanations.",
     },
     videos: {
       label: "Videos",
@@ -201,11 +207,13 @@ const ar: CommonDict = {
       technology: "التكنولوجيا",
       people: "الأفراد والمشروعات",
       outlook: "نظرة مستقبلية",
+      start: "ابدأ من هنا",
       learn: "تعلّم وشاهد",
       about: "عن المشروع",
     },
     short: {
       home: "الرئيسية",
+      basics: "أساسيات البنوك",
       understanding: "الشمول المالي",
       banking: "الخدمات المصرفية",
       egypt: "مصر",
@@ -263,6 +271,10 @@ const ar: CommonDict = {
     sources: {
       label: "المصادر",
       blurb: "كل رقم على هذا الموقع، موثقًا بمصدره.",
+    },
+    basics: {
+      label: "أساسيات البنوك",
+      blurb: "أول مرة تتعامل مع بنك؟ ابدأ بالشرح المبسط.",
     },
     videos: {
       label: "الفيديوهات",

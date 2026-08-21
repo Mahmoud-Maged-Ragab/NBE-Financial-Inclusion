@@ -30,31 +30,30 @@ export interface Stat {
 
 export const EGYPT_HEADLINE: Stat[] = [
   {
-    value: 77.6,
+    value: 79,
     unit: "%",
     label: {
       en: "Financial inclusion rate",
       ar: "معدل الشمول المالي",
     },
     detail: {
-      en: "Share of Egyptians aged 15+ holding an active transactional account, on the Central Bank of Egypt's definition.",
-      ar: "نسبة المصريين من عمر 15 عامًا فأكثر ممن يملكون حساب معاملات نشطًا، وفق تعريف البنك المركزي المصري.",
+      en: "Share of Egyptians aged 15+ with an active account, on the Central Bank of Egypt's definition. Up from 77.6% at the end of 2025.",
+      ar: "نسبة المصريين من عمر 15 عامًا فأكثر ممن يملكون حسابًا نشطًا، وفق تعريف البنك المركزي المصري. ارتفاعًا من 77.6% في نهاية 2025.",
     },
-    source: "cbeInclusion2025",
-    decimals: 1,
+    source: "cbeInclusion2026",
   },
   {
-    value: 54.7,
+    value: 56.4,
     unit: "M",
     label: {
       en: "Citizens with active accounts",
       ar: "مواطنًا يملكون حسابات نشطة (بالمليون)",
     },
     detail: {
-      en: "Out of an eligible population of 70.5 million Egyptians aged 15 and above.",
-      ar: "من إجمالي 70.5 مليون مصري من عمر 15 عامًا فأكثر.",
+      en: "Out of 71.4 million Egyptians aged 15 and above. An active account can be at a bank, at Egypt Post, a mobile wallet or a prepaid card.",
+      ar: "من إجمالي 71.4 مليون مصري من عمر 15 عامًا فأكثر. والحساب النشط قد يكون في بنك أو البريد المصري أو محفظة إلكترونية أو بطاقة مسبقة الدفع.",
     },
-    source: "cbeInclusion2025",
+    source: "cbeInclusion2026",
     decimals: 1,
   },
   {
@@ -72,17 +71,17 @@ export const EGYPT_HEADLINE: Stat[] = [
     decimals: 1,
   },
   {
-    value: 219,
+    value: 229,
     unit: "%",
     label: {
       en: "Growth in inclusion since 2016",
       ar: "نمو الشمول المالي منذ 2016",
     },
     detail: {
-      en: "Increase in the CBE financial inclusion rate between 2016 and 2025.",
-      ar: "الزيادة في معدل الشمول المالي وفق البنك المركزي بين 2016 و2025.",
+      en: "Growth in the ownership and use of financial services between 2016 and June 2026, on the CBE's Financial Inclusion Data Hub.",
+      ar: "نمو امتلاك واستخدام الخدمات المالية بين 2016 ويونيو 2026، وفق منصة بيانات الشمول المالي بالبنك المركزي.",
     },
-    source: "cbeInclusion2025",
+    source: "cbeInclusion2026",
   },
 ];
 
@@ -294,17 +293,17 @@ export const EGYPT_BARRIERS: { label: L; value: number }[] = [
 
 export const WOMEN_STATS: Stat[] = [
   {
-    value: 71.4,
+    value: 72.5,
     unit: "%",
     label: {
       en: "Women's financial inclusion rate in Egypt",
       ar: "معدل الشمول المالي للمرأة في مصر",
     },
     detail: {
-      en: "Up from 19.1% in 2016 — a 316% increase on the CBE measure.",
-      ar: "ارتفاعًا من 19.1% في 2016 — بزيادة 316% وفق مقياس البنك المركزي.",
+      en: "At June 2026, up from 19.1% in 2016 — a 327% increase in the number of women included, on the CBE measure.",
+      ar: "في يونيو 2026، ارتفاعًا من 19.1% في 2016 — بزيادة 327% في عدد النساء المشمولات وفق مقياس البنك المركزي.",
     },
-    source: "cbeInclusion2025",
+    source: "cbeInclusion2026",
     decimals: 1,
   },
   {

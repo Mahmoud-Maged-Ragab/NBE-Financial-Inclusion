@@ -4,7 +4,7 @@ const en = {
   meta: {
     title: "NBE & Financial Inclusion",
     description:
-      "How the National Bank of Egypt contributes to financial inclusion, using figures published in NBE's own 2023 Progress ESG Report and its June 2025 Economic Bulletin.",
+      "How the National Bank of Egypt contributes to financial inclusion, using NBE's own published reports and the Central Bank of Egypt's June 2026 national indicators.",
   },
   hero: {
     eyebrow: "About this project",
@@ -14,11 +14,30 @@ const en = {
   },
   disclaimer:
     "This page is an educational summary compiled by the project team from NBE's published reports. It is not an official National Bank of Egypt publication, no account can be opened through it, and it does not promote any product.",
-  programmes: {
-    eyebrow: "Financial inclusion programmes",
-    title: "What NBE reported for 2023",
+  latestLabel: "Latest NBE data",
+  recent: {
+    eyebrow: "What NBE reports now",
+    title: "What NBE Reported for 2025 and 2026",
     description:
-      "Every figure below is reproduced from the 2023 National Bank of Egypt Progress ESG Report and describes 2023. Later years are shown separately further down.",
+      "These are NBE's own latest published results, from its Economic Bulletins No. 1 and No. 2 of 2026. Each card shows the exact period it covers — a bulletin printed in 2026 usually reports results from 2025, and it is labelled that way rather than rounded up to look newer.",
+    note: "This is everything NBE itself has published recently. Its bulletins report the bank's balance sheet and its awards; they do not report on its financial education programmes, which is why those appear separately below with their own year.",
+  },
+  access: {
+    eyebrow: "Egypt, not NBE",
+    title: "How Egypt Pays and Banks Now",
+    description:
+      "These are country-wide figures for all of Egypt, published by the Central Bank of Egypt and reprinted in NBE Economic Bulletin No. 2 – 2026. They describe the whole banking system, not NBE's customers.",
+    meaning: "What this means for you",
+    meaningBody:
+      "More wallets, more cards and more places to use them mean fewer errands, less cash to carry, and more ways to be paid without queueing for it.",
+  },
+  programmes: {
+    eyebrow: "Earlier reporting",
+    title: "Financial Education Programmes — Last Reported for 2023",
+    description:
+      "How many people NBE's financial education work reached. 2023 is the most recent year NBE has published these numbers for: its 2025 and 2026 Economic Bulletins cover the bank's finances and awards, not its programmes. So these are shown as the 2023 results they are, not as current figures.",
+    caveat:
+      "Looking for NBE's current position? That is the section above, drawn from its 2026 bulletins.",
   },
   scale: {
     eyebrow: "Reach",
@@ -84,7 +103,7 @@ const en = {
       },
       {
         t: "National context",
-        b: "Egypt's women's financial inclusion rate reached 68.8% at the end of 2024 — a Central Bank of Egypt figure reprinted in NBE's June 2025 Economic Bulletin, not an NBE result.",
+        b: "Across Egypt, 72.5% of women held an active account by June 2026, up from 19.1% in 2016. That is a Central Bank of Egypt national figure, not an NBE result.",
       },
     ],
   },
@@ -92,13 +111,13 @@ const en = {
     eyebrow: "National context",
     title: "Where Egypt stands overall",
     description:
-      "These are Central Bank of Egypt indicators for the whole country, reprinted in NBE's Economic Bulletin of June 2025. They describe Egypt, not NBE's customers, and are shown here so the bank's programmes can be read in proportion.",
+      "These are Central Bank of Egypt indicators for the whole country, announced in August 2026 and current to the end of June 2026. They describe Egypt, not NBE's customers, and are shown here so the bank's programmes can be read in proportion.",
   },
   sources: {
     eyebrow: "Sources",
     title: "Where these figures come from",
     description:
-      "Two NBE publications underpin this page. Both are linked in full on the Sources page, alongside every other figure used on this site.",
+      "Five publications underpin this page: NBE's 2023 ESG report and 2023 annual report for its programmes, NBE Economic Bulletins No. 1 and No. 2 of 2026 for its latest numbers, and the Central Bank of Egypt for Egypt's national rates. All are listed in full on the Sources page, with the pages the figures come from.",
     seeAll: "See the full source list",
   },
   cta: {
@@ -112,7 +131,7 @@ const en = {
     eyebrow: "NBE & financial inclusion",
     title: "NBE & Financial Inclusion",
     description:
-      "The National Bank of Egypt publishes what its financial inclusion programmes reached. Here are three figures from its 2023 report.",
+      "Across Egypt, 79% of adults now hold an active account. Here is where the National Bank of Egypt stands, and what its financial education programmes have reached.",
     cta: "Explore NBE's impact",
   },
 };
@@ -123,7 +142,7 @@ const ar: NbeImpactDict = {
   meta: {
     title: "البنك الأهلي المصري والشمول المالي",
     description:
-      "كيف يساهم البنك الأهلي المصري في الشمول المالي، بالاستناد إلى أرقام منشورة في تقرير التقدم البيئي والاجتماعي والحوكمي لعام 2023 والنشرة الاقتصادية لشهر يونيو 2025.",
+      "كيف يساهم البنك الأهلي المصري في الشمول المالي، بالاستناد إلى تقارير البنك المنشورة وإلى المؤشرات القومية للبنك المركزي المصري في يونيو 2026.",
   },
   hero: {
     eyebrow: "عن المشروع",
@@ -133,11 +152,30 @@ const ar: NbeImpactDict = {
   },
   disclaimer:
     "هذه الصفحة ملخص تثقيفي أعده فريق المشروع من التقارير المنشورة للبنك الأهلي المصري. وهي ليست إصدارًا رسميًا للبنك، ولا يمكن فتح حساب من خلالها، ولا تروّج لأي منتج.",
-  programmes: {
-    eyebrow: "برامج الشمول المالي",
-    title: "ما أعلنه البنك الأهلي عن عام 2023",
+  latestLabel: "أحدث بيانات البنك الأهلي المصري",
+  recent: {
+    eyebrow: "ما يعلنه البنك الأهلي الآن",
+    title: "ما أعلنه البنك الأهلي المصري عن 2025 و2026",
     description:
-      "كل رقم أدناه منقول عن تقرير التقدم البيئي والاجتماعي والحوكمي للبنك الأهلي المصري لعام 2023، ويصف عام 2023. أما السنوات اللاحقة فتُعرض بشكل منفصل أدناه.",
+      "هذه أحدث النتائج التي نشرها البنك الأهلي بنفسه، من نشرتيه الاقتصاديتين العدد الأول والعدد الثاني لعام 2026. وتوضح كل بطاقة الفترة التي تغطيها بالضبط — فالنشرة الصادرة في 2026 تعرض عادةً نتائج عام 2025، وقد وُضّح ذلك بدل تقديمها وكأنها أحدث مما هي عليه.",
+    note: "هذا كل ما نشره البنك الأهلي حديثًا. فنشراته تعرض مركز الميزانية والجوائز، ولا تتناول برامج التثقيف المالي، ولذلك تظهر تلك البرامج بشكل منفصل أدناه بسنتها الخاصة.",
+  },
+  access: {
+    eyebrow: "مصر لا البنك الأهلي",
+    title: "كيف تدفع مصر وتتعامل مع البنوك الآن",
+    description:
+      "هذه أرقام على مستوى مصر كلها، صادرة عن البنك المركزي المصري ومعاد نشرها في النشرة الاقتصادية للبنك الأهلي العدد الثاني 2026. وهي تصف النظام المصرفي بأكمله لا عملاء البنك الأهلي.",
+    meaning: "ماذا يعني هذا لك",
+    meaningBody:
+      "زيادة المحافظ والبطاقات وأماكن استخدامها تعني مشاوير أقل، ونقودًا أقل تحملها معك، وطرقًا أكثر لتصلك أموالك دون وقوف في طابور.",
+  },
+  programmes: {
+    eyebrow: "تقارير سابقة",
+    title: "برامج التثقيف المالي — آخر ما أُعلن عنه كان عام 2023",
+    description:
+      "عدد من وصلت إليهم جهود التثقيف المالي لدى البنك الأهلي. و2023 هو آخر عام نشر فيه البنك هذه الأرقام: فنشراته الاقتصادية لعامي 2025 و2026 تتناول أوضاعه المالية وجوائزه لا برامجه. ولذلك تُعرض هنا بوصفها نتائج عام 2023، لا أرقامًا حالية.",
+    caveat:
+      "تبحث عن وضع البنك الأهلي الحالي؟ ستجده في القسم أعلاه، المأخوذ من نشرتيه لعام 2026.",
   },
   scale: {
     eyebrow: "الانتشار",
@@ -203,7 +241,7 @@ const ar: NbeImpactDict = {
       },
       {
         t: "السياق القومي",
-        b: "بلغ معدل الشمول المالي للمرأة في مصر 68.8% في نهاية 2024 — وهو رقم صادر عن البنك المركزي المصري ومعاد نشره في النشرة الاقتصادية للبنك الأهلي في يونيو 2025، وليس نتيجة خاصة بالبنك الأهلي.",
+        b: "على مستوى مصر، بلغت نسبة النساء اللاتي يملكن حسابًا نشطًا 72.5% في يونيو 2026، ارتفاعًا من 19.1% في 2016. وهو رقم قومي للبنك المركزي المصري وليس نتيجة خاصة بالبنك الأهلي.",
       },
     ],
   },
@@ -211,13 +249,13 @@ const ar: NbeImpactDict = {
     eyebrow: "السياق القومي",
     title: "أين تقف مصر إجمالًا",
     description:
-      "هذه مؤشرات صادرة عن البنك المركزي المصري وتخص البلاد كلها، أعيد نشرها في النشرة الاقتصادية للبنك الأهلي في يونيو 2025. وهي تصف مصر لا عملاء البنك الأهلي، وتُعرض هنا حتى تُقرأ برامج البنك في حجمها الصحيح.",
+      "هذه مؤشرات صادرة عن البنك المركزي المصري وتخص البلاد كلها، أُعلنت في أغسطس 2026 وتغطي حتى نهاية يونيو 2026. وهي تصف مصر لا عملاء البنك الأهلي، وتُعرض هنا حتى تُقرأ برامج البنك في حجمها الصحيح.",
   },
   sources: {
     eyebrow: "المصادر",
     title: "من أين جاءت هذه الأرقام",
     description:
-      "تستند هذه الصفحة إلى إصدارين للبنك الأهلي المصري. كلاهما مُدرج بالكامل في صفحة المصادر، إلى جانب كل رقم آخر مستخدم في هذا الموقع.",
+      "تستند هذه الصفحة إلى خمسة مصادر: تقرير الاستدامة والتقرير السنوي للبنك الأهلي لعام 2023 لبرامجه، والنشرتين الاقتصاديتين العدد الأول والعدد الثاني لعام 2026 لأحدث أرقامه، والبنك المركزي المصري للمعدلات القومية. وجميعها مُدرجة بالكامل في صفحة المصادر مع أرقام الصفحات المأخوذة منها.",
     seeAll: "اطّلع على قائمة المصادر كاملة",
   },
   cta: {
@@ -231,7 +269,7 @@ const ar: NbeImpactDict = {
     eyebrow: "البنك الأهلي والشمول المالي",
     title: "البنك الأهلي المصري والشمول المالي",
     description:
-      "ينشر البنك الأهلي المصري ما وصلت إليه برامجه للشمول المالي. وهذه ثلاثة أرقام من تقريره لعام 2023.",
+      "على مستوى مصر، بات 79% من البالغين يملكون حسابًا نشطًا. وهذا هو موقف البنك الأهلي المصري وما وصلت إليه برامجه للتثقيف المالي.",
     cta: "استكشف دور البنك الأهلي",
   },
 };

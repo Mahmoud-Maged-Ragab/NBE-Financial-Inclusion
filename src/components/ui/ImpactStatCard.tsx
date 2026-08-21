@@ -1,3 +1,4 @@
+import { Sparkle } from "lucide-react";
 import { AnimatedCounter } from "./AnimatedCounter";
 import { SourceBadge } from "./SourceBadge";
 import type { DatedStat } from "@/lib/nbeImpact";
@@ -8,18 +9,24 @@ interface ImpactStatCardProps {
   locale: Locale;
   /** Green fill, for the leading figure in a group. */
   emphasis?: boolean;
+  /** "Latest NBE data" wording, supplied by the page dictionary. */
+  latestLabel?: string;
 }
 
 /**
  * A single NBE figure with the year it describes and its citation.
  *
  * The year sits beside the number rather than only inside the source badge,
- * so a 2023 result can never be mistaken for a current one.
+ * so a 2023 result can never be mistaken for a current one. Figures drawn
+ * from the 2026 bulletins also carry a "latest data" marker — the marker says
+ * the source is the newest available, while the year chip still states the
+ * period the figure actually covers.
  */
 export function ImpactStatCard({
   stat,
   locale,
   emphasis = false,
+  latestLabel,
 }: ImpactStatCardProps) {
   return (
     <div
@@ -49,6 +56,19 @@ export function ImpactStatCard({
           {stat.year}
         </span>
       </div>
+
+      {stat.latest && latestLabel ? (
+        <p
+          className={`mt-3 inline-flex items-center gap-1.5 rounded-full px-2.5 py-1 text-[11px] leading-tight font-semibold tracking-wide uppercase ${
+            emphasis
+              ? "bg-gold-300/20 text-gold-200"
+              : "bg-gold-100 text-gold-600"
+          }`}
+        >
+          <Sparkle aria-hidden="true" className="size-3 shrink-0" />
+          {latestLabel}
+        </p>
+      ) : null}
 
       <p
         className={`mt-3 text-sm font-medium ${

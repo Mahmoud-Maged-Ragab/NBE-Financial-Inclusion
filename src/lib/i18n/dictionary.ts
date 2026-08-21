@@ -15,6 +15,7 @@ import { egyptVsIndia } from "./content/egypt-vs-india";
 import { future } from "./content/future";
 import { sources } from "./content/sources";
 import { team } from "./content/team";
+import { basics } from "./content/basics";
 import { videos } from "./content/videos";
 import { nbeImpact } from "./content/nbe-impact";
 
@@ -39,6 +40,7 @@ const PAGES = {
   future,
   sources,
   team,
+  basics,
   videos,
   nbeImpact,
 } as const;

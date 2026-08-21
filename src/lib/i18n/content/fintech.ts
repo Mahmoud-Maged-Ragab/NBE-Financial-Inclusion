@@ -55,7 +55,7 @@ const en = {
         title: "Digital payments",
         summary: "Moving money between people, merchants and institutions.",
         detail:
-          "The largest and most mature category in Egypt, and the one with the most direct bearing on inclusion. Payments matter disproportionately because they are the entry point: most people meet the formal financial system by paying for something, not by opening a savings product.",
+          "The largest and most developed category in Egypt, and the one that matters most for inclusion. Payments come first for a simple reason: most people's first contact with a bank is paying for something, not opening a savings account.",
         points: [
           "Bill payment and cash-in/cash-out agent networks",
           "Merchant acceptance through cards, QR codes and links",

@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { ExternalLink, Play, Search, X } from "lucide-react";
 import {
+  beginnerRank,
   getEmbedUrl,
   getThumbnail,
   getYouTubeId,
@@ -72,8 +73,9 @@ export function VideoLibrary({
   );
 
   /**
-   * Videos spoken in the reader's language come first, so an Arabic reader
-   * meets Arabic videos without having to touch the filter.
+   * Ordered for a beginner: videos in the reader's own language first, then
+   * the ones published by NBE and the Central Bank, then the most basic
+   * topics. An Arabic reader meets Arabic videos without touching a filter.
    */
   const items = useMemo(() => {
     const all = videos.map(localize);
@@ -100,11 +102,9 @@ export function VideoLibrary({
         .includes(needle);
     });
 
-    return matched.sort((a, b) => {
-      const aNative = a.video.language === locale ? 0 : 1;
-      const bNative = b.video.language === locale ? 0 : 1;
-      return aNative - bNative;
-    });
+    return matched.sort(
+      (a, b) => beginnerRank(a.video, locale) - beginnerRank(b.video, locale),
+    );
   }, [videos, localize, query, language, category, locale]);
 
   const filtered = query !== "" || language !== "all" || category !== "all";

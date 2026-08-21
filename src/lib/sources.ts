@@ -421,6 +421,83 @@ export const SOURCES = {
       ar: "مصدر مقاطع الفيديو المنشورة من البنك المركزي والمضمّنة في صفحة الفيديوهات.",
     },
   },
+  cbeInclusion2026: {
+    id: "cbeInclusion2026",
+    short: {
+      en: "CBE financial inclusion indicators, June 2026",
+      ar: "مؤشرات الشمول المالي للبنك المركزي، يونيو 2026",
+    },
+    publisher: { en: "Central Bank of Egypt", ar: "البنك المركزي المصري" },
+    title:
+      "Financial Inclusion Data Hub indicators announced 6 August 2026",
+    url: "https://www.cbe.org.eg/en/financial-inclusion/data-measurement-and-reports",
+    category: "cbe",
+    period: {
+      en: "Position at end of June 2026",
+      ar: "الوضع في نهاية يونيو 2026",
+    },
+    note: {
+      en: "The CBE's own site restricts automated access, so this entry points to its Financial Inclusion data section. The figures were announced on 6 August 2026 and reported consistently by Ahram Online and Daily News Egypt.",
+      ar: "يقيّد موقع البنك المركزي الوصول الآلي، لذا يشير هذا المرجع إلى قسم بيانات الشمول المالي على موقعه. أُعلنت الأرقام في 6 أغسطس 2026 ونقلتها بالتوافق كل من الأهرام أونلاين وديلي نيوز إيجيبت.",
+    },
+  },
+  nbeBulletin2026: {
+    id: "nbeBulletin2026",
+    short: {
+      en: "NBE Economic Bulletin No. 1 – 2026",
+      ar: "النشرة الاقتصادية للبنك الأهلي، العدد الأول 2026",
+    },
+    publisher: { en: "National Bank of Egypt", ar: "البنك الأهلي المصري" },
+    title: "NBE Economic Bulletin — No. 1, 1st issue / March 2026, Volume 76",
+    url: "https://www.nbe.com.eg/AssetsManager/26706f44-b141-4962-ac21-27791b779fbf.pdf",
+    category: "nbe",
+    period: {
+      en: "NBE performance as at September 2025; awards for 2025 (pp. 69–71)",
+      ar: "أداء البنك كما في سبتمبر 2025؛ والجوائز عن عام 2025 (ص 69–71)",
+    },
+    note: {
+      en: "Carries NBE's own balance-sheet position and the recognitions it received during 2025.",
+      ar: "يتضمن مركز الميزانية الخاص بالبنك والجوائز التي حصل عليها خلال عام 2025.",
+    },
+  },
+  nbeAnnual2023: {
+    id: "nbeAnnual2023",
+    short: {
+      en: "NBE Annual Report 2023",
+      ar: "التقرير السنوي للبنك الأهلي 2023",
+    },
+    publisher: { en: "National Bank of Egypt", ar: "البنك الأهلي المصري" },
+    title: "National Bank of Egypt Annual Report 2023",
+    url: "https://www.nbe.com.eg/AssetsManager/f8b0bbc9-b2c8-4115-99bc-d7a3e87cc302.pdf",
+    category: "nbe",
+    period: {
+      en: "Reporting year 2023",
+      ar: "السنة المشمولة بالتقرير 2023",
+    },
+    note: {
+      en: "Contains NBE's Financial Inclusion Sector pages. Its Haya Karima village count of 164 differs by one from the 163 in NBE's ESG report for the same year; both are shown rather than silently reconciled.",
+      ar: "يتضمن صفحات قطاع الشمول المالي بالبنك. ويذكر عدد قرى حياة كريمة 164 قرية، بفارق قرية واحدة عن 163 الواردة في تقرير الاستدامة للعام نفسه؛ وقد عُرض الرقمان بدلًا من التوفيق بينهما دون بيان.",
+    },
+  },
+  nbeBulletin2No2026: {
+    id: "nbeBulletin2No2026",
+    short: {
+      en: "NBE Economic Bulletin No. 2 – 2026",
+      ar: "النشرة الاقتصادية للبنك الأهلي، العدد الثاني 2026",
+    },
+    publisher: { en: "National Bank of Egypt", ar: "البنك الأهلي المصري" },
+    title: "NBE Economic Bulletin — No. 2, 2nd issue / June 2026, Volume 76",
+    url: "https://www.nbe.com.eg/AssetsManager/b7fbfb4c-3b35-499c-9356-714c708d271e.pdf",
+    category: "nbe",
+    period: {
+      en: "NBE results to Q1 2026; national indicators to December 2025 (pp. 66–71)",
+      ar: "نتائج البنك حتى الربع الأول 2026؛ والمؤشرات القومية حتى ديسمبر 2025 (ص 66–71)",
+    },
+    note: {
+      en: "The newest NBE publication. Its banking pages carry two different things: NBE's own results, and Central Bank of Egypt national indicators up to December 2025 that NBE reprints. The CBE has since published June 2026 figures, so the national rates on this site come from that later release instead.",
+      ar: "أحدث إصدار للبنك الأهلي. وتتضمن صفحاته المصرفية أمرين مختلفين: نتائج البنك نفسه، ومؤشرات قومية للبنك المركزي المصري حتى ديسمبر 2025 يعيد البنك الأهلي نشرها. وقد نشر البنك المركزي بعدها أرقام يونيو 2026، ولذلك تعتمد المعدلات القومية في هذا الموقع على ذلك الإصدار الأحدث.",
+    },
+  },
 } as const satisfies Record<string, Source>;
 
 export type SourceId = keyof typeof SOURCES;

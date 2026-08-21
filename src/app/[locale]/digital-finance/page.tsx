@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { PageHero } from "@/components/ui/PageHero";
 import { NextStep } from "@/components/ui/NextStep";
 import { Section, SectionHeader } from "@/components/ui/Section";
+import { ImpactStatCard } from "@/components/ui/ImpactStatCard";
+import { EGYPT_PAYMENTS_ACCESS } from "@/lib/nbeImpact";
 import { Reveal } from "@/components/ui/Reveal";
 import { Card, FeatureCard, StatCard } from "@/components/ui/Card";
 import { FlowDiagram, type FlowStep } from "@/components/ui/FlowDiagram";
@@ -264,7 +266,40 @@ export default async function DigitalFinancePage({
       </Section>
 
       {/* -------- The rails -------- */}
-      <Section muted>
+      {/* -------- Latest national payment figures -------- */}
+      <Section muted id="where-egypt-is-now">
+        <Reveal>
+          <SectionHeader
+            eyebrow={t.nowLatest.eyebrow}
+            title={t.nowLatest.title}
+            description={t.nowLatest.description}
+          />
+        </Reveal>
+        <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          {EGYPT_PAYMENTS_ACCESS().map((stat, i) => (
+            <Reveal key={stat.label.en} delay={(i % 4) * 80}>
+              <ImpactStatCard
+                stat={stat}
+                locale={locale}
+                latestLabel={t.nowLatest.label}
+                emphasis={i === 0}
+              />
+            </Reveal>
+          ))}
+        </div>
+        <Reveal delay={140}>
+          <div className="mt-8 max-w-3xl rounded-xl border border-ink-200 bg-white p-6">
+            <h3 className="text-base font-semibold text-ink-900">
+              {t.nowLatest.meaning}
+            </h3>
+            <p className="mt-2 leading-relaxed text-ink-700">
+              {t.nowLatest.meaningBody}
+            </p>
+          </div>
+        </Reveal>
+      </Section>
+
+      <Section>
         <Reveal>
           <SectionHeader
             eyebrow={t.rails.eyebrow}

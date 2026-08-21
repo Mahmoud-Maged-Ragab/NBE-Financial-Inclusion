@@ -31,7 +31,7 @@ const en = {
     body1:
       "The 2021 reading sits below 2017, mirroring the dip in the national series. As with the headline figure, this is reproduced as published: survey measures carry sampling variation, and the 2021 round was conducted under pandemic conditions worldwide.",
     body2:
-      "The Central Bank of Egypt, using its broader measure of active transactional accounts, reports women's financial inclusion rising from 19.1% in 2016 to 71.4% in 2025 — an increase of 316%. The gap between that and the World Bank's 40.2% is the same methodological difference that appears in the national numbers, not a contradiction.",
+      "The Central Bank of Egypt, using its broader measure of active accounts, reports women's financial inclusion rising from 19.1% in 2016 to 72.5% by June 2026 — a 327% increase in the number of women included. The gap between that and the World Bank's 40.2% is the same difference in method that appears in the national numbers, not a contradiction.",
   },
   gap: {
     eyebrow: "Women and men compared",
@@ -149,7 +149,7 @@ const ar: WomenDict = {
     body1:
       "قراءة 2021 أقل من 2017، بما يعكس الانخفاض في السلسلة الوطنية. وكما هو الحال مع الرقم الرئيسي، فهي منقولة كما نُشرت: فمقاييس المسح تحمل تباينًا في العينة، وأُجريت جولة 2021 في ظروف الجائحة عالميًا.",
     body2:
-      "أما البنك المركزي المصري، باستخدام مقياسه الأوسع لحسابات المعاملات النشطة، فيفيد بارتفاع الشمول المالي للمرأة من 19.1% في 2016 إلى 71.4% في 2025 — بزيادة قدرها 316%. والفارق بين هذا الرقم و40.2% لدى البنك الدولي هو الاختلاف المنهجي نفسه الوارد في الأرقام الوطنية، لا تناقضًا.",
+      "أما البنك المركزي المصري، باستخدام مقياسه الأوسع للحسابات النشطة، فيفيد بارتفاع الشمول المالي للمرأة من 19.1% في 2016 إلى 72.5% بحلول يونيو 2026 — بزيادة 327% في عدد النساء المشمولات. والفارق بين هذا الرقم و40.2% لدى البنك الدولي هو الاختلاف نفسه في المنهجية الذي يظهر في الأرقام القومية، وليس تناقضًا.",
   },
   gap: {
     eyebrow: "مقارنة بين النساء والرجال",
