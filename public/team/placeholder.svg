@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" width="400" height="500" role="img" aria-label="Placeholder portrait">
+  <rect width="400" height="500" fill="#eef5f1"/>
+  <g fill="#aed1c0">
+    <circle cx="200" cy="196" r="60"/>
+    <path d="M200 276c-60 0-109 41-109 92v42h218v-42c0-51-49-92-109-92z"/>
+  </g>
+  <text x="200" y="462" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="15" font-weight="600" letter-spacing="3.5" fill="#7db39c">PLACEHOLDER</text>
+</svg>

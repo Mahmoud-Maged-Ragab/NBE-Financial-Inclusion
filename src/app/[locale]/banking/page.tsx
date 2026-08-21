@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
-import { Info, ShieldAlert } from "lucide-react";
+// `Info` was dropped from this import when the educational-notice block below
+// was commented out. Re-add it if that section is restored.
+import { ShieldAlert } from "lucide-react";
 import { PageHero } from "@/components/ui/PageHero";
 import { NextStep } from "@/components/ui/NextStep";
 import { Section, SectionHeader } from "@/components/ui/Section";

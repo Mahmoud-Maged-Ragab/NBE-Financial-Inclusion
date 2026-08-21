@@ -24,6 +24,9 @@ export const NAV_ITEMS: NavItem[] = [
   { key: "egyptVsIndia", href: "/egypt-vs-india", group: "outlook" },
   { key: "future", href: "/future", group: "outlook" },
   { key: "sources", href: "/sources", group: "outlook" },
+  { key: "videos", href: "/videos", group: "learn" },
+  { key: "nbeImpact", href: "/nbe-impact", group: "learn" },
+  { key: "team", href: "/team", group: "about" },
 ];
 
 export const NAV_GROUPS: NavGroupKey[] = [
@@ -32,15 +35,28 @@ export const NAV_GROUPS: NavGroupKey[] = [
   "technology",
   "people",
   "outlook",
+  "learn",
+  "about",
 ];
 
-/** Links kept inline in the header on large screens. */
+/**
+ * Links kept inline in the header.
+ *
+ * The full set only fits once there is room for it, so the lower-priority
+ * links are held back until `xl`. Everything remains one tap away in the
+ * Sections panel at every width.
+ */
 export const PRIMARY_NAV: {
   href: string;
   short: keyof CommonDict["nav"]["short"];
+  /** Held back until xl, where the header has room for all seven. */
+  wideOnly?: boolean;
 }[] = [
+  { href: "/", short: "home", wideOnly: true },
   { href: "/understanding", short: "understanding" },
-  { href: "/banking", short: "banking" },
   { href: "/egypt", short: "egypt" },
   { href: "/digital-finance", short: "digitalFinance" },
+  { href: "/videos", short: "videos" },
+  { href: "/nbe-impact", short: "nbeImpact", wideOnly: true },
+  { href: "/team", short: "team", wideOnly: true },
 ];

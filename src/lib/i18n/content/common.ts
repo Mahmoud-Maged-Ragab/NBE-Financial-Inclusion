@@ -19,12 +19,18 @@ const en = {
       technology: "Technology",
       people: "People",
       outlook: "Outlook",
+      learn: "Learn & watch",
+      about: "About",
     },
     short: {
-      understanding: "Understanding",
+      home: "Home",
+      understanding: "Financial Inclusion",
       banking: "Banking",
       egypt: "Egypt",
       digitalFinance: "Digital Finance",
+      videos: "Videos",
+      nbeImpact: "NBE Impact",
+      team: "Team",
     },
   },
   items: {
@@ -75,6 +81,18 @@ const en = {
     sources: {
       label: "Sources",
       blurb: "Every figure on this site, traced to its origin.",
+    },
+    videos: {
+      label: "Videos",
+      blurb: "Explanations on film, from NBE, the CBE and the World Bank.",
+    },
+    nbeImpact: {
+      label: "NBE Impact",
+      blurb: "What NBE publishes about its financial inclusion work.",
+    },
+    team: {
+      label: "Team",
+      blurb: "The people who worked on this project.",
     },
   },
   footer: {
@@ -183,12 +201,18 @@ const ar: CommonDict = {
       technology: "التكنولوجيا",
       people: "الأفراد والمشروعات",
       outlook: "نظرة مستقبلية",
+      learn: "تعلّم وشاهد",
+      about: "عن المشروع",
     },
     short: {
-      understanding: "المفهوم",
+      home: "الرئيسية",
+      understanding: "الشمول المالي",
       banking: "الخدمات المصرفية",
       egypt: "مصر",
       digitalFinance: "التمويل الرقمي",
+      videos: "الفيديوهات",
+      nbeImpact: "دور البنك الأهلي",
+      team: "الفريق",
     },
   },
   items: {
@@ -239,6 +263,18 @@ const ar: CommonDict = {
     sources: {
       label: "المصادر",
       blurb: "كل رقم على هذا الموقع، موثقًا بمصدره.",
+    },
+    videos: {
+      label: "الفيديوهات",
+      blurb: "شروح مصورة من البنك الأهلي والبنك المركزي والبنك الدولي.",
+    },
+    nbeImpact: {
+      label: "دور البنك الأهلي",
+      blurb: "ما ينشره البنك الأهلي عن عمله في الشمول المالي.",
+    },
+    team: {
+      label: "الفريق",
+      blurb: "الأشخاص الذين عملوا على هذا المشروع.",
     },
   },
   footer: {
@@ -309,10 +345,10 @@ const ar: CommonDict = {
   },
   project: {
     logoAlt: "شعار البنك الأهلي المصري",
-    createdBy: "إعداد متدربي إدارة الائتمان",
+    createdBy: "إعداد متدربي إدارة الائتمان و المتابعة",
     org: "البنك الأهلي المصري (NBE)",
     footerLine:
-      "مشروع تثقيفي من إعداد متدربي إدارة الائتمان في البنك الأهلي المصري (NBE).",
+      "مشروع تثقيفي من إعداد متدربي إدارة الائتمان و المتابعة في البنك الأهلي المصري (NBE).",
     aboutEyebrow: "عن المشروع",
     aboutTitle: "عن هذا المشروع",
     aboutBody:

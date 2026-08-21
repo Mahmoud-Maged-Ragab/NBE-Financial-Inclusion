@@ -2,7 +2,12 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { ArrowRight, Quote } from "lucide-react";
 import { EgyptHeroArt } from "@/components/ui/EgyptHeroArt";
-import { Container, Rule, Section, SectionHeader } from "@/components/ui/Section";
+import {
+  Container,
+  Rule,
+  Section,
+  SectionHeader,
+} from "@/components/ui/Section";
 import { Reveal } from "@/components/ui/Reveal";
 import { StatCard } from "@/components/ui/Card";
 import {
@@ -12,10 +17,17 @@ import {
 import { BeforeAfter, type BeforeAfterRow } from "@/components/ui/BeforeAfter";
 import { JourneyStrip, type JourneyStep } from "@/components/ui/JourneyStrip";
 import { TrustSection } from "@/components/ui/TrustSection";
+import { AboutProject } from "@/components/ui/AboutProject";
+import { TeamGrid } from "@/components/ui/TeamGrid";
+import { VideoLibrary } from "@/components/ui/VideoLibrary";
+import { ImpactStatCard } from "@/components/ui/ImpactStatCard";
 import { CTA } from "@/components/ui/PageHero";
 import { AnimatedCounter } from "@/components/ui/AnimatedCounter";
 import { SourceBadge } from "@/components/ui/SourceBadge";
 import { CONTEXT, EGYPT_HEADLINE } from "@/lib/data";
+import { TEAM_MEMBERS, TEAM_PREVIEW_COUNT } from "@/lib/teamMembers";
+import { VIDEOS } from "@/data/videos";
+import { NBE_INCLUSION_STATS } from "@/lib/nbeImpact";
 import { getContent, getCommon, requireLocale } from "@/lib/i18n/dictionary";
 import { languageAlternates, localePath } from "@/lib/i18n/config";
 
@@ -43,7 +55,22 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
   const { locale: raw } = await params;
   const locale = requireLocale(raw);
   const t = getContent(locale, "home");
+  const team = getContent(locale, "team");
+  const videos = getContent(locale, "videos");
+  const nbe = getContent(locale, "nbeImpact");
   const c = getCommon(locale);
+
+  /**
+   * Three videos for the home preview: the featured explainer in the reader's
+   * language first, then the next videos spoken in that language.
+   */
+  const homeVideos = [...VIDEOS]
+    .sort((a, b) => {
+      const score = (v: typeof a) =>
+        (v.language === locale ? 0 : 2) + (v.featured ? -1 : 0);
+      return score(a) - score(b);
+    })
+    .slice(0, 3);
 
   const journey: JourneyStep[] = t.hero.journey.map((label, i) => ({
     label,
@@ -61,13 +88,13 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
         />
         <Container className="relative py-20 sm:py-28">
           <div className="max-w-2xl">
-            <p className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/5 px-3.5 py-1.5 text-xs font-medium tracking-wide text-brand-100">
+            {/* <p className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/5 px-3.5 py-1.5 text-xs font-medium tracking-wide text-brand-100">
               <span
                 aria-hidden="true"
                 className="size-1.5 rounded-full bg-gold-400"
               />
               {t.hero.badge}
-            </p>
+            </p> */}
             <h1 className="mt-6 text-4xl font-semibold tracking-tight text-balance sm:text-6xl lg:text-7xl">
               {t.hero.title}
             </h1>
@@ -316,6 +343,119 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
           ))}
         </div>
       </Section>
+
+      {/* ---------------- Videos preview ---------------- */}
+      <Section muted>
+        <Reveal>
+          <SectionHeader
+            eyebrow={videos.preview.eyebrow}
+            title={videos.preview.title}
+            description={videos.preview.description}
+            align="center"
+          />
+        </Reveal>
+
+        <div className="mt-12">
+          <VideoLibrary
+            videos={homeVideos}
+            locale={locale}
+            dict={videos}
+            compact
+          />
+        </div>
+
+        <Reveal delay={120}>
+          <div className="mt-10 flex justify-center">
+            <Link
+              href={localePath(locale, "/videos")}
+              className="group inline-flex items-center justify-center gap-2 rounded-lg bg-brand-700 px-6 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-brand-800"
+            >
+              {videos.preview.cta}
+              <ArrowRight
+                aria-hidden="true"
+                className="size-4 transition-transform duration-300 group-hover:translate-x-1 rtl:rotate-180 rtl:group-hover:-translate-x-1"
+              />
+            </Link>
+          </div>
+        </Reveal>
+      </Section>
+
+      {/* ---------------- NBE impact preview ---------------- */}
+      <Section>
+        <Reveal>
+          <SectionHeader
+            eyebrow={nbe.preview.eyebrow}
+            title={nbe.preview.title}
+            description={nbe.preview.description}
+            align="center"
+          />
+        </Reveal>
+
+        <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          {NBE_INCLUSION_STATS.slice(0, 3).map((stat, i) => (
+            <Reveal key={stat.label.en} delay={i * 80}>
+              <ImpactStatCard stat={stat} locale={locale} emphasis={i === 0} />
+            </Reveal>
+          ))}
+        </div>
+
+        <Reveal delay={140}>
+          <div className="mt-10 flex justify-center">
+            <Link
+              href={localePath(locale, "/nbe-impact")}
+              className="group inline-flex items-center justify-center gap-2 rounded-lg border border-ink-200 bg-white px-6 py-3.5 text-sm font-semibold text-brand-700 transition-colors hover:border-brand-300 hover:bg-brand-50"
+            >
+              {nbe.preview.cta}
+              <ArrowRight
+                aria-hidden="true"
+                className="size-4 transition-transform duration-300 group-hover:translate-x-1 rtl:rotate-180 rtl:group-hover:-translate-x-1"
+              />
+            </Link>
+          </div>
+        </Reveal>
+      </Section>
+
+      {/* ---------------- Team preview ---------------- */}
+      {/* <Section muted id="team">
+        <Reveal>
+          <SectionHeader
+            eyebrow={team.preview.eyebrow}
+            title={team.preview.title}
+            description={team.preview.description}
+            align="center"
+          />
+        </Reveal>
+
+        <TeamGrid
+          members={TEAM_MEMBERS.slice(0, TEAM_PREVIEW_COUNT)}
+          locale={locale}
+          columns={3}
+          labels={{
+            university: team.grid.university,
+            major: team.grid.major,
+          }}
+          ariaLabel={team.grid.ariaLabel}
+          emptyMessage={team.grid.empty}
+          className="mt-12"
+        />
+
+        <Reveal delay={120}>
+          <div className="mt-10 flex justify-center">
+            <Link
+              href={localePath(locale, "/team")}
+              className="group inline-flex items-center justify-center gap-2 rounded-lg border border-ink-200 bg-white px-6 py-3.5 text-sm font-semibold text-brand-700 transition-colors hover:border-brand-300 hover:bg-brand-50"
+            >
+              {team.preview.cta}
+              <ArrowRight
+                aria-hidden="true"
+                className="size-4 transition-transform duration-300 group-hover:translate-x-1 rtl:rotate-180 rtl:group-hover:-translate-x-1"
+              />
+            </Link>
+          </div>
+        </Reveal>
+      </Section> */}
+
+      <AboutProject muted />
 
       <CTA
         title={t.finalCta.title}

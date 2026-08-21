@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { LayoutGrid, X } from "lucide-react";
 import { NAV_GROUPS, NAV_ITEMS, PRIMARY_NAV } from "@/lib/nav";
-import { Logo } from "@/components/ui/Logo";
+import { NBELogo } from "@/components/ui/NBELogo";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 import { localePath, stripLocale, type Locale } from "@/lib/i18n/config";
 import type { CommonDict } from "@/lib/i18n/content/common";
@@ -40,10 +40,14 @@ export function SiteHeader({ locale, dict }: SiteHeaderProps) {
       <div className="mx-auto flex h-16 w-full max-w-6xl items-center gap-3 px-5 sm:px-8">
         <Link
           href={localePath(locale, "/")}
-          className="flex items-center gap-2.5 text-ink-900"
+          className="flex shrink-0 items-center gap-3 text-ink-900"
           aria-label={dict.site.home}
         >
-          <Logo className="size-8 shrink-0" />
+          <NBELogo alt={dict.project.logoAlt} size="sm" className="shrink-0" />
+          <span
+            aria-hidden="true"
+            className="hidden h-7 w-px bg-ink-200 sm:block"
+          />
           <span className="hidden text-sm leading-tight font-semibold sm:block">
             {dict.site.name}
             <span className="block text-xs font-normal text-ink-500">
@@ -54,7 +58,7 @@ export function SiteHeader({ locale, dict }: SiteHeaderProps) {
 
         <nav
           aria-label={dict.nav.primary}
-          className="ms-auto hidden items-center gap-1 lg:flex"
+          className="ms-auto hidden items-center gap-0.5 lg:flex"
         >
           {PRIMARY_NAV.map((item) => {
             const active = current === item.href;
@@ -63,7 +67,9 @@ export function SiteHeader({ locale, dict }: SiteHeaderProps) {
                 key={item.href}
                 href={localePath(locale, item.href)}
                 aria-current={active ? "page" : undefined}
-                className={`rounded-md px-3 py-2 text-sm font-medium transition-colors ${
+                className={`rounded-md px-2.5 py-2 text-sm font-medium whitespace-nowrap transition-colors ${
+                  item.wideOnly ? "hidden xl:block" : ""
+                } ${
                   active
                     ? "bg-brand-50 text-brand-700"
                     : "text-ink-600 hover:bg-ink-50 hover:text-ink-900"

@@ -15,6 +15,7 @@ import type { Locale } from "./i18n/config";
 export type SourceCategory =
   | "worldBank"
   | "cbe"
+  | "nbe"
   | "imf"
   | "government"
   | "academic"
@@ -338,6 +339,88 @@ export const SOURCES = {
     category: "other",
     period: { en: "Published 2025", ar: "نُشرت في 2025" },
   },
+  nbeEsg2023: {
+    id: "nbeEsg2023",
+    short: {
+      en: "NBE Progress ESG Report 2023",
+      ar: "تقرير التقدم البيئي والاجتماعي والحوكمي للبنك الأهلي 2023",
+    },
+    publisher: {
+      en: "National Bank of Egypt",
+      ar: "البنك الأهلي المصري",
+    },
+    title: "2023 National Bank of Egypt Progress ESG Report",
+    url: "https://www.nbe.com.eg/AssetsManager/10495ea7-5582-4a8d-b288-e16eddf8dc83.pdf",
+    category: "nbe",
+    period: {
+      en: "Reporting year 2023, figures as at 31 December 2023",
+      ar: "السنة المشمولة بالتقرير 2023، والأرقام كما في 31 ديسمبر 2023",
+    },
+    note: {
+      en: "NBE's own sustainability and ESG disclosure. All NBE programme figures on this site — individuals reached, villages, students, branches, ATMs — are reproduced from this report and describe 2023 only.",
+      ar: "إفصاح البنك الأهلي المصري عن الاستدامة والمعايير البيئية والاجتماعية والحوكمية. جميع أرقام برامج البنك على هذا الموقع — الأفراد الذين تم الوصول إليهم والقرى والطلاب والفروع وماكينات الصراف — منقولة عن هذا التقرير وتخص عام 2023 فقط.",
+    },
+  },
+  nbeBulletin2025: {
+    id: "nbeBulletin2025",
+    short: {
+      en: "NBE Economic Bulletin, June 2025",
+      ar: "النشرة الاقتصادية للبنك الأهلي، يونيو 2025",
+    },
+    publisher: {
+      en: "National Bank of Egypt",
+      ar: "البنك الأهلي المصري",
+    },
+    title: "NBE Economic Bulletin — 2nd issue / June 2025, Volume 75",
+    url: "https://www.nbe.com.eg/AssetsManager/ccd7024c-87a6-4e0f-b038-cb1a5b27610c.pdf",
+    category: "nbe",
+    period: {
+      en: "Indicators as at end of 2024, published June 2025",
+      ar: "مؤشرات حتى نهاية 2024، ونُشرت في يونيو 2025",
+    },
+    note: {
+      en: "An NBE publication reporting national indicators that the bulletin itself attributes to the Central Bank of Egypt. These are Egypt-wide rates, not NBE customer figures.",
+      ar: "منشور صادر عن البنك الأهلي المصري يعرض مؤشرات قومية ينسبها المنشور نفسه إلى البنك المركزي المصري. وهي معدلات على مستوى مصر كلها وليست أرقام عملاء البنك الأهلي.",
+    },
+  },
+  nbeYouTube: {
+    id: "nbeYouTube",
+    short: {
+      en: "NBE official YouTube channel",
+      ar: "قناة البنك الأهلي المصري الرسمية على يوتيوب",
+    },
+    publisher: {
+      en: "National Bank of Egypt",
+      ar: "البنك الأهلي المصري",
+    },
+    title: "National Bank of Egypt — official YouTube channel",
+    url: "https://www.youtube.com/c/nbe",
+    category: "nbe",
+    period: { en: "Accessed August 2026", ar: "تم الاطلاع في أغسطس 2026" },
+    note: {
+      en: "Source of the NBE-published videos embedded on the Videos page. Videos are embedded from the publisher's own channel and are not hosted on this site.",
+      ar: "مصدر مقاطع الفيديو المنشورة من البنك الأهلي والمضمّنة في صفحة الفيديوهات. تُعرض المقاطع من قناة الناشر نفسه ولا تُستضاف على هذا الموقع.",
+    },
+  },
+  cbeYouTube: {
+    id: "cbeYouTube",
+    short: {
+      en: "CBE official YouTube channel",
+      ar: "قناة البنك المركزي المصري الرسمية على يوتيوب",
+    },
+    publisher: {
+      en: "Central Bank of Egypt",
+      ar: "البنك المركزي المصري",
+    },
+    title: "Central Bank of Egypt — official YouTube channel",
+    url: "https://www.youtube.com/@CentralBankofEgypt",
+    category: "cbe",
+    period: { en: "Accessed August 2026", ar: "تم الاطلاع في أغسطس 2026" },
+    note: {
+      en: "Source of the CBE-published videos embedded on the Videos page.",
+      ar: "مصدر مقاطع الفيديو المنشورة من البنك المركزي والمضمّنة في صفحة الفيديوهات.",
+    },
+  },
 } as const satisfies Record<string, Source>;
 
 export type SourceId = keyof typeof SOURCES;
@@ -347,6 +430,7 @@ export const SOURCE_LIST: readonly Source[] = Object.values(SOURCES);
 export const SOURCE_CATEGORIES: readonly SourceCategory[] = [
   "worldBank",
   "cbe",
+  "nbe",
   "imf",
   "government",
   "academic",

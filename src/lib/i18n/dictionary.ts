@@ -14,6 +14,9 @@ import { smallBusiness } from "./content/small-business";
 import { egyptVsIndia } from "./content/egypt-vs-india";
 import { future } from "./content/future";
 import { sources } from "./content/sources";
+import { team } from "./content/team";
+import { videos } from "./content/videos";
+import { nbeImpact } from "./content/nbe-impact";
 
 /**
  * Content is grouped per page so each page pulls only what it renders.
@@ -35,6 +38,9 @@ const PAGES = {
   egyptVsIndia,
   future,
   sources,
+  team,
+  videos,
+  nbeImpact,
 } as const;
 
 type Pages = typeof PAGES;

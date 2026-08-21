@@ -5,6 +5,7 @@ import { Section, SectionHeader } from "@/components/ui/Section";
 import { Reveal } from "@/components/ui/Reveal";
 import { Card } from "@/components/ui/Card";
 import { BankAwarenessCTA } from "@/components/ui/BankAwarenessCTA";
+import { AboutProject } from "@/components/ui/AboutProject";
 import { SOURCE_CATEGORIES, SOURCE_LIST } from "@/lib/sources";
 import { getContent, getCommon, requireLocale } from "@/lib/i18n/dictionary";
 import { languageAlternates } from "@/lib/i18n/config";
@@ -163,6 +164,8 @@ export default async function SourcesPage({
           ))}
         </div>
       </Section> */}
+
+      <AboutProject muted />
 
       <BankAwarenessCTA />
     </>

@@ -43,6 +43,7 @@ const en = {
   categories: {
     worldBank: "World Bank",
     cbe: "Central Bank of Egypt",
+    nbe: "National Bank of Egypt",
     imf: "International Monetary Fund",
     government: "Egyptian government",
     academic: "Academic",
@@ -127,6 +128,7 @@ const ar: SourcesDict = {
   categories: {
     worldBank: "البنك الدولي",
     cbe: "البنك المركزي المصري",
+    nbe: "البنك الأهلي المصري",
     imf: "صندوق النقد الدولي",
     government: "الجهات الحكومية المصرية",
     academic: "مصادر أكاديمية",

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { NAV_GROUPS, NAV_ITEMS } from "@/lib/nav";
 import { Logo } from "@/components/ui/Logo";
+import { NBELogo } from "@/components/ui/NBELogo";
 import { localePath, type Locale } from "@/lib/i18n/config";
 import type { CommonDict } from "@/lib/i18n/content/common";
 
@@ -63,7 +64,23 @@ export function SiteFooter({
           </div>
         </div>
 
-        <div className="mt-12 flex flex-col gap-3 border-t border-white/10 pt-6 text-xs text-ink-500 sm:flex-row sm:items-center sm:justify-between">
+        {/* Project attribution */}
+        <div className="mt-12 border-t border-white/10 pt-8">
+          <div className="flex flex-col gap-5 sm:flex-row sm:items-center sm:gap-7">
+            <NBELogo alt={dict.project.logoAlt} size="md" plate />
+            <div>
+              <p className="text-sm font-semibold text-white">
+                {dict.project.createdBy}
+              </p>
+              <p className="mt-0.5 text-sm text-ink-300">{dict.project.org}</p>
+            </div>
+          </div>
+          <p className="mt-5 max-w-3xl text-xs leading-relaxed text-ink-500">
+            {dict.project.notOfficial}
+          </p>
+        </div>
+
+        <div className="mt-8 flex flex-col gap-3 border-t border-white/10 pt-6 text-xs text-ink-500 sm:flex-row sm:items-center sm:justify-between">
           <p className="max-w-2xl">{dict.footer.disclaimer}</p>
           <p>{dict.footer.dataNote}</p>
         </div>
