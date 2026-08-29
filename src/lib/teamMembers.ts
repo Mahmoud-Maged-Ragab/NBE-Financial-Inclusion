@@ -1,5 +1,8 @@
 import type { Locale } from "./i18n/config";
-
+export const MahmoudImg = "/team/MahmoudImg.jpeg";
+export const BadrImg = "/team/BadrImg.jpeg";
+export const OlaImg = "/team/OlaImg.jpeg";
+export const SiefeImg = "/team/SiefeImg.jpeg";
 /**
  * Neutral avatar shipped in `/public/team`. Any member still pointing at it is
  * showing placeholder art rather than a real photo.
@@ -61,37 +64,37 @@ export const TEAM_MEMBERS: TeamMember[] = [
     universityAr: "الاكاديمية البحرية للعلوم و التكنولوجيا",
     major: "BIS",
     majorAr: "BIS",
-    image: PLACEHOLDER_IMAGE, // ← e.g. "/team/member-1.jpg"
+    image: MahmoudImg, // ← e.g. "/team/member-1.jpg"
   },
   {
     id: "member-2",
-    name: "Badr",
-    nameAr: "بدر",
+    name: "Badr Mohammed Badr",
+    nameAr: "بدر محمد بدر",
     university: "Misr University for Science & Technology (MUST)",
     universityAr: "جامعة مصر للعلوم والتكنولوجيا",
     major: "Finance",
     majorAr: "Finance",
-    image: PLACEHOLDER_IMAGE, // ← e.g. "/team/member-2.jpg"
+    image: BadrImg, // ← e.g. "/team/member-2.jpg"
   },
   {
     id: "member-3",
     name: "Ola Elgohary",
     nameAr: " علا الجهاري",
-    university: "University Name",
-    universityAr: "اسم الجامعة",
-    major: "Major / Program",
-    majorAr: "التخصص / البرنامج",
-    image: PLACEHOLDER_IMAGE, // ← e.g. "/team/member-3.jpg"
+    university: "Cairo University",
+    universityAr: "  الجامعة القاهرة",
+    major: "Accounting",
+    majorAr: "محاسبة",
+    image: OlaImg, // ← e.g. "/team/member-3.jpg"
   },
   {
     id: "member-4",
-    name: "Siefe Farage ",
+    name: "Siefe Farage",
     nameAr: "سيف فاراج",
-    university: "Cairo University",
-    universityAr: "جامعة القاهرة",
+    university: "Ain Shams University",
+    universityAr: "جامعة عين شمس",
     major: "Economics",
     majorAr: "الاقتصاد",
-    image: PLACEHOLDER_IMAGE, // ← e.g. "/team/member-4.jpg"
+    image: "", // ← e.g. "/team/member-4.jpg"
   },
 ];
 

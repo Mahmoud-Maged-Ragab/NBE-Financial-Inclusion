@@ -20,7 +20,7 @@ const en = {
   hero: {
     eyebrow: "Start here",
     title: "Banking, Explained Simply",
-    description: "Never used a bank before? That is completely fine.",
+    description: "Never used a bank before? That's completely fine.",
     lead: "This page explains the basics in plain language — what a bank actually does, what an account is for, how to put money in and take it out, and how to keep your money safe. No banking knowledge needed.",
   },
 
@@ -195,7 +195,7 @@ const en = {
     description:
       "From having no account to using financial services. Select any step to see what it involves.",
     caption:
-      "You do not have to do all of this. Most people start at the first two steps and stop wherever suits them.",
+      "You don't have to do all of this. Most people start with the first two steps and stop wherever suits them.",
     steps: [
       {
         id: "you",
@@ -258,9 +258,9 @@ const en = {
     includes:
       "That can mean a bank account, savings, payments, credit, a mobile wallet, or digital banking.",
     whyTitle: "Why does it matter?",
-    why: "Because having access to financial services can make it easier to save, to receive money, to pay for things, and to take part in the formal economy.",
+    why: "Because it can make saving easier, make it simpler to get paid and pay others, and help you take part in the formal economy.",
     notTitle: "And what it is not",
-    not: "Financial inclusion is not about pushing anyone to borrow, and it does not promise that anyone will become better off. It is about having the choice available to you.",
+    not: "Financial inclusion isn't about pushing anyone to borrow, and it doesn't promise anyone will end up better off. It's about giving you the choice.",
   },
 
   /* ---------------- Real people ---------------- */
@@ -301,7 +301,7 @@ const en = {
         icon: "store",
         who: "Youssef runs a small shop",
         without:
-          "He takes only cash, keeps no records, and cannot show anyone how the shop is doing.",
+          "He takes only cash, keeps no records, and can't show anyone how the shop is doing.",
         with: "He accepts card payments, and a record of his takings exists if he ever applies for financing.",
       },
       {
@@ -386,7 +386,7 @@ const en = {
       {
         icon: "alert",
         t: "Fake messages and emails",
-        b: "A message that looks like it is from your bank, asking you to confirm your details. Banks do not ask this way.",
+        b: "A message that looks like it's from your bank, asking you to confirm your details. Banks don't ask this way.",
       },
       {
         icon: "smartphone",
@@ -424,7 +424,7 @@ const en = {
       },
       {
         q: "Why would I need a bank account?",
-        a: "So you do not have to keep cash at home or carry it around, so you can be paid and pay others without cash, and so you have a record of your money.",
+        a: "So you don't have to keep cash at home or carry it around, so you can be paid and pay others without cash, and so you have a record of your money.",
       },
       {
         q: "Do I need a lot of money to open an account?",
@@ -496,7 +496,7 @@ const en = {
   },
 
   disclaimer:
-    "This page explains how banking works in general. It is not financial advice, it does not recommend any bank or product, and terms differ between providers — always check with the bank before you decide anything.",
+    "This page explains how banking works in general. It's not financial advice, it doesn't recommend any bank or product, and terms differ between providers — always check with the bank before you decide anything.",
 
   preview: {
     eyebrow: "New to banking?",
@@ -751,9 +751,9 @@ const ar: BasicsDict = {
     includes:
       "وقد يشمل ذلك حسابًا بنكيًا، أو ادخارًا، أو مدفوعات، أو تمويلًا، أو محفظة إلكترونية، أو خدمات مصرفية رقمية.",
     whyTitle: "ولماذا يهم؟",
-    why: "لأن الوصول إلى الخدمات المالية يسهّل الادخار، واستلام الأموال، ودفع المستحقات، والمشاركة في الاقتصاد الرسمي.",
+    why: "لأنه يسهّل الادخار، ويجعل استلام الأموال ودفعها أبسط، ويساعدك على المشاركة في الاقتصاد الرسمي.",
     notTitle: "وما هو ليس كذلك",
-    not: "الشمول المالي ليس دفعًا لأحد نحو الاقتراض، ولا يَعِد أحدًا بأن حاله سيتحسن. إنما هو أن يكون الاختيار متاحًا أمامك.",
+    not: "الشمول المالي ليس دفعًا لأحد نحو الاقتراض، ولا وعدًا بأن حاله سيتحسن. هو ببساطة أن يكون الاختيار متاحًا أمامك.",
   },
 
   examples: {

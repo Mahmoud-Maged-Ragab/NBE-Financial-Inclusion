@@ -140,10 +140,10 @@ export default async function WomenPage({
                     note: t.gap.rows.egypt2021Note,
                   },
                   {
-                    metric: t.gap.rows.india,
-                    left: 89.2,
-                    right: 88.8,
-                    note: t.gap.rows.indiaNote,
+                    metric: t.gap.rows.kenya,
+                    left: 86.5,
+                    right: 93.9,
+                    note: t.gap.rows.kenyaNote,
                   },
                 ]}
                 leftLabel={c.ui.women}
@@ -240,7 +240,7 @@ export default async function WomenPage({
           label: t.cta.primary,
         }}
         secondary={{
-          href: localePath(locale, "/egypt-vs-india"),
+          href: localePath(locale, "/egypt-vs-kenya"),
           label: t.cta.secondary,
         }}
       />

@@ -10,7 +10,7 @@ const en = {
     eyebrow: "Outlook",
     title: "Sources",
     description:
-      "Every figure on this site references an entry below. Where two institutions measure the same thing differently, both are shown and the difference is explained rather than resolved by picking one.",
+      "Every figure on this site points back to an entry below. When two institutions measure the same thing in different ways, we show both and explain the difference — rather than just picking one and moving on.",
   },
   method: {
     eyebrow: "Method",
@@ -18,19 +18,19 @@ const en = {
     items: [
       {
         t: "No estimated figures",
-        b: "Every number is reproduced from a published source. Nothing is interpolated, rounded for effect, or invented to fill a gap. Where a figure does not exist — such as the 2011 female account ownership rate for Egypt — the series simply starts later.",
+        b: "Every number here comes straight from a published source. Nothing is interpolated, rounded to look better, or invented to fill a gap. When a figure simply doesn't exist — like the 2011 female account ownership rate for Egypt — the series just starts later instead.",
       },
       {
         t: "Every figure is labelled",
-        b: "Each statistic carries the publisher and the period the data covers, not the date it was published. Survey data is labelled by fieldwork year.",
+        b: "Each statistic is labelled with its publisher and the period it covers — not the date it was published. Survey data is labelled by the year the fieldwork actually happened.",
       },
       {
         t: "Competing measures are both shown",
-        b: "The Central Bank of Egypt and the World Bank report different national inclusion rates because they measure different things. Both appear throughout, each identified.",
+        b: "The Central Bank of Egypt and the World Bank report different national inclusion rates, because they're measuring different things. Both show up throughout the site, each one clearly labelled.",
       },
       {
-        t: "Inconvenient data is kept",
-        b: "Egypt's account ownership fell between the 2017 and 2021 survey waves. That decline is shown as published rather than smoothed, with the reasons discussed.",
+        t: "The inconvenient data stays in",
+        b: "Egypt's account ownership actually fell between the 2017 and 2021 survey waves. That drop is shown exactly as published, not smoothed over — and we talk through the likely reasons for it.",
       },
     ],
   },
@@ -38,7 +38,7 @@ const en = {
     eyebrowSuffix: "sources",
     title: "Organised by publisher",
     description:
-      "Links open on the publisher's own site. Where a publisher restricts automated access, the entry points to the relevant section of that publisher's site rather than to a document that may have moved.",
+      "Links open on the publisher's own site. If a publisher blocks automated access, the entry points to the relevant section of their site instead of a specific document — which tends to move around.",
   },
   categories: {
     worldBank: "World Bank",
@@ -53,31 +53,31 @@ const en = {
     eyebrow: "Limitations",
     title: "What this data cannot tell you",
     description:
-      "Stating the limits of the evidence is part of presenting it honestly.",
+      "Being upfront about what the evidence can't tell you is part of presenting it honestly.",
     items: [
       {
         t: "Survey data carries sampling error",
-        b: "The Global Findex is a sample survey, not a census. Differences of one or two percentage points between waves should not be over-interpreted, and the 2017 to 2021 movement in Egypt is a reminder of this.",
+        b: "The Global Findex is a sample survey, not a census. A difference of one or two percentage points between waves shouldn't be read into too much — and the swing in Egypt's numbers between 2017 and 2021 is a good reminder of that.",
       },
       {
         t: "Self-reported answers have limits",
-        b: "Findex asks people about their own behaviour. Respondents may not know whether an account they hold is digitally enabled, and reasons given for not holding one are perceptions as much as facts.",
+        b: "Findex asks people about their own behaviour. Someone might not actually know whether their account is digitally enabled, and the reasons people give for not having one are often as much about perception as fact.",
       },
       {
         t: "Supply-side data counts products, not people",
-        b: "Institutional reporting counts accounts and cards. One person may hold several, and an account counted as active may see very little use.",
+        b: "Institutional reporting counts accounts and cards, not people. One person can hold several of each, and an account counted as 'active' might barely get used.",
       },
       {
         t: "No governorate-level breakdown exists",
-        b: "Egypt's published inclusion data is reported nationally and split rural against urban. This site therefore shows no governorate-level rates, and the map is explicitly schematic.",
+        b: "Egypt's published inclusion data is broken down nationally, and split between rural and urban — nothing more granular than that. So this site doesn't show governorate-level rates, and the map here is deliberately schematic rather than precise.",
       },
       {
         t: "Definitions differ between countries",
-        b: "The Egypt–India comparison uses Findex data from the same round, which is like for like. Comparisons involving each country's own national statistics would not be.",
+        b: "Nine of the ten indicators in the Egypt–Kenya comparison come from the same Findex survey round, so they're genuinely like for like. The exception is the smartphone-ownership row, which comes from Kenya's telecoms regulator instead, and is labelled that way. Comparisons built from each country's own national statistics wouldn't be like for like.",
       },
       {
         t: "Figures move",
-        b: "Financial inclusion data is revised and updated. Each figure here is labelled with its period so it can be checked against whatever the publisher currently shows.",
+        b: "Financial inclusion data gets revised and updated over time. Every figure here is labelled with its period, so you can check it against whatever the publisher currently shows.",
       },
     ],
   },
@@ -157,7 +157,7 @@ const ar: SourcesDict = {
       },
       {
         t: "التعريفات تختلف بين الدول",
-        b: "المقارنة بين مصر والهند تستخدم بيانات من جولة المسح نفسها، وهي متكافئة. أما المقارنات المستندة إلى الإحصاءات الوطنية لكل بلد فلن تكون كذلك.",
+        b: "تستخدم المقارنة بين مصر وكينيا بيانات من جولة المسح نفسها لتسعة من مؤشراتها العشرة، وهي متكافئة. أما صف امتلاك الهاتف الذكي فمصدره هيئة تنظيم الاتصالات الكينية، وهو موضَّح بذلك. والمقارنات المستندة إلى الإحصاءات الوطنية لكل بلد لن تكون متكافئة.",
       },
       {
         t: "الأرقام تتغير",

@@ -82,20 +82,20 @@ export default async function SmallBusinessPage({
                   {
                     metric: t.scale.rows.business,
                     left: 3.6,
-                    right: 11.8,
+                    right: 7.5,
                     note: t.scale.rows.businessNote,
                   },
-                  { metric: t.scale.rows.formal, left: 10.4, right: 15.1 },
+                  { metric: t.scale.rows.formal, left: 56.1, right: 81.9 },
                   {
                     metric: t.scale.rows.saved,
-                    left: 13.8,
-                    right: 27.0,
+                    left: 23.0,
+                    right: 70.2,
                     note: t.scale.rows.savedNote,
                   },
                 ]}
                 leftLabel={c.ui.egypt}
-                rightLabel={c.ui.india}
-                max={30}
+                rightLabel={c.ui.kenya}
+                max={85}
               />
               <div className="mt-6">
                 <SourceBadge source="findexApi" />
@@ -230,7 +230,7 @@ export default async function SmallBusinessPage({
         title={t.cta.title}
         description={t.cta.description}
         primary={{
-          href: localePath(locale, "/egypt-vs-india"),
+          href: localePath(locale, "/egypt-vs-kenya"),
           label: t.cta.primary,
         }}
         secondary={{

@@ -387,7 +387,7 @@ const en = {
         links: [
           { href: "/digital-finance", key: "digitalFinance" },
           { href: "/fintech", key: "fintech" },
-          { href: "/egypt-vs-india", key: "egyptVsIndia" },
+          { href: "/egypt-vs-kenya", key: "egyptVsKenya" },
         ],
       },
     ],
@@ -787,7 +787,7 @@ const ar: HomeDict = {
         links: [
           { href: "/digital-finance", key: "digitalFinance" },
           { href: "/fintech", key: "fintech" },
-          { href: "/egypt-vs-india", key: "egyptVsIndia" },
+          { href: "/egypt-vs-kenya", key: "egyptVsKenya" },
         ],
       },
     ],

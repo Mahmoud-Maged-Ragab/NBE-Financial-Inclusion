@@ -16,7 +16,7 @@ const en = {
     eyebrow: "How to read this",
     title: "No single barrier explains exclusion",
     description:
-      "These eight interact. Distance raises the cost of a transaction; irregular income makes that cost harder to absorb; low confidence removes the digital alternative that would have avoided the journey. Interventions that address one in isolation tend to underperform.",
+      "These eight barriers don't work in isolation — they feed into each other. Distance raises the cost of a transaction. Irregular income makes that cost harder to absorb. Low confidence rules out the digital option that could have avoided the trip in the first place. Fix just one of these on its own, and the results tend to disappoint.",
   },
   items: [
     {
@@ -29,10 +29,10 @@ const en = {
           "account ownership, primary education or less against secondary or more",
       },
       problem:
-        "Many adults have not been taught how formal financial products work — what an account costs, how interest accrues, or how to judge whether an offer is reasonable. Where the product is digital, a second layer is added: completing a transfer, and telling a legitimate request from a fraudulent one.",
-      why: "Without that grounding, people either avoid formal finance entirely or use it badly. Avoidance keeps savings in cash where inflation erodes them; poor use leads to unmanageable debt and a bad first experience that deters return.",
+        "A lot of adults were never taught how formal financial products actually work — what an account costs, how interest builds up, or how to tell if an offer is a good one. Add a digital product to the mix and there's a second layer to learn too: completing a transfer, and spotting a fraudulent request before it's too late.",
+      why: "Without that grounding, people tend to do one of two things: avoid formal finance altogether, or use it badly. Avoiding it means keeping savings in cash, where inflation quietly eats away at them. Using it badly can mean debt that spirals — and a bad first experience that puts someone off trying again.",
       solution:
-        "Financial education is one of the four pillars of the Central Bank's national strategy and carries into the 2026–2030 strategy. The evidence generally favours teaching at the point of decision — when an account is opened or a loan considered — over classroom instruction years earlier.",
+        "Financial education is one of four pillars in the Central Bank's national strategy, and it carries into the 2026–2030 plan too. The evidence points to one thing clearly: teaching works best right at the moment of decision — when someone's opening an account or thinking about a loan — not in a classroom years before they'll ever use it.",
     },
     {
       id: "informal",
@@ -43,10 +43,10 @@ const en = {
         label: "of Egyptian GDP is estimated to be informal",
       },
       problem:
-        "A large share of Egyptian economic activity takes place outside formal registration. Informal businesses are paid in cash, keep no audited accounts, and often have reason to avoid creating a visible record of turnover.",
-      why: "Cash-based activity is invisible to lenders, so the businesses that most need working capital cannot evidence the revenue that would justify it. It is also invisible to the state, narrowing the tax base. For workers, informality usually means no contract and no social insurance.",
+        "A large chunk of Egypt's economy runs outside any formal registration. These businesses get paid in cash, don't keep audited accounts, and often have good reason to avoid leaving a visible record of what they earn.",
+      why: "That invisibility cuts both ways. Lenders can't see cash-based activity, so the businesses that most need working capital can't prove the revenue that would justify a loan. The state can't see it either, which narrows the tax base. And for the people working in these businesses, informality usually means no contract and no social insurance.",
       solution:
-        "MSME Law No. 152 of 2020 created a unified definition of micro, small and medium enterprises and attached incentives to formalising. The complementary approach is to make formal channels more attractive on their own terms — payment acceptance cheaper than handling cash, and credit that becomes available once a record exists.",
+        "MSME Law No. 152 of 2020 gave micro, small and medium enterprises one unified legal definition and attached real incentives to registering formally. The other half of the approach is making formal channels genuinely more attractive — cheaper than handling cash, with credit that opens up once a business has a record to show for itself.",
     },
     {
       id: "rural",
@@ -57,10 +57,10 @@ const en = {
         label: "commercial bank branches per 100,000 adults, nationally",
       },
       problem:
-        "Branch and ATM networks are thin relative to comparable economies and concentrated in urban centres, while 56.7% of Egyptians live in rural areas. For many households the nearest branch involves a journey and a lost day of work.",
-      why: "When the cost of reaching a financial institution exceeds the value of the transaction, the rational choice is not to transact. That applies every time, so distance does not merely delay inclusion — it suppresses the small, frequent transactions that make an account worth holding.",
+        "Egypt's branch and ATM networks are thinner than in comparable economies, and concentrated in cities — while 56.7% of Egyptians actually live in rural areas. For a lot of households, getting to the nearest branch means a real trip, and often a lost day of work.",
+      why: "If it costs more to reach a bank than the transaction is worth, the sensible choice is simply not to bother — and that's true every single time. So distance doesn't just slow inclusion down. It kills off exactly the small, frequent transactions that would make holding an account worthwhile in the first place.",
       solution:
-        "Agent banking and mobile wallets substitute for buildings: a local shop can act as a cash-in and cash-out point without the cost of a branch. This is the intervention with the clearest logic in sparsely populated areas.",
+        "Agent banking and mobile wallets stand in for buildings — a local shop can become a cash-in, cash-out point without anyone having to build a branch. Of everything on this page, this is the fix with the clearest logic for sparsely populated areas.",
     },
     {
       id: "divide",
@@ -71,10 +71,10 @@ const en = {
         label: "own a mobile phone, but pay with a card or phone",
       },
       problem:
-        "The divide in Egypt is no longer mainly about devices. Phone ownership is high, and smartphone ownership at 55.7% exceeds India's. The divide is in what those devices are used for, compounded by uneven connectivity outside the main corridors.",
-      why: "A digital financial system reaching only the confident and well-connected reproduces existing inequality in a new form. If digital becomes the cheap channel while cash remains the only accessible one for some groups, exclusion becomes more expensive rather than less.",
+        "In Egypt, the divide isn't really about devices anymore. Phone ownership is high, and smartphone ownership — at 55.7% — isn't far off regional leaders like Kenya. The real divide is in what people actually do with those devices, made worse by patchy connectivity outside the main cities.",
+      why: "A digital financial system that only really reaches people who are confident and well-connected just repeats the same old inequality in a new shape. And if digital becomes the cheap option while cash is still the only one some groups can actually use, being excluded gets more expensive, not less.",
       solution:
-        "Interface design in Arabic aimed at first-time users, offline-capable and low-data flows, and agent networks that let people move between cash and digital. The device layer is largely built, which makes this more tractable than in many comparable economies.",
+        "Interfaces designed in Arabic for people using them for the first time, flows that work offline or on very little data, and agent networks that let people move back and forth between cash and digital. Since the device layer is mostly already there, this is a more solvable problem here than in a lot of comparable economies.",
     },
     {
       id: "credit",
@@ -85,10 +85,10 @@ const en = {
         label: "borrowed formally, against borrowing from family or friends",
       },
       problem:
-        "Credit demand in Egypt is high: 56.1% of adults borrowed during 2024. Formal supply meets a small fraction of it. Collateral requirements, documentation and the difficulty of assessing an undocumented income keep most borrowers outside the formal system.",
-      why: "Informal credit is not free. It is priced in obligation and, with moneylenders, often in terms that would not survive disclosure. It also cannot scale: family lending can cover an emergency, but rarely an investment large enough to grow a business.",
+        "Demand for credit in Egypt is high — 56.1% of adults borrowed money in 2024. Formal lenders only meet a small slice of that demand. Collateral requirements, paperwork, and the sheer difficulty of assessing income nobody's documented keep most borrowers outside the formal system.",
+      why: "Informal credit isn't free, even if no interest rate is written down anywhere. It's priced in obligation, and moneylenders often attach terms that wouldn't hold up if anyone had to spell them out. It doesn't scale either — a loan from family can get you through an emergency, but it's rarely enough to grow a business.",
       solution:
-        "The Central Bank requires banks to direct 25% of lending portfolios to MSMEs, with at least 10% to small enterprises. Alongside the quota, cash-flow lending assessed on digital transaction history offers a route to credit for borrowers with no collateral but a record.",
+        "The Central Bank requires banks to put 25% of their lending portfolios toward MSMEs, with at least 10% going to small enterprises specifically. Alongside that quota, cash-flow lending — assessed on someone's digital transaction history rather than what they own — gives borrowers with no collateral but a track record an actual way in.",
     },
     {
       id: "trust",
@@ -100,37 +100,37 @@ const en = {
           "of unbanked adults say someone else in the family already has an account",
       },
       problem:
-        "Confidence in institutions is built slowly and lost quickly. Some hesitancy is historical, some reflects unfamiliarity, and some is a rational response to opaque fees and to difficulty getting a problem resolved.",
-      why: "Trust determines whether an account that has been opened is ever used. It also explains household-level rather than individual-level inclusion: where one family member's account serves everyone, the others remain formally excluded, with no records of their own.",
+        "Trust in institutions builds slowly and disappears fast. Some of the hesitation here is historical, some comes from simply not being familiar with how banks work, and some is just a rational response to unclear fees and to how hard it can be to get a problem actually fixed.",
+      why: "Trust is what decides whether an account someone opened actually gets used. It's also behind a pattern you see a lot: inclusion at the household level rather than the individual level. One family member's account ends up serving everyone, while the rest stay formally excluded, with no record of their own.",
       solution:
-        "Transparent pricing, deposit protection and dispute resolution that visibly works. Consumer protection is a named pillar of the national strategy for this reason — the pillar whose effects are slowest to appear and most durable once they do.",
+        "Clear pricing, deposit protection, and dispute resolution that people can see actually works. That's exactly why consumer protection is one of the named pillars of the national strategy — it's the one whose effects take longest to show up, but last the longest once they do.",
     },
     {
       id: "cyber",
       icon: "shield",
       title: "Cybersecurity and fraud",
       problem:
-        "As payments move to phones, fraud follows. Social engineering — a call or message persuading someone to authorise a transfer or share a code — requires no technical compromise of the bank, and targets new users most effectively.",
-      why: "Fraud losses fall hardest on those least able to absorb them, and the reputational damage extends well beyond those directly affected. A single widely circulated story can set back adoption across a community, a particular risk early in a digital transition.",
+        "As payments move onto phones, fraud follows right along with them. Social engineering — a call or message that talks someone into authorising a transfer or sharing a code — doesn't need to breach the bank's systems at all. It works best on new users.",
+      why: "Fraud losses hit hardest the people who can least afford to absorb them, and the damage to trust spreads well past whoever was actually scammed. One widely shared story can set back adoption across an entire community — a real risk this early in a digital transition.",
       solution:
-        "Layered defences: transaction limits and confirmation steps for new payees, clear in-app warnings written for non-specialists, fast reimbursement where a provider is at fault, and sustained public education. Cybersecurity is named among the priorities of Egypt's second strategy.",
+        "Defences that work in layers: transaction limits and confirmation steps for new payees, in-app warnings written so anyone can understand them, fast reimbursement when a provider is at fault, and public education that doesn't stop after one campaign. Cybersecurity is named as a priority in Egypt's second national strategy for exactly this reason.",
     },
     {
       id: "documentation",
       icon: "fileText",
       title: "Documentation and requirements",
       problem:
-        "Opening an account requires identity documents, and often proof of address or income. People who work informally, who have moved, or who never obtained the specific documents a bank expects can be blocked at the first step, regardless of income or intent.",
-      why: "This is the barrier that most clearly excludes people who could otherwise be included. It does not respond to price reductions, because the applicant never reaches the point of comparing prices. It falls disproportionately on women, informal workers and internal migrants.",
+        "Opening an account means producing identity documents, and often proof of address or income too. Anyone who works informally, has moved recently, or never got hold of the specific paperwork a bank expects can get stuck at the very first step — no matter how much they earn or how badly they want an account.",
+      why: "This is the barrier that most clearly shuts out people who could otherwise be included. Cutting prices doesn't help here, because the applicant never even gets to the point of comparing prices — they're stopped before that. And it falls hardest on women, informal workers, and people who've moved within the country.",
       solution:
-        "Tiered know-your-customer rules, where a basic account with low transaction limits can be opened on minimal documentation and requirements rise with activity. This is how mobile wallets have reached people whom full bank onboarding could not.",
+        "Tiered know-your-customer rules solve this: a basic account with low transaction limits can be opened with minimal paperwork, and the requirements only grow as the account gets used more. This is exactly how mobile wallets have reached people that full bank onboarding never could.",
     },
   ],
   sequencing: {
     eyebrow: "Sequencing",
     title: "Which barriers move first",
     intro:
-      "Not all eight respond at the same speed. Grouping them by how quickly they can shift is useful for judging what a realistic decade of progress looks like.",
+      "Not all eight barriers move at the same speed. Grouping them by how quickly they can realistically shift helps set expectations for what a decade of progress actually looks like.",
     groups: [
       {
         horizon: "Fastest to move",
@@ -148,7 +148,7 @@ const en = {
         body: "Neither can be legislated into existence. They accumulate through repeated good experiences, and are the barriers most easily undone by a single failure.",
       },
     ],
-    note: "This sequencing is an analytical judgement drawn from the evidence cited on this page, not a published forecast. It is offered as a way of reading the barriers together rather than as a prediction.",
+    note: "This ordering is our own reading of the evidence cited on this page, not a published forecast. Think of it as a way to read the barriers together, not a prediction.",
   },
   cta: {
     title: "Digital finance addresses several of these at once",
@@ -189,10 +189,10 @@ const ar: ChallengesDict = {
         label: "امتلاك الحسابات: تعليم ابتدائي أو أقل مقابل ثانوي أو أعلى",
       },
       problem:
-        "كثير من البالغين لم يتعلموا كيف تعمل المنتجات المالية الرسمية — كم يكلف الحساب، وكيف تُحتسب الفوائد، وكيف يُحكم على معقولية عرض ما. وحين يكون المنتج رقميًا تُضاف طبقة أخرى: إتمام التحويل، وتمييز الطلب المشروع من الاحتيالي.",
-      why: "بدون هذا الأساس، إما أن يتجنب الناس التمويل الرسمي كليًا أو يستخدموه بشكل سيئ. فالتجنب يُبقي المدخرات نقدًا حيث يقضمها التضخم؛ وسوء الاستخدام يقود إلى ديون يصعب إدارتها وإلى تجربة أولى سيئة تصدّ عن العودة.",
+        "كثير من البالغين لم يسبق أن تعلّموا كيف تعمل المنتجات المالية الرسمية فعليًا — كم يكلف الحساب، وكيف تُحتسب الفائدة، وكيف يُحكم على أن عرضًا ما معقول. وحين يكون المنتج رقميًا تُضاف طبقة أخرى: إتمام التحويل بنجاح، والتفريق بين طلب حقيقي وآخر احتيالي قبل فوات الأوان.",
+      why: "بدون هذا الأساس، يميل الناس لأحد أمرين: تجنّب التمويل الرسمي كليًا، أو استخدامه بشكل سيئ. فالتجنب يُبقي المدخرات نقدًا يقضمه التضخم بهدوء. وسوء الاستخدام قد يعني ديونًا تخرج عن السيطرة — وتجربة أولى سيئة تصدّ الشخص عن المحاولة مجددًا.",
       solution:
-        "التثقيف المالي أحد الركائز الأربع في الاستراتيجية الوطنية للبنك المركزي ويمتد إلى استراتيجية 2026–2030. وتميل الأدلة عمومًا لصالح التعليم في لحظة القرار — عند فتح الحساب أو التفكير في قرض — لا التعليم النظري قبلها بسنوات.",
+        "التثقيف المالي واحد من أربع ركائز في الاستراتيجية الوطنية للبنك المركزي، ويمتد أيضًا إلى استراتيجية 2026–2030. والأدلة تشير بوضوح إلى أمر واحد: أفضل وقت للتعليم هو لحظة القرار نفسها — عند فتح حساب أو التفكير في قرض — لا في فصل دراسي قبلها بسنوات لن يستخدم فيها الشخص ما تعلمه.",
     },
     {
       id: "informal",
@@ -203,10 +203,10 @@ const ar: ChallengesDict = {
         label: "من الناتج المحلي المصري يُقدَّر أنه غير رسمي",
       },
       problem:
-        "يجري جزء كبير من النشاط الاقتصادي المصري خارج التسجيل الرسمي. فالمشروعات غير الرسمية تُدفع لها نقدًا، ولا تحتفظ بحسابات مراجَعة، وكثيرًا ما يكون لديها سبب لتجنّب إنشاء سجل ظاهر لإيراداتها.",
-      why: "النشاط النقدي غير مرئي للمقرضين، ولذلك فإن المشروعات الأحوج لرأس المال العامل لا تستطيع إثبات الإيراد الذي يبرره. وهو غير مرئي للدولة أيضًا، مما يضيّق القاعدة الضريبية. أما بالنسبة للعاملين فتعني عدم الرسمية غالبًا غياب العقد والتأمين الاجتماعي.",
+        "جزء كبير من اقتصاد مصر يعمل خارج أي تسجيل رسمي. هذه المشروعات تتقاضى أموالها نقدًا، ولا تحتفظ بحسابات مراجَعة، وغالبًا ما يكون لديها سبب وجيه لتجنّب ترك سجل ظاهر لما تكسبه.",
+      why: "وهذا الاختفاء يعمل في الاتجاهين. فالمقرضون لا يرون النشاط النقدي، لذلك لا تستطيع المشروعات الأكثر احتياجًا لرأس مال عامل إثبات الإيراد الذي يبرر منحها قرضًا. والدولة لا تراه أيضًا، فتضيق القاعدة الضريبية. وبالنسبة للعاملين في هذه المشروعات، تعني عدم الرسمية غالبًا لا عقد ولا تأمينًا اجتماعيًا.",
       solution:
-        "أنشأ قانون المشروعات رقم 152 لسنة 2020 تعريفًا موحدًا للمشروعات متناهية الصغر والصغيرة والمتوسطة وربط حوافز بالتسجيل الرسمي. والنهج المكمّل هو جعل القنوات الرسمية أكثر جاذبية بذاتها — قبول مدفوعات أرخص من التعامل مع النقد، وائتمان يصبح متاحًا بمجرد وجود سجل.",
+        "منح قانون المشروعات رقم 152 لسنة 2020 المشروعات متناهية الصغر والصغيرة والمتوسطة تعريفًا قانونيًا موحدًا وربط حوافز حقيقية بالتسجيل الرسمي. أما الشق الآخر من المعالجة فهو جعل القنوات الرسمية أكثر جاذبية بذاتها — أرخص من التعامل مع النقد، وائتمان يُفتح بمجرد أن يصبح للمشروع سجل يُظهره.",
     },
     {
       id: "rural",
@@ -217,10 +217,10 @@ const ar: ChallengesDict = {
         label: "فرعًا مصرفيًا تجاريًا لكل 100 ألف بالغ على المستوى الوطني",
       },
       problem:
-        "شبكات الفروع وماكينات الصراف قليلة مقارنة باقتصادات مماثلة ومتركزة في المراكز الحضرية، بينما يعيش 56.7% من المصريين في الريف. ولكثير من الأسر يعني أقرب فرع رحلة ويوم عمل ضائعًا.",
-      why: "حين تتجاوز تكلفة الوصول إلى المؤسسة المالية قيمة المعاملة نفسها، يصبح القرار الرشيد هو عدم إجراء المعاملة. وينطبق ذلك في كل مرة، فالمسافة لا تؤجل الشمول المالي فحسب — بل تكبح المعاملات الصغيرة المتكررة التي تجعل الحساب يستحق الاحتفاظ به.",
+        "شبكات الفروع وماكينات الصراف في مصر أرق مما هي عليه في اقتصادات مماثلة، ومتركزة في المدن — بينما يعيش 56.7% من المصريين فعليًا في الريف. ولكثير من الأسر، الوصول إلى أقرب فرع يعني رحلة حقيقية، وغالبًا يوم عمل ضائعًا.",
+      why: "حين تكلّف رحلة الوصول إلى البنك أكثر مما تستحقه المعاملة نفسها، يصبح القرار المنطقي ببساطة ألا تُجرى أصلًا — وهذا صحيح في كل مرة. فالمسافة لا تؤجل الشمول المالي فحسب، بل تقتل تحديدًا تلك المعاملات الصغيرة المتكررة التي تجعل الاحتفاظ بحساب أمرًا يستحق العناء.",
       solution:
-        "الخدمات عبر الوكلاء والمحافظ الإلكترونية تحل محل المباني: فمتجر محلي يمكن أن يكون نقطة إيداع وسحب دون تكلفة فرع. وهذه هي المعالجة الأوضح منطقًا في المناطق قليلة الكثافة السكانية.",
+        "الخدمات عبر الوكلاء والمحافظ الإلكترونية تحل محل المباني — فمتجر محلي يمكن أن يصبح نقطة إيداع وسحب دون أن يبني أحد فرعًا. ومن بين كل ما في هذه الصفحة، هذه المعالجة هي الأوضح منطقًا في المناطق قليلة الكثافة السكانية.",
     },
     {
       id: "divide",
@@ -231,10 +231,10 @@ const ar: ChallengesDict = {
         label: "يملكون هاتفًا محمولًا، لكن يدفعون ببطاقة أو هاتف",
       },
       problem:
-        "لم تعد الفجوة في مصر تتعلق أساسًا بالأجهزة. فامتلاك الهواتف مرتفع، وامتلاك الهواتف الذكية عند 55.7% يفوق نظيره في الهند. الفجوة تكمن فيما تُستخدم فيه هذه الأجهزة، ويضاعفها تفاوت التغطية خارج المحاور الرئيسية.",
-      why: "النظام المالي الرقمي الذي يصل فقط إلى الواثقين وجيدي الاتصال يعيد إنتاج التفاوت القائم في صورة جديدة. وإذا صار الرقمي هو القناة الأرخص بينما يظل النقد الوحيد المتاح لبعض الفئات، يصبح الاستبعاد أكثر كلفة لا أقل.",
+        "لم تعد الفجوة في مصر تتعلق أساسًا بالأجهزة. فامتلاك الهواتف مرتفع، وامتلاك الهواتف الذكية عند 55.7% قريب من دول رائدة إقليميًا مثل كينيا. الفجوة تكمن فيما تُستخدم فيه هذه الأجهزة، ويضاعفها تفاوت التغطية خارج المحاور الرئيسية.",
+      why: "نظام مالي رقمي لا يصل إلا إلى الواثقين وجيدي الاتصال يعيد إنتاج التفاوت القائم نفسه في شكل جديد. وإذا صار الرقمي هو الخيار الأرخص بينما يظل النقد هو الخيار الوحيد المتاح لبعض الفئات، يصبح الاستبعاد أكثر كلفة لا أقل.",
       solution:
-        "تصميم واجهات بالعربية موجهة للمستخدمين لأول مرة، ومسارات تعمل دون اتصال أو ببيانات محدودة، وشبكات وكلاء تتيح التنقل بين النقد والرقمي. وطبقة الأجهزة مبنية إلى حد كبير، مما يجعل هذا التحدي أيسر منه في اقتصادات مماثلة كثيرة.",
+        "واجهات مصممة بالعربية لمن يستخدمها لأول مرة، ومسارات تعمل دون اتصال أو ببيانات محدودة، وشبكات وكلاء تتيح للناس التنقل بين النقد والرقمي. وبما أن طبقة الأجهزة موجودة إلى حد كبير أصلًا، فهذا تحدٍّ أسهل حلًا هنا منه في كثير من الاقتصادات المماثلة.",
     },
     {
       id: "credit",
@@ -245,10 +245,10 @@ const ar: ChallengesDict = {
         label: "اقترضوا رسميًا، مقابل الاقتراض من الأهل والأصدقاء",
       },
       problem:
-        "الطلب على الائتمان في مصر مرتفع: اقترض 56.1% من البالغين خلال 2024. لكن العرض الرسمي يلبي جزءًا صغيرًا منه. فاشتراطات الضمانات والمستندات وصعوبة تقييم دخل غير موثق تُبقي معظم المقترضين خارج النظام الرسمي.",
-      why: "الائتمان غير الرسمي ليس مجانيًا. فثمنه التزام اجتماعي، ومع المقرضين غير الرسميين شروط لا تصمد أمام الإفصاح. كما أنه غير قابل للتوسع: فقرض الأسرة قد يغطي طارئًا، لكنه نادرًا ما يغطي استثمارًا كافيًا لتنمية مشروع.",
+        "الطلب على الائتمان في مصر مرتفع — اقترض 56.1% من البالغين أموالًا في 2024. لكن المقرضين الرسميين لا يلبون سوى جزء صغير من هذا الطلب. فاشتراطات الضمانات، والمستندات، وصعوبة تقييم دخل لا يوثقه أحد، كلها تُبقي معظم المقترضين خارج النظام الرسمي.",
+      why: "الائتمان غير الرسمي ليس مجانيًا، حتى لو لم يُكتب سعر فائدة في أي مكان. فثمنه التزام اجتماعي، وغالبًا ما يفرض المقرضون غير الرسميين شروطًا لن تصمد لو اضطر أحد لتوضيحها بصراحة. وهو لا يتسع أيضًا: فقرض من الأهل قد يعبر بك أزمة طارئة، لكنه نادرًا ما يكفي لتنمية مشروع.",
       solution:
-        "يُلزم البنك المركزي البنوك بتوجيه 25% من محافظ الإقراض للمشروعات الصغيرة، بما لا يقل عن 10% للمشروعات الصغيرة. وإلى جانب هذه النسبة، يتيح الإقراض المبني على التدفق النقدي — والمقيَّم بسجل المعاملات الرقمية — طريقًا للائتمان لمقترضين بلا ضمانات لكن لديهم سجل.",
+        "يُلزم البنك المركزي البنوك بتوجيه 25% من محافظ إقراضها إلى المشروعات الصغيرة والمتوسطة، بما لا يقل عن 10% للمشروعات الصغيرة تحديدًا. وإلى جانب هذه النسبة، يفتح الإقراض القائم على التدفق النقدي — المقيَّم بسجل المعاملات الرقمية لا بما يملكه الشخص — طريقًا فعليًا للائتمان أمام مقترضين بلا ضمانات لكن لديهم سجل.",
     },
     {
       id: "trust",

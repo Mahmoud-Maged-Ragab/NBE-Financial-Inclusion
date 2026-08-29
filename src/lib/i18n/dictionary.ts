@@ -11,13 +11,14 @@ import { digitalFinance } from "./content/digital-finance";
 import { fintech } from "./content/fintech";
 import { women } from "./content/women";
 import { smallBusiness } from "./content/small-business";
-import { egyptVsIndia } from "./content/egypt-vs-india";
+import { egyptVsKenya } from "./content/egypt-vs-kenya";
 import { future } from "./content/future";
 import { sources } from "./content/sources";
 import { team } from "./content/team";
 import { basics } from "./content/basics";
 import { videos } from "./content/videos";
 import { nbeImpact } from "./content/nbe-impact";
+import { solutions } from "./content/solutions";
 
 /**
  * Content is grouped per page so each page pulls only what it renders.
@@ -36,13 +37,14 @@ const PAGES = {
   fintech,
   women,
   smallBusiness,
-  egyptVsIndia,
+  egyptVsKenya,
   future,
   sources,
   team,
   basics,
   videos,
   nbeImpact,
+  solutions,
 } as const;
 
 type Pages = typeof PAGES;

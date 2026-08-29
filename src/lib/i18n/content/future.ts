@@ -10,7 +10,7 @@ const en = {
     eyebrow: "Outlook",
     title: "The future of financial inclusion in Egypt",
     description:
-      "What follows is deliberately unspectacular. It describes what Egypt's existing infrastructure, published strategy and measured position make plausible over the next several years — not a technological transformation, but the completion of one already underway.",
+      "What follows is deliberately unspectacular. It's about what Egypt's existing infrastructure, published strategy and current numbers make plausible over the next several years — not some big technological leap, but the completion of one that's already underway.",
   },
   start: {
     eyebrow: "The starting position",
@@ -20,9 +20,9 @@ const en = {
     body1:
       "In 2011, 9.7% of Egyptian adults held an account and the country lacked both the device base and the payment rails to change that quickly. By 2024 account ownership had reached 43.1%, phone ownership 84.6%, and an instant payment network had been running for two years.",
     body2:
-      "What remains is the conversion problem: turning distributed products into daily use. That is a question of merchant acceptance, of what wages and government payments do by default, and of whether people trust the system enough to keep money in it. None of those require an unavailable technology.",
+      "What's left is a conversion problem: turning products people already have into things they actually use every day. That comes down to whether merchants accept digital payments, whether wages and government payments land in an account by default, and whether people trust the system enough to keep their money in it. None of that needs some technology that doesn't exist yet.",
     body3:
-      "This is why the Egypt–India comparison is more encouraging than the headline gap suggests. India reached 89.0% account ownership with lower phone and smartphone ownership than Egypt has today.",
+      "This is why the Egypt–Kenya comparison is more encouraging than the headline gap suggests. Kenya reached 90.1% account ownership with phone ownership in much the same range as Egypt's — the constraint was never the hardware.",
     strategy: {
       title: "What the national strategy commits to",
       intro:
@@ -50,7 +50,7 @@ const en = {
         title: "Digital identity",
         summary: "The precondition for opening an account remotely.",
         detail:
-          "Documentation is the barrier that price reductions cannot solve, because the applicant never reaches the point of comparing prices. A digital identity layer allowing remote verification makes tiered account opening workable at scale, and it is the component India's experience suggests matters most. It is also the component with the clearest privacy implications.",
+          "Documentation is the barrier that price reductions cannot solve, because the applicant never reaches the point of comparing prices. A digital identity layer allowing remote verification makes tiered account opening workable at scale, and Kenya's experience suggests it does not have to be a new system — a pre-existing national ID, already required to register a SIM card, did the job. It is also the component with the clearest privacy implications.",
         points: [
           "Remote verification without a branch visit",
           "Tiered onboarding: basic accounts on minimal documentation",
@@ -64,7 +64,7 @@ const en = {
         title: "Open banking",
         summary: "Letting customers move their own financial data.",
         detail:
-          "Open banking lets a customer authorise one provider to see data held by another. For inclusion the relevant consequence is credit: a borrower with no collateral but a documented history of receiving and spending money becomes assessable. It also increases competition on price, which matters where 20.4% of unbanked adults cite cost as a barrier.",
+          "Open banking lets a customer give one provider permission to see data held by another. For financial inclusion, the part that matters is credit: a borrower with no collateral but a documented history of receiving and spending money suddenly becomes someone a lender can assess. It also pushes prices down through competition, which matters given that 20.4% of unbanked adults say cost is what's keeping them out.",
         points: [
           "Credit assessed on transaction history rather than collateral",
           "Easier switching, which puts downward pressure on fees",
@@ -120,7 +120,7 @@ const en = {
         title: "Cybersecurity",
         summary: "What protects everything else on this list.",
         detail:
-          "Every other item here increases the amount of money moving through digital channels and the number of inexperienced people using them. Cybersecurity is therefore not a parallel workstream but a precondition. The particular exposure in a fast-growing market is social engineering, which targets new users and requires no technical compromise of any institution.",
+          "Every other item on this list means more money moving through digital channels, and more inexperienced people using them. So cybersecurity isn't a separate workstream running alongside the rest — it's a precondition for all of it. The main risk in a fast-growing market is social engineering: tricking a new user into handing over access, which needs no technical break-in at any bank.",
         points: [
           "Fraud defences that scale with adoption, not behind it",
           "Clear liability and fast reimbursement when providers are at fault",
@@ -141,7 +141,7 @@ const en = {
         title: "Already largely in place",
         items: [
           "High mobile phone ownership, at 84.6% of adults",
-          "Smartphone ownership at 55.7%, ahead of India",
+          "Smartphone ownership at 55.7% of adults, and rising",
           "A functioning instant payment network since 2022",
           "Mobile wallets counted within the national inclusion measure",
           "A published national strategy running to 2030",
@@ -173,15 +173,15 @@ const en = {
     note: {
       title: "A note on what is not claimed here",
       body1:
-        "This page contains no projected figures for 2030. Egypt's published strategy sets priorities rather than numerical targets this site could reproduce, and the trajectory of account ownership between 2017 and 2021 — which fell — shows how unreliable straight-line extrapolation would be. What can be said is that the constraints are now better understood, the infrastructure exists, and the remaining problem is one of use rather than of access.",
+        "You won't find a projected number for 2030 on this page. Egypt's published strategy sets priorities, not numerical targets we could reproduce here — and account ownership actually fell between 2017 and 2021, which is a good reminder of how unreliable it is to just draw a straight line into the future. What we can say is that the constraints are better understood now, the infrastructure exists, and what's left is mostly about use rather than access.",
       body2:
-        "The largest single obstacle is also the one least affected by technology. Among Egyptian adults without an account, 90.1% say the reason is that they do not have enough money. No payment rail changes that. It is a reminder that financial inclusion is an instrument of economic development, and depends on it in turn.",
+        "The single biggest obstacle is also the one technology barely touches. Among Egyptian adults without an account, 90.1% say the reason is simply that they don't have enough money. No payment app changes that. It's a good reminder that financial inclusion is a tool for economic development — and depends on that development happening too.",
     },
   },
   cta: {
     title: "Every figure on this site is traceable",
     description:
-      "The Sources page lists each institution, publication and dataset used, organised by publisher, with the period each figure covers.",
+      "The Sources page lists every institution, publication and dataset we used, organised by publisher, with the period each figure covers.",
     primary: "Go to Sources",
     secondary: "Back to the start",
   },
@@ -199,7 +199,7 @@ const ar: FutureDict = {
     eyebrow: "نظرة مستقبلية",
     title: "مستقبل الشمول المالي في مصر",
     description:
-      "ما يلي غير مبهر عن قصد. فهو يصف ما تجعله البنية التحتية القائمة في مصر واستراتيجيتها المنشورة وموقعها المقيس معقولًا خلال السنوات المقبلة — لا تحولًا تكنولوجيًا، بل استكمال تحول جارٍ بالفعل.",
+      "ما يلي غير مبهر عن قصد. فهو يدور حول ما تجعله البنية التحتية القائمة في مصر واستراتيجيتها المنشورة وأرقامها الحالية معقولًا خلال السنوات المقبلة — لا قفزة تكنولوجية كبرى، بل استكمال تحول جارٍ بالفعل.",
   },
   start: {
     eyebrow: "نقطة الانطلاق",
@@ -209,9 +209,9 @@ const ar: FutureDict = {
     body1:
       "في 2011 كان 9.7% من البالغين في مصر يملكون حسابًا، وكانت البلاد تفتقر إلى قاعدة الأجهزة وقنوات المدفوعات اللازمتين لتغيير ذلك سريعًا. وبحلول 2024 بلغ امتلاك الحسابات 43.1%، وامتلاك الهواتف 84.6%، وكانت شبكة المدفوعات اللحظية تعمل منذ عامين.",
     body2:
-      "ما تبقى هو مشكلة التحويل: تحويل المنتجات الموزعة إلى استخدام يومي. وهذه مسألة قبول من التجار، ومسألة ما تفعله الأجور والمدفوعات الحكومية تلقائيًا، ومسألة ثقة الناس بالنظام بما يكفي لإبقاء أموالهم فيه. ولا يتطلب أي من ذلك تقنية غير متاحة.",
+      "ما تبقى هو مشكلة التحويل: تحويل منتجات يملكها الناس بالفعل إلى أشياء يستخدمونها فعليًا كل يوم. وهذا يتوقف على ما إذا كان التجار يقبلون الدفع الرقمي، وما إذا كانت الأجور والمدفوعات الحكومية تصل إلى الحساب تلقائيًا، وما إذا كان الناس يثقون بالنظام بما يكفي لإبقاء أموالهم فيه. ولا شيء من هذا يحتاج تقنية غير موجودة أصلًا.",
     body3:
-      "ولهذا فإن المقارنة بين مصر والهند أكثر تشجيعًا مما توحي به الفجوة الظاهرة. فقد بلغت الهند 89.0% في امتلاك الحسابات بامتلاك للهواتف والهواتف الذكية أقل مما لدى مصر اليوم.",
+      "ولهذا فإن المقارنة بين مصر وكينيا أكثر تشجيعًا مما توحي به الفجوة الظاهرة. فقد بلغت كينيا 90.1% في امتلاك الحسابات بامتلاك للهواتف يقارب ما لدى مصر — فالقيد لم يكن الأجهزة قط.",
     strategy: {
       title: "ما تلتزم به الاستراتيجية الوطنية",
       intro:
@@ -239,7 +239,7 @@ const ar: FutureDict = {
         title: "الهوية الرقمية",
         summary: "الشرط المسبق لفتح حساب عن بُعد.",
         detail:
-          "المستندات هي العقبة التي لا يحلها خفض الأسعار، لأن مقدم الطلب لا يصل أصلًا إلى مرحلة مقارنة الأسعار. وطبقة هوية رقمية تتيح التحقق عن بُعد تجعل الفتح المتدرج للحسابات قابلًا للتطبيق على نطاق واسع، وهي المكوّن الذي تشير تجربة الهند إلى أنه الأهم. وهي أيضًا المكوّن الأوضح من حيث تبعات الخصوصية.",
+          "المستندات هي العقبة التي لا يحلها خفض الأسعار، لأن مقدم الطلب لا يصل أصلًا إلى مرحلة مقارنة الأسعار. وطبقة هوية رقمية تتيح التحقق عن بُعد تجعل الفتح المتدرج للحسابات قابلًا للتطبيق على نطاق واسع، وتشير تجربة كينيا إلى أنها لا تحتاج نظامًا جديدًا — فبطاقة الهوية الوطنية القائمة أصلًا، المشترطة لتسجيل شريحة الهاتف، كانت كافية. وهي أيضًا المكوّن الأوضح من حيث تبعات الخصوصية.",
         points: [
           "تحقق عن بُعد دون زيارة فرع",
           "فتح متدرج: حسابات أساسية بمستندات بسيطة",
@@ -253,7 +253,7 @@ const ar: FutureDict = {
         title: "الخدمات المصرفية المفتوحة",
         summary: "تمكين العملاء من نقل بياناتهم المالية.",
         detail:
-          "تتيح الخدمات المصرفية المفتوحة للعميل أن يأذن لجهة بالاطلاع على بيانات لدى جهة أخرى. والنتيجة المهمة للشمول المالي هي الائتمان: فالمقترض بلا ضمانات لكن بسجل موثق لتلقي المال وإنفاقه يصبح قابلًا للتقييم. كما تزيد المنافسة على السعر، وهو ما يهم حيث يذكر 20.4% من غير المتعاملين مع البنوك التكلفة كعائق.",
+          "تتيح الخدمات المصرفية المفتوحة للعميل أن يمنح جهة ما إذنًا بالاطلاع على بياناته لدى جهة أخرى. وبالنسبة للشمول المالي، الجزء المهم هنا هو الائتمان: فالمقترض الذي لا يملك ضمانات لكن لديه سجل موثق لتلقي المال وإنفاقه يصبح فجأة شخصًا يستطيع المقرض تقييمه. كما تدفع المنافسة الأسعار للأسفل، وهو أمر مهم حين يقول 20.4% من غير المتعاملين مع البنوك إن التكلفة هي ما يبقيهم خارج النظام.",
         points: [
           "ائتمان يُقيَّم بسجل المعاملات لا بالضمانات",
           "سهولة التنقل بين الجهات، مما يضغط على الرسوم",
@@ -309,7 +309,7 @@ const ar: FutureDict = {
         title: "الأمن السيبراني",
         summary: "ما يحمي كل ما سبق في هذه القائمة.",
         detail:
-          "كل بند آخر هنا يزيد حجم الأموال المتحركة عبر القنوات الرقمية وعدد قليلي الخبرة الذين يستخدمونها. ولذلك فالأمن السيبراني ليس مسار عمل موازيًا بل شرطًا مسبقًا. والتعرض الخاص في سوق سريعة النمو هو الهندسة الاجتماعية، التي تستهدف المستخدمين الجدد ولا تتطلب أي اختراق تقني لأي مؤسسة.",
+          "كل بند آخر في هذه القائمة يعني مزيدًا من الأموال المتحركة عبر القنوات الرقمية، ومزيدًا من المستخدمين قليلي الخبرة الذين يتعاملون بها. لذلك فالأمن السيبراني ليس مسار عمل منفصلًا يسير جنبًا إلى جنب مع الباقي — بل شرط أساسي لكل ما سبق. والمخاطرة الرئيسية في سوق سريعة النمو هي الهندسة الاجتماعية: خداع مستخدم جديد ليتنازل عن صلاحية الدخول، وهو ما لا يحتاج أي اختراق تقني لأي بنك.",
         points: [
           "دفاعات احتيال تتوسع مع التبني لا خلفه",
           "مسؤولية واضحة وتعويض سريع عند خطأ مقدم الخدمة",
@@ -330,7 +330,7 @@ const ar: FutureDict = {
         title: "متحقق إلى حد كبير بالفعل",
         items: [
           "امتلاك مرتفع للهواتف المحمولة، عند 84.6% من البالغين",
-          "امتلاك الهواتف الذكية عند 55.7%، متقدمًا على الهند",
+          "امتلاك الهواتف الذكية عند 55.7% من البالغين، وفي ارتفاع",
           "شبكة مدفوعات لحظية عاملة منذ 2022",
           "محافظ إلكترونية محتسبة ضمن مقياس الشمول الوطني",
           "استراتيجية وطنية منشورة تمتد حتى 2030",
@@ -362,9 +362,9 @@ const ar: FutureDict = {
     note: {
       title: "ملاحظة بشأن ما لا يُدَّعى هنا",
       body1:
-        "لا تتضمن هذه الصفحة أي أرقام متوقعة لعام 2030. فالاستراتيجية المنشورة لمصر تضع أولويات لا مستهدفات رقمية يمكن لهذا الموقع نقلها، كما أن مسار امتلاك الحسابات بين 2017 و2021 — الذي انخفض — يبيّن مدى عدم موثوقية الاستقراء الخطي. وما يمكن قوله إن القيود صارت مفهومة بشكل أفضل، وإن البنية التحتية موجودة، وإن المشكلة المتبقية مشكلة استخدام لا مشكلة وصول.",
+        "لن تجد رقمًا متوقعًا لعام 2030 في هذه الصفحة. فالاستراتيجية المنشورة لمصر تضع أولويات لا مستهدفات رقمية يمكن لهذا الموقع نقلها — بل إن امتلاك الحسابات انخفض فعليًا بين 2017 و2021، وهو تذكير جيد بمدى عدم موثوقية مجرد رسم خط مستقيم نحو المستقبل. وما يمكن قوله إن القيود صارت مفهومة بشكل أفضل الآن، وإن البنية التحتية موجودة، وإن ما تبقى هو مسألة استخدام في الأغلب لا مسألة وصول.",
       body2:
-        "وأكبر عقبة منفردة هي أيضًا الأقل تأثرًا بالتكنولوجيا. فمن بين البالغين في مصر ممن لا يملكون حسابًا، يقول 90.1% إن السبب هو عدم كفاية المال. ولا تغيّر ذلك أي قناة مدفوعات. وهو تذكير بأن الشمول المالي أداة للتنمية الاقتصادية، ويعتمد عليها بدوره.",
+        "وأكبر عقبة منفردة هي أيضًا الأقل تأثرًا بالتكنولوجيا. فمن بين البالغين في مصر ممن لا يملكون حسابًا، يقول 90.1% إن السبب ببساطة هو عدم كفاية المال. ولا يغيّر ذلك أي تطبيق دفع. وهو تذكير جيد بأن الشمول المالي أداة للتنمية الاقتصادية — ويعتمد في الوقت نفسه على حدوث هذه التنمية.",
     },
   },
   cta: {

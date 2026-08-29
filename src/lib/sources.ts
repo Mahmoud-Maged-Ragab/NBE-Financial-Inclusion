@@ -268,37 +268,49 @@ export const SOURCES = {
     category: "academic",
     period: { en: "Published 2024", ar: "نُشرت في 2024" },
   },
-  pmjdy: {
-    id: "pmjdy",
+  safaricomMpesa: {
+    id: "safaricomMpesa",
     short: {
-      en: "PMJDY, Government of India",
-      ar: "برنامج جان دان، حكومة الهند",
+      en: "Safaricom M-PESA results",
+      ar: "نتائج إم-بيسا، سفاريكوم",
     },
     publisher: {
-      en: "Department of Financial Services, Government of India",
-      ar: "إدارة الخدمات المالية، حكومة الهند",
+      en: "Safaricom PLC",
+      ar: "سفاريكوم",
     },
-    title:
-      "Pradhan Mantri Jan Dhan Yojana — National Mission for Financial Inclusion",
-    url: "https://pmjdy.gov.in/",
+    title: "Full Year FY2024/25 Results — M-PESA performance",
+    url: "https://www.safaricom.co.ke/images/Downloads/FY25-Press-Release_May-9-2025.pdf",
     category: "other",
-    period: { en: "As of July 2026", ar: "حتى يوليو 2026" },
+    period: {
+      en: "Financial year to 31 March 2025",
+      ar: "السنة المالية حتى 31 مارس 2025",
+    },
     note: {
-      en: "Progress figures published by the Department of Financial Services and the Press Information Bureau.",
-      ar: "أرقام التقدم المنشورة من إدارة الخدمات المالية ومكتب الإعلام الصحفي.",
+      en: "Safaricom's own reporting of M-PESA customers, agents, merchants and transaction volumes. M-PESA launched in 2007 and is operated by Safaricom, Kenya's largest mobile network operator.",
+      ar: "بيانات سفاريكوم الخاصة عن عملاء ووكلاء وتجار وأحجام معاملات إم-بيسا. أُطلقت الخدمة عام 2007 وتديرها سفاريكوم، أكبر مشغل اتصالات في كينيا.",
     },
   },
-  npciUpi: {
-    id: "npciUpi",
-    short: { en: "NPCI", ar: "المؤسسة الوطنية للمدفوعات بالهند" },
-    publisher: {
-      en: "National Payments Corporation of India",
-      ar: "المؤسسة الوطنية للمدفوعات في الهند",
+  cbkFinAccess2024: {
+    id: "cbkFinAccess2024",
+    short: {
+      en: "FinAccess Household Survey 2024",
+      ar: "مسح فين-أكسس للأسر 2024",
     },
-    title: "Unified Payments Interface (UPI) product statistics",
-    url: "https://www.npci.org.in/what-we-do/upi/product-statistics",
+    publisher: {
+      en: "Central Bank of Kenya, Kenya National Bureau of Statistics and FSD Kenya",
+      ar: "البنك المركزي الكيني، والمكتب الوطني الكيني للإحصاء، ومؤسسة FSD Kenya",
+    },
+    title: "2024 FinAccess Household Survey Report",
+    url: "https://www.centralbank.go.ke/2024/12/13/10960/",
     category: "other",
-    period: { en: "FY 2024–25", ar: "السنة المالية 2024–25" },
+    period: {
+      en: "Fieldwork 2024, published December 2024",
+      ar: "العمل الميداني في 2024، ونُشر في ديسمبر 2024",
+    },
+    note: {
+      en: "Kenya's own nationally representative demand-side household survey, run every few years since 2006. It measures financial inclusion on a broader, Kenya-specific definition than the World Bank Global Findex survey, which is why the two rates differ.",
+      ar: "مسح ميداني وطني كيني للأسر من جانب الطلب، يُجرى كل بضع سنوات منذ 2006. يقيس الشمول المالي وفق تعريف أوسع وخاص بكينيا يختلف عن مسح المؤشر العالمي للشمول المالي التابع للبنك الدولي، ولهذا يختلف المعدلان.",
+    },
   },
   hassouba: {
     id: "hassouba",
@@ -496,6 +508,28 @@ export const SOURCES = {
     note: {
       en: "The newest NBE publication. Its banking pages carry two different things: NBE's own results, and Central Bank of Egypt national indicators up to December 2025 that NBE reprints. The CBE has since published June 2026 figures, so the national rates on this site come from that later release instead.",
       ar: "أحدث إصدار للبنك الأهلي. وتتضمن صفحاته المصرفية أمرين مختلفين: نتائج البنك نفسه، ومؤشرات قومية للبنك المركزي المصري حتى ديسمبر 2025 يعيد البنك الأهلي نشرها. وقد نشر البنك المركزي بعدها أرقام يونيو 2026، ولذلك تعتمد المعدلات القومية في هذا الموقع على ذلك الإصدار الأحدث.",
+    },
+  },
+  caKenya: {
+    id: "caKenya",
+    short: {
+      en: "Communications Authority of Kenya",
+      ar: "هيئة الاتصالات الكينية",
+    },
+    publisher: {
+      en: "Communications Authority of Kenya",
+      ar: "هيئة الاتصالات الكينية",
+    },
+    title: "Quarterly Sector Statistics Report",
+    url: "https://www.ca.go.ke/quarterly-sector-statistics-reports",
+    category: "government",
+    period: {
+      en: "Quarter to September 2024",
+      ar: "الربع المنتهي في سبتمبر 2024",
+    },
+    note: {
+      en: "Kenya's telecoms regulator. Its smartphone penetration figure is a network-connection count from operators, not a Global Findex survey response, so it is not strictly like-for-like with Egypt's Findex-sourced figure.",
+      ar: "الجهة الكينية المنظمة للاتصالات. رقم انتشار الهواتف الذكية لديها مبني على عدد الأجهزة المتصلة بالشبكة كما يبلغه المشغلون، وليس إجابة في مسح المؤشر العالمي للشمول المالي، لذا فهو غير متكافئ تمامًا مع رقم مصر المستمد من ذلك المسح.",
     },
   },
 } as const satisfies Record<string, Source>;

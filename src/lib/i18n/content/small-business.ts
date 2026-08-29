@@ -16,16 +16,16 @@ const en = {
     eyebrow: "Scale and constraint",
     title: "A large share of the economy, a small share of the credit",
     description:
-      "MSMEs dominate Egyptian private enterprise by number and contribute close to half of national output. Formal borrowing to fund them remains rare.",
-    chartTitle: "Business borrowing, Egypt and India",
+      "MSMEs make up most of Egypt's private businesses by sheer number, and together they produce close to half the country's output. Formal borrowing to fund them is still rare.",
+    chartTitle: "Business borrowing, saving and credit, Egypt and Kenya",
     rows: {
       business: "Borrowed to start or operate a business",
       businessNote:
-        "Adults in India are more than three times as likely to have borrowed for a business.",
-      formal: "Borrowed formally from an institution",
-      saved: "Saved at a financial institution",
+        "Adults in Kenya are roughly twice as likely to have borrowed for a business.",
+      formal: "Borrowed money in the past year",
+      saved: "Saved money in the past year",
       savedNote:
-        "Formal savings are the other side of the same coin: deposits are what banks lend on.",
+        "Savings are the other side of the same coin: deposits are what banks lend on.",
     },
     body1:
       "The constraint on Egyptian small businesses is visible in the borrowing data. A majority of adults borrow — 56.1% did so in 2024 — but formal institutions supply only a small part of it, and borrowing specifically to start or run a business is rarer still at 3.6%.",
@@ -38,7 +38,7 @@ const en = {
     eyebrow: "How the effect propagates",
     title: "From financial access to economic development",
     description:
-      "Each stage depends on the one before it. Select a stage to read what it involves, and where the Egyptian data sits.",
+      "Each stage depends on the one before it. Choose a stage below to see what it involves, and where Egypt's own numbers sit.",
     note: "This chain describes a mechanism, not a guarantee. Access to finance is one input among several — demand, competition, input costs and management all bear on whether a business grows. Credit extended to a business that cannot service it makes matters worse, not better.",
     steps: [
       {
@@ -53,28 +53,28 @@ const en = {
         icon: "coins",
         label: "Business investment",
         detail:
-          "With credit available on the strength of that record, the business can buy stock ahead of demand, replace equipment, or take on a larger order. Only 3.6% of Egyptian adults borrowed to start or run a business in 2024, against 11.8% in India.",
+          "With credit available on the strength of that record, the business can buy stock ahead of demand, replace equipment, or take on a larger order. Only 3.6% of Egyptian adults borrowed to start or run a business in 2024, against 7.5% in Kenya.",
       },
       {
         id: "growth",
         icon: "trendingUp",
         label: "Business growth",
         detail:
-          "Investment permits a larger or more reliable operation: more stock, better margins on bulk purchases, customers who pay by card. Growth is not automatic — most small businesses face demand and competition constraints as well as capital ones — but without capital it is foreclosed entirely.",
+          "Investment makes a bigger, steadier operation possible: more stock, better margins on bulk purchases, customers who pay by card. Growth is never automatic — most small businesses face demand and competition problems as well as capital ones — but without capital, it simply isn't possible.",
       },
       {
         id: "employment",
         icon: "users",
         label: "Employment",
         detail:
-          "Businesses that grow hire. MSMEs are reported to employ around 75% of Egypt's workforce, so their capacity to expand has direct consequences for how many people are working and on what terms.",
+          "Businesses that grow hire. MSMEs are reported to employ around 75% of Egypt's workforce, so their ability to expand directly shapes how many people have jobs and on what terms.",
       },
       {
         id: "development",
         icon: "building",
         label: "Economic development",
         detail:
-          "At aggregate scale, more productive small businesses raise output, broaden the tax base as activity formalises, and reduce the concentration of economic activity in a few large firms. MSMEs already account for around 43% of Egyptian GDP.",
+          "Add it up across the whole economy, and more productive small businesses raise output, widen the tax base as activity formalises, and spread economic activity beyond a handful of large firms. MSMEs already account for around 43% of Egyptian GDP.",
       },
     ],
   },
@@ -206,8 +206,8 @@ const en = {
   cta: {
     title: "How does this compare with a country that moved faster?",
     description:
-      "India ran a comparable transition from a similar starting point, and reached a different place. Ten indicators, side by side.",
-    primary: "Egypt vs India",
+      "Kenya took a different route to a different place, driven by a mobile money network rather than a bank branch. Ten indicators, side by side.",
+    primary: "Egypt vs Kenya",
     secondary: "The decade ahead",
   },
 };
@@ -230,16 +230,16 @@ const ar: SmallBusinessDict = {
     eyebrow: "الحجم والقيد",
     title: "حصة كبيرة من الاقتصاد، وحصة صغيرة من الائتمان",
     description:
-      "تهيمن المشروعات الصغيرة على المنشآت الخاصة في مصر عددًا وتسهم بما يقارب نصف الناتج الوطني. ومع ذلك يظل الاقتراض الرسمي لتمويلها نادرًا.",
-    chartTitle: "اقتراض المشروعات، مصر والهند",
+      "تشكّل المشروعات الصغيرة معظم منشآت القطاع الخاص في مصر من حيث العدد، وتسهم معًا بما يقارب نصف الناتج الوطني. ومع ذلك، ما زال الاقتراض الرسمي لتمويلها نادرًا.",
+    chartTitle: "اقتراض المشروعات والادخار والائتمان، مصر وكينيا",
     rows: {
       business: "اقترضوا لبدء مشروع أو تشغيله",
       businessNote:
-        "احتمال اقتراض البالغين في الهند لأغراض مشروع يزيد بأكثر من ثلاثة أضعاف.",
-      formal: "اقترضوا رسميًا من مؤسسة",
-      saved: "ادّخروا لدى مؤسسة مالية",
+        "احتمال اقتراض البالغين في كينيا لأغراض مشروع يبلغ ضعف احتمال مصر تقريبًا.",
+      formal: "اقترضوا خلال العام الماضي",
+      saved: "ادّخروا خلال العام الماضي",
       savedNote:
-        "الادخار الرسمي هو الوجه الآخر للعملة نفسها: فالودائع هي ما تقرضه البنوك.",
+        "الادخار هو الوجه الآخر للعملة نفسها: فالودائع هي ما تقرضه البنوك.",
     },
     body1:
       "القيد على المشروعات الصغيرة في مصر ظاهر في بيانات الاقتراض. فغالبية البالغين يقترضون — 56.1% فعلوا ذلك في 2024 — لكن المؤسسات الرسمية توفر جزءًا صغيرًا منه، والاقتراض تحديدًا لبدء مشروع أو تشغيله أندر عند 3.6%.",
@@ -252,7 +252,7 @@ const ar: SmallBusinessDict = {
     eyebrow: "كيف ينتقل الأثر",
     title: "من الوصول المالي إلى التنمية الاقتصادية",
     description:
-      "كل مرحلة تعتمد على سابقتها. اختر مرحلة لتقرأ ما تتضمنه، وأين تقف البيانات المصرية.",
+      "كل مرحلة تعتمد على سابقتها. اختر مرحلة من الأسفل لترى ما تتضمنه، وأين تقف أرقام مصر نفسها.",
     note: "تصف هذه السلسلة آلية لا ضمانًا. فالحصول على التمويل مدخل واحد بين عدة مدخلات — إذ يؤثر الطلب والمنافسة وتكاليف المدخلات والإدارة كلها في نمو المشروع. والائتمان الممنوح لمشروع لا يستطيع خدمته يزيد الأمر سوءًا لا تحسنًا.",
     steps: [
       {
@@ -267,28 +267,28 @@ const ar: SmallBusinessDict = {
         icon: "coins",
         label: "الاستثمار في المشروع",
         detail:
-          "مع توافر ائتمان استنادًا إلى ذلك السجل، يستطيع المشروع شراء بضاعة قبل الطلب، أو استبدال معدات، أو قبول طلبية أكبر. ولم يقترض سوى 3.6% من البالغين في مصر لبدء مشروع أو تشغيله في 2024، مقابل 11.8% في الهند.",
+          "مع توافر ائتمان استنادًا إلى ذلك السجل، يستطيع المشروع شراء بضاعة قبل الطلب، أو استبدال معدات، أو قبول طلبية أكبر. ولم يقترض سوى 3.6% من البالغين في مصر لبدء مشروع أو تشغيله في 2024، مقابل 7.5% في كينيا.",
       },
       {
         id: "growth",
         icon: "trendingUp",
         label: "نمو المشروع",
         detail:
-          "الاستثمار يتيح عملية أكبر أو أكثر استقرارًا: بضاعة أكثر، وهوامش أفضل عند الشراء بالجملة، وعملاء يدفعون بالبطاقة. والنمو ليس تلقائيًا — فمعظم المشروعات الصغيرة تواجه قيود الطلب والمنافسة إلى جانب قيود رأس المال — لكنه بدون رأس مال ممتنع تمامًا.",
+          "الاستثمار يجعل عملية أكبر وأكثر استقرارًا ممكنة: بضاعة أكثر، وهوامش أفضل عند الشراء بالجملة، وعملاء يدفعون بالبطاقة. والنمو ليس تلقائيًا أبدًا — فمعظم المشروعات الصغيرة تواجه مشكلات الطلب والمنافسة إلى جانب قيود رأس المال — لكن بدون رأس مال، لا يصبح ممكنًا أصلًا.",
       },
       {
         id: "employment",
         icon: "users",
         label: "التشغيل",
         detail:
-          "المشروعات التي تنمو توظّف. ويُذكر أن المشروعات الصغيرة تشغّل نحو 75% من قوة العمل في مصر، ولذلك فإن قدرتها على التوسع لها أثر مباشر في عدد العاملين وشروط عملهم.",
+          "المشروعات التي تنمو توظّف. ويُذكر أن المشروعات الصغيرة تشغّل نحو 75% من قوة العمل في مصر، ولذلك فإن قدرتها على التوسع تحدد مباشرة عدد من يجدون عملًا وشروط هذا العمل.",
       },
       {
         id: "development",
         icon: "building",
         label: "التنمية الاقتصادية",
         detail:
-          "على المستوى الكلي، ترفع المشروعات الصغيرة الأكثر إنتاجية الناتج، وتوسّع القاعدة الضريبية مع تحول النشاط إلى الرسمية، وتقلل تركّز النشاط الاقتصادي في عدد قليل من الشركات الكبرى. وتمثل هذه المشروعات بالفعل نحو 43% من الناتج المحلي المصري.",
+          "واجمع هذا الأثر على مستوى الاقتصاد كله: المشروعات الصغيرة الأكثر إنتاجية ترفع الناتج، وتوسّع القاعدة الضريبية مع تحول النشاط إلى الرسمية، وتوزّع النشاط الاقتصادي بدل حصره في حفنة من الشركات الكبرى. وتمثل هذه المشروعات بالفعل نحو 43% من الناتج المحلي المصري.",
       },
     ],
   },
@@ -415,8 +415,8 @@ const ar: SmallBusinessDict = {
   cta: {
     title: "كيف تبدو المقارنة مع بلد تحرك أسرع؟",
     description:
-      "خاضت الهند تحولًا مماثلًا من نقطة بداية متقاربة، ووصلت إلى موضع مختلف. عشرة مؤشرات جنبًا إلى جنب.",
-    primary: "مصر والهند",
+      "سلكت كينيا طريقًا مختلفًا إلى موضع مختلف، بدفع من شبكة محفظة هاتف محمول لا من فروع بنكية. عشرة مؤشرات جنبًا إلى جنب.",
+    primary: "مصر وكينيا",
     secondary: "العقد المقبل",
   },
 };

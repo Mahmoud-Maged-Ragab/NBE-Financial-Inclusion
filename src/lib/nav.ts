@@ -13,6 +13,7 @@ export interface NavItem {
 
 export const NAV_ITEMS: NavItem[] = [
   { key: "basics", href: "/basics", group: "start" },
+  { key: "solutions", href: "/solutions", group: "start" },
   { key: "understanding", href: "/understanding", group: "foundations" },
   { key: "banking", href: "/banking", group: "foundations" },
   { key: "egypt", href: "/egypt", group: "egypt" },
@@ -22,7 +23,7 @@ export const NAV_ITEMS: NavItem[] = [
   { key: "fintech", href: "/fintech", group: "technology" },
   { key: "women", href: "/women", group: "people" },
   { key: "smallBusiness", href: "/small-business", group: "people" },
-  { key: "egyptVsIndia", href: "/egypt-vs-india", group: "outlook" },
+  { key: "egyptVsKenya", href: "/egypt-vs-kenya", group: "outlook" },
   { key: "future", href: "/future", group: "outlook" },
   { key: "sources", href: "/sources", group: "outlook" },
   { key: "videos", href: "/videos", group: "learn" },
@@ -57,6 +58,7 @@ export const PRIMARY_NAV: {
   { href: "/", short: "home", wideOnly: true },
   { href: "/basics", short: "basics" },
   { href: "/understanding", short: "understanding", wideOnly: true },
+  { href: "/solutions", short: "solutions" },
   { href: "/egypt", short: "egypt" },
   { href: "/digital-finance", short: "digitalFinance" },
   { href: "/videos", short: "videos" },

@@ -8,35 +8,35 @@ import { TrendChart } from "@/components/charts/TrendChart";
 import { ComparisonBars } from "@/components/charts/BarChart";
 import { AnimatedCounter } from "@/components/ui/AnimatedCounter";
 import { SourceBadge } from "@/components/ui/SourceBadge";
-import { EgyptFlag, IndiaFlag } from "@/components/ui/Flags";
+import { EgyptFlag, KenyaFlag } from "@/components/ui/Flags";
 import { BankAwarenessCTA } from "@/components/ui/BankAwarenessCTA";
 import { ICONS } from "@/components/ui/icons";
 import type { SourceId } from "@/lib/sources";
 import {
   ACCOUNT_OWNERSHIP_SERIES,
-  EGYPT_INDIA_COMPARISON,
+  EGYPT_KENYA_COMPARISON,
 } from "@/lib/data";
 import { getContent, getCommon, requireLocale } from "@/lib/i18n/dictionary";
 import { languageAlternates, localePath } from "@/lib/i18n/config";
 
 export async function generateMetadata({
   params,
-}: PageProps<"/[locale]/egypt-vs-india">): Promise<Metadata> {
+}: PageProps<"/[locale]/egypt-vs-kenya">): Promise<Metadata> {
   const { locale } = await params;
-  const t = getContent(locale, "egyptVsIndia");
+  const t = getContent(locale, "egyptVsKenya");
   return {
     title: t.meta.title,
     description: t.meta.description,
-    alternates: languageAlternates("/egypt-vs-india"),
+    alternates: languageAlternates("/egypt-vs-kenya"),
   };
 }
 
-export default async function EgyptVsIndiaPage({
+export default async function EgyptVsKenyaPage({
   params,
-}: PageProps<"/[locale]/egypt-vs-india">) {
+}: PageProps<"/[locale]/egypt-vs-kenya">) {
   const { locale: raw } = await params;
   const locale = requireLocale(raw);
-  const t = getContent(locale, "egyptVsIndia");
+  const t = getContent(locale, "egyptVsKenya");
   const c = getCommon(locale);
 
   return (
@@ -58,11 +58,11 @@ export default async function EgyptVsIndiaPage({
           </div>
           <div className="h-12 w-px bg-white/20" aria-hidden="true" />
           <div className="flex items-center gap-4">
-            <IndiaFlag className="h-11 w-auto rounded shadow-lg" />
+            <KenyaFlag className="h-11 w-auto rounded shadow-lg" />
             <div>
-              <p className="text-sm text-brand-200">{c.ui.india}</p>
+              <p className="text-sm text-brand-200">{c.ui.kenya}</p>
               <p className="tabular text-3xl font-semibold">
-                <AnimatedCounter value={89.0} decimals={1} suffix="%" />
+                <AnimatedCounter value={90.1} decimals={1} suffix="%" />
               </p>
             </div>
           </div>
@@ -114,8 +114,8 @@ export default async function EgyptVsIndiaPage({
                   color: "var(--color-brand-600)",
                 },
                 {
-                  key: "india",
-                  label: c.ui.india,
+                  key: "kenya",
+                  label: c.ui.kenya,
                   color: "var(--color-gold-500)",
                 },
               ]}
@@ -141,15 +141,15 @@ export default async function EgyptVsIndiaPage({
         <Reveal delay={100} className="mt-12">
           <Card className="p-6 sm:p-8">
             <ComparisonBars
-              rows={EGYPT_INDIA_COMPARISON.map((r) => ({
+              rows={EGYPT_KENYA_COMPARISON.map((r) => ({
                 metric: r.metric[locale],
                 left: r.egypt,
-                right: r.india,
+                right: r.kenya,
                 unit: r.unit,
                 note: r.note?.[locale],
               }))}
               leftLabel={c.ui.egypt}
-              rightLabel={c.ui.india}
+              rightLabel={c.ui.kenya}
             />
             <div className="mt-8">
               <SourceBadge source="findexApi" />
@@ -161,18 +161,18 @@ export default async function EgyptVsIndiaPage({
           <div className="mt-8 grid gap-5 sm:grid-cols-2">
             <Card className="border-brand-200 bg-brand-50">
               <h3 className="text-lg font-semibold text-ink-900">
-                {t.comparison.egyptLeads.title}
+                {t.comparison.closestGap.title}
               </h3>
               <p className="mt-3 leading-relaxed text-ink-700">
-                {t.comparison.egyptLeads.body}
+                {t.comparison.closestGap.body}
               </p>
             </Card>
             <Card>
               <h3 className="text-lg font-semibold text-ink-900">
-                {t.comparison.indiaLeads.title}
+                {t.comparison.widestGap.title}
               </h3>
               <p className="mt-3 leading-relaxed text-ink-700">
-                {t.comparison.indiaLeads.body}
+                {t.comparison.widestGap.body}
               </p>
             </Card>
           </div>
@@ -206,22 +206,22 @@ export default async function EgyptVsIndiaPage({
               </h3>
               <ComparisonBars
                 rows={[
-                  { metric: t.reversal.rows.phone, left: 84.6, right: 66.5 },
+                  { metric: t.reversal.rows.phone, left: 84.6, right: 92.7 },
                   {
                     metric: t.reversal.rows.smartphone,
                     left: 55.7,
-                    right: 42.0,
+                    right: 72.6,
                   },
                   {
                     metric: t.reversal.rows.account,
                     left: 43.1,
-                    right: 89.0,
+                    right: 90.1,
                     note: t.reversal.rows.accountNote,
                   },
-                  { metric: t.reversal.rows.pay, left: 18.5, right: 27.7 },
+                  { metric: t.reversal.rows.pay, left: 18.5, right: 28.3 },
                 ]}
                 leftLabel={c.ui.egypt}
-                rightLabel={c.ui.india}
+                rightLabel={c.ui.kenya}
               />
               <div className="mt-6">
                 <SourceBadge source="findexApi" />
@@ -231,7 +231,7 @@ export default async function EgyptVsIndiaPage({
         </div>
       </Section>
 
-      {/* -------- What India did -------- */}
+      {/* -------- What Kenya did -------- */}
       <Section>
         <Reveal>
           <SectionHeader
@@ -303,7 +303,7 @@ export default async function EgyptVsIndiaPage({
           <div className="mt-8 flex flex-wrap gap-2">
             <SourceBadge source="findexApi" />
             <SourceBadge source="cbeInclusion2026" />
-            <SourceBadge source="pmjdy" />
+            <SourceBadge source="cbkFinAccess2024" />
           </div>
         </Reveal>
       </Section>

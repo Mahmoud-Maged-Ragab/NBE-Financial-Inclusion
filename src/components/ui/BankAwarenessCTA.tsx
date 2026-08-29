@@ -19,7 +19,7 @@ export async function BankAwarenessCTA() {
   const links = [
     { href: "/banking", label: cta.exploreBanking, primary: true },
     { href: "/digital-finance", label: cta.learnDigital, primary: false },
-    { href: "/egypt-vs-india", label: cta.compare, primary: false },
+    { href: "/egypt-vs-kenya", label: cta.compare, primary: false },
   ];
 
   return (

@@ -10,7 +10,7 @@ const en = {
     eyebrow: "Egypt in focus",
     title: "Rural and urban Egypt",
     description:
-      "The national figure of 43.1% masks two distinct situations. Each has its own obstacles — and, importantly, its own realistic remedies.",
+      "The national figure of 43.1% hides two very different situations. Each comes with its own obstacles — and its own realistic fixes.",
   },
   gap: {
     eyebrow: "The measured gap",
@@ -45,7 +45,7 @@ const en = {
     eyebrow: "Geography",
     title: "A country living on a river",
     description:
-      "Egypt's population is not spread across its territory. It is concentrated along the Nile and its Delta, which shapes what a branch network can economically look like. Select a region to read what constrains inclusion there.",
+      "Egypt's population isn't spread out across the country — it's concentrated along the Nile and its Delta, and that shapes what a bank's branch network can realistically look like. Pick a region below to see what gets in the way of financial inclusion there.",
     note: "Regional descriptions are qualitative. Egypt's published inclusion statistics are reported nationally and by rural/urban split, not by governorate, so no governorate-level rates are shown here.",
     labels: {
       alt: "Schematic map of Egypt showing the Delta, the Nile valley and the desert regions",
@@ -65,7 +65,7 @@ const en = {
         name: "The Delta and Greater Cairo",
         character: "Dense, urban, best served",
         description:
-          "The Nile Delta and the Cairo–Alexandria corridor hold Egypt's largest cities and the overwhelming majority of its branches, ATMs and merchant terminals. Physical access is rarely the binding constraint. The obstacles are different in kind: paperwork, cost, confidence in digital channels, and an informal sector that keeps earnings in cash.",
+          "The Nile Delta and the Cairo–Alexandria corridor hold Egypt's biggest cities and most of its branches, ATMs and card machines. Getting to a branch is rarely the problem here — the obstacles are a different kind entirely: paperwork, cost, trust in digital channels, and an informal sector that keeps people's earnings in cash.",
         barriers: [
           "Complex account-opening procedures",
           "Concern about fraud and digital security",
@@ -78,7 +78,7 @@ const en = {
         name: "The Nile Valley and Upper Egypt",
         character: "Rural, agricultural, thinly served",
         description:
-          "South of Cairo the inhabited land narrows to a strip a few kilometres wide on either side of the river. Communities are numerous but small, and branch networks thin out with distance from governorate capitals. Incomes are more likely to be agricultural and seasonal, which fits poorly with products designed around a monthly salary.",
+          "South of Cairo, the inhabited land narrows to a strip just a few kilometres wide on either side of the river. There are plenty of communities, but they're small, and branches get sparser the further you go from a governorate capital. Income here tends to be agricultural and seasonal — which doesn't fit well with products built around a fixed monthly salary.",
         barriers: [
           "Distance to the nearest branch or ATM",
           "Seasonal and irregular farm income",
@@ -91,7 +91,7 @@ const en = {
         name: "The deserts and Sinai",
         character: "Sparse, remote, hardest to reach",
         description:
-          "The Western Desert, the Red Sea coast and Sinai make up most of Egypt's land area but hold a small fraction of its people. Populations are scattered across long distances, which makes a conventional branch difficult to justify. These are the areas where agent banking and mobile wallets carry the most weight, because they do not require a building.",
+          "The Western Desert, the Red Sea coast and Sinai make up most of Egypt's land area but hold only a small share of its people. Communities are scattered across long distances, so a conventional branch is hard to justify commercially. This is where agent banking and mobile wallets do the most good — neither one needs a building.",
         barriers: [
           "Very long distances between settlements",
           "Branch networks hard to sustain commercially",
@@ -105,7 +105,7 @@ const en = {
     eyebrow: "Problem and response",
     title: "What can actually help",
     description:
-      "Listing barriers is only half the picture. Each of these has a recognised response — though every one of them depends on infrastructure, availability and whether people can actually reach it.",
+      "Naming the barriers is only half the picture. Each one has a known response — though every response still depends on infrastructure, availability, and whether people can actually get to it.",
     ruralTitle: "Rural Egypt",
     urbanTitle: "Urban Egypt",
     caveat:
@@ -115,7 +115,7 @@ const en = {
         icon: "mapPin",
         problem: "Distance from financial institutions",
         solution:
-          "Mobile banking and agent networks put cash-in and cash-out points in local shops, so a service does not need a branch building to exist.",
+          "Mobile banking and agent networks turn local shops into cash-in, cash-out points — so a service doesn't need a branch building to exist.",
       },
       {
         icon: "tractor",
@@ -159,13 +159,13 @@ const en = {
         icon: "receipt",
         problem: "No record of income or spending",
         solution:
-          "Automatic transaction histories that make budgeting easier and allow income to be evidenced when needed.",
+          "Automatic transaction histories that make budgeting easier and make it simple to prove income when you need to.",
       },
       {
         icon: "landmark",
         problem: "Distance from formal financial services",
         solution:
-          "A wider range of account types, including lighter-documentation wallets for people the full onboarding process excludes.",
+          "More account types to choose from, including lighter-documentation wallets for people the standard onboarding process shuts out.",
       },
       {
         icon: "bookOpen",
@@ -211,11 +211,11 @@ const en = {
     eyebrow: "The common thread",
     title: "Income matters more than geography",
     description:
-      "Set the rural and urban figures against the income split and the ranking changes. The widest gap in Egyptian account ownership is not between village and city.",
+      "Compare the rural and urban figures against the income split, and the ranking flips. The widest gap in Egyptian account ownership isn't between village and city at all.",
     body1:
-      "The rural–urban gap is 6.0 points. The gap between the poorest 40% and the richest 60% is 16.7 points — nearly three times as wide. Poverty is the stronger predictor of exclusion, and it is present in both settings.",
+      "The rural–urban gap is 6.0 points. The gap between the poorest 40% and the richest 60% is 16.7 points — nearly three times as wide. Poverty predicts exclusion better than geography does, and it shows up in villages and cities alike.",
     body2:
-      "That has a practical implication. Building branches in villages addresses distance, which is real but secondary. Products priced for small and irregular balances address the constraint that actually binds — and help low-income households in Cairo at the same time.",
+      "That has a practical upshot. Building branches in villages helps with distance, which is a real problem but a secondary one. Products priced for small, irregular balances tackle the constraint that actually matters — and they help a low-income household in Cairo just as much as one in a village.",
     chartTitle: "Account ownership by group, Egypt",
     chartCaption: "Adults aged 15+ with an account, by group.",
     groups: {
@@ -250,7 +250,7 @@ const ar: RuralUrbanDict = {
     eyebrow: "مصر عن قرب",
     title: "الريف والحضر في مصر",
     description:
-      "الرقم الوطني البالغ 43.1% يخفي وضعين متمايزين. لكل منهما عقباته، والأهم أن لكل منهما حلولًا واقعية خاصة به.",
+      "الرقم الوطني البالغ 43.1% يخفي في الحقيقة وضعين مختلفين تمامًا. لكل منهما عقباته، ولكل منهما أيضًا حلوله الواقعية.",
   },
   gap: {
     eyebrow: "الفجوة المقيسة",
@@ -285,7 +285,7 @@ const ar: RuralUrbanDict = {
     eyebrow: "الجغرافيا",
     title: "بلد يعيش على نهر",
     description:
-      "سكان مصر ليسوا موزعين على أراضيها، بل متركزون على ضفاف النيل ودلتاه، وهو ما يحدد الشكل الاقتصادي الممكن لشبكة الفروع. اختر منطقة لتقرأ ما يقيّد الشمول المالي فيها.",
+      "سكان مصر ليسوا موزعين على أراضيها بالتساوي — بل متركزون على ضفاف النيل ودلتاه، وهذا ما يحدد الشكل الذي يمكن أن تكون عليه شبكة فروع أي بنك اقتصاديًا. اختر منطقة من الأسفل لترى ما الذي يعيق الشمول المالي فيها.",
     note: "أوصاف المناطق نوعية. فإحصاءات الشمول المالي المنشورة في مصر تُعرض وطنيًا وبتقسيم ريف/حضر لا على مستوى المحافظات، ولذلك لا تُعرض هنا معدلات على مستوى المحافظة.",
     labels: {
       alt: "خريطة تخطيطية لمصر تُظهر الدلتا ووادي النيل والمناطق الصحراوية",
@@ -305,7 +305,7 @@ const ar: RuralUrbanDict = {
         name: "الدلتا والقاهرة الكبرى",
         character: "كثيفة وحضرية والأفضل خدمة",
         description:
-          "تضم دلتا النيل ومحور القاهرة–الإسكندرية أكبر مدن مصر والغالبية الساحقة من فروعها وماكينات الصراف ونقاط البيع. ونادرًا ما يكون الوصول المادي هو القيد الحاسم. فالعقبات هنا مختلفة في نوعها: المستندات، والتكلفة، والثقة في القنوات الرقمية، وقطاع غير رسمي يُبقي الدخل نقدًا.",
+          "تضم دلتا النيل ومحور القاهرة–الإسكندرية أكبر مدن مصر ومعظم فروعها وماكينات الصراف ونقاط البيع. والوصول إلى فرع نادرًا ما يكون المشكلة هنا. العقبات مختلفة تمامًا: المستندات، والتكلفة، والثقة في القنوات الرقمية، وقطاع غير رسمي يُبقي دخل الناس نقدًا.",
         barriers: [
           "إجراءات معقدة لفتح الحساب",
           "القلق من الاحتيال وأمن المعاملات الرقمية",
@@ -318,7 +318,7 @@ const ar: RuralUrbanDict = {
         name: "وادي النيل وصعيد مصر",
         character: "ريفية وزراعية وقليلة الخدمة",
         description:
-          "جنوب القاهرة تضيق الأرض المأهولة إلى شريط عرضه بضعة كيلومترات على جانبي النهر. والمجتمعات كثيرة لكنها صغيرة، وتقل شبكات الفروع كلما ابتعدنا عن عواصم المحافظات. والدخول هنا زراعية وموسمية في الغالب، وهو ما يتلاءم بصعوبة مع منتجات مصممة حول راتب شهري.",
+          "جنوب القاهرة، تضيق الأرض المأهولة إلى شريط لا يتجاوز عرضه بضعة كيلومترات على جانبي النهر. المجتمعات كثيرة لكنها صغيرة، وتقل الفروع كلما ابتعدنا عن عاصمة المحافظة. والدخل هنا غالبًا زراعي وموسمي — وهو ما لا يتلاءم جيدًا مع منتجات مبنية على راتب شهري ثابت.",
         barriers: [
           "بُعد المسافة إلى أقرب فرع أو ماكينة صراف",
           "دخل زراعي موسمي وغير منتظم",
@@ -331,7 +331,7 @@ const ar: RuralUrbanDict = {
         name: "الصحاري وسيناء",
         character: "متناثرة ونائية والأصعب وصولًا",
         description:
-          "تشكل الصحراء الغربية وساحل البحر الأحمر وسيناء معظم مساحة مصر لكنها تضم نسبة صغيرة من سكانها. والتجمعات متباعدة عبر مسافات طويلة، مما يصعّب تبرير إنشاء فرع تقليدي. وهنا تحديدًا تكتسب الخدمات عبر الوكلاء والمحافظ الإلكترونية أهميتها الكبرى، لأنها لا تحتاج إلى مبنى.",
+          "تشكل الصحراء الغربية وساحل البحر الأحمر وسيناء معظم مساحة مصر، لكنها لا تضم سوى نسبة صغيرة من سكانها. والتجمعات متباعدة عبر مسافات طويلة، ما يجعل تبرير إنشاء فرع تقليدي أمرًا صعبًا اقتصاديًا. وهنا تحديدًا تصنع الخدمات عبر الوكلاء والمحافظ الإلكترونية أكبر فرق — فلا واحدة منهما تحتاج إلى مبنى.",
         barriers: [
           "مسافات شاسعة بين التجمعات السكنية",
           "صعوبة استدامة شبكات الفروع تجاريًا",
@@ -345,7 +345,7 @@ const ar: RuralUrbanDict = {
     eyebrow: "المشكلة والاستجابة",
     title: "ما الذي يمكن أن يساعد فعلًا",
     description:
-      "سرد العقبات نصف الصورة فقط. فلكل منها استجابة معروفة — وإن كانت كل واحدة منها تتوقف على البنية التحتية والإتاحة وقدرة الناس على الوصول إليها فعليًا.",
+      "تسمية العقبات نصف الصورة فقط. فلكل منها استجابة معروفة — لكن كل استجابة تظل مرهونة بالبنية التحتية والإتاحة وقدرة الناس فعليًا على الوصول إليها.",
     ruralTitle: "ريف مصر",
     urbanTitle: "حضر مصر",
     caveat:
@@ -355,7 +355,7 @@ const ar: RuralUrbanDict = {
         icon: "mapPin",
         problem: "البعد عن المؤسسات المالية",
         solution:
-          "الخدمات المصرفية عبر الهاتف وشبكات الوكلاء تجعل نقاط الإيداع والسحب في متاجر محلية، فلا تحتاج الخدمة إلى مبنى فرع لتوجد.",
+          "تحوّل الخدمات المصرفية عبر الهاتف وشبكات الوكلاء المتاجر المحلية إلى نقاط إيداع وسحب — فلا تحتاج الخدمة إلى مبنى فرع لتوجد.",
       },
       {
         icon: "tractor",
@@ -399,13 +399,13 @@ const ar: RuralUrbanDict = {
         icon: "receipt",
         problem: "غياب سجل للدخل والإنفاق",
         solution:
-          "سجلات معاملات تلقائية تسهّل وضع الميزانية وتتيح إثبات الدخل عند الحاجة.",
+          "سجلات معاملات تلقائية تسهّل وضع الميزانية، وتجعل إثبات الدخل عند الحاجة أمرًا بسيطًا.",
       },
       {
         icon: "landmark",
         problem: "البعد عن الخدمات المالية الرسمية",
         solution:
-          "تنويع أكبر في أنواع الحسابات، بما فيها محافظ بمستندات أخف لمن يستبعدهم إجراء الفتح الكامل.",
+          "خيارات أكثر لأنواع الحسابات، بما فيها محافظ بمستندات أخف لمن يُقصيهم إجراء الفتح الكامل.",
       },
       {
         icon: "bookOpen",
@@ -451,11 +451,11 @@ const ar: RuralUrbanDict = {
     eyebrow: "الخيط المشترك",
     title: "الدخل أهم من الجغرافيا",
     description:
-      "بمقارنة أرقام الريف والحضر بتقسيم الدخل يتغير الترتيب. فأوسع فجوة في امتلاك الحسابات في مصر ليست بين القرية والمدينة.",
+      "قارن أرقام الريف والحضر بتقسيم الدخل، وسيتغيّر الترتيب تمامًا. فأوسع فجوة في امتلاك الحسابات في مصر ليست بين القرية والمدينة أصلًا.",
     body1:
-      "الفجوة بين الريف والحضر 6.0 نقاط. أما الفجوة بين الأفقر 40% والأغنى 60% فهي 16.7 نقطة — أي نحو ثلاثة أضعاف. فالفقر هو المؤشر الأقوى على الاستبعاد، وهو موجود في البيئتين معًا.",
+      "الفجوة بين الريف والحضر 6.0 نقاط. أما الفجوة بين الأفقر 40% والأغنى 60% فهي 16.7 نقطة — أي نحو ثلاثة أضعاف. فالفقر مؤشر على الاستبعاد أقوى من مكان السكن، ويظهر في القرى والمدن على حد سواء.",
     body2:
-      "ولهذا دلالة عملية. فبناء الفروع في القرى يعالج المسافة، وهي مشكلة حقيقية لكنها ثانوية. أما المنتجات المسعّرة للأرصدة الصغيرة وغير المنتظمة فتعالج القيد الفعلي — وتساعد في الوقت نفسه الأسر منخفضة الدخل في القاهرة.",
+      "ولهذا نتيجة عملية. بناء الفروع في القرى يعالج مشكلة المسافة، وهي حقيقية لكنها ثانوية. أما المنتجات المسعّرة للأرصدة الصغيرة وغير المنتظمة فتعالج القيد الذي يهم فعلًا — وتساعد أسرة منخفضة الدخل في القاهرة بقدر ما تساعد أسرة في قرية.",
     chartTitle: "امتلاك الحسابات بحسب الفئة، مصر",
     chartCaption: "البالغون من عمر 15 عامًا فأكثر ممن يملكون حسابًا، بحسب الفئة.",
     groups: {

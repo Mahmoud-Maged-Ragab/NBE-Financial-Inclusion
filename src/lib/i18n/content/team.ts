@@ -10,13 +10,13 @@ const en = {
     eyebrow: "About this project",
     title: "Meet the Team",
     description:
-      "Meet the team behind this financial inclusion awareness project.",
+      "The people who put this financial inclusion project together.",
   },
   grid: {
     eyebrow: "Contributors",
     title: "The people who worked on this project",
     description:
-      "Everyone listed here contributed to the research, writing and build of this educational site.",
+      "Everyone below helped research, write, or build this site.",
     ariaLabel: "Project team members",
     university: "University",
     major: "Major or programme",
@@ -26,7 +26,7 @@ const en = {
   preview: {
     eyebrow: "The people behind it",
     title: "Meet the Team",
-    description: "Learn more about the people who contributed to this project.",
+    description: "A quick look at who worked on this project with us.",
     cta: "Meet the Team",
   },
 };

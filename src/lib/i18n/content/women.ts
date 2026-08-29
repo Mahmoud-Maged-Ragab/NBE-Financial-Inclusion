@@ -43,14 +43,14 @@ const en = {
       egypt2024Note: "A gap of 5.7 percentage points.",
       egypt2021: "Account ownership, Egypt (2021)",
       egypt2021Note: "A gap of 6.4 percentage points — narrowing, but slowly.",
-      india: "Account ownership, India (2024)",
-      indiaNote:
-        "India has effectively closed its gender gap; women's ownership slightly exceeds men's.",
+      kenya: "Account ownership, Kenya (2024)",
+      kenyaNote:
+        "On this measure Kenya's own gap is a little wider than Egypt's — its national household survey tells a narrower story instead.",
     },
     body1:
       "Two things are worth noticing. First, the Egyptian gap narrowed only slightly between 2021 and 2024 — from 6.4 points to 5.7 — even as both women's and men's ownership rose sharply. Rapid overall growth has lifted both groups without substantially changing the distance between them.",
     body2:
-      "Second, India shows the gap is not fixed. Indian women now hold accounts at a marginally higher rate than Indian men, having started from a considerably wider gap. That followed a deliberate national programme in which accounts were opened at scale with women named as beneficiaries, and government transfers routed through them.",
+      "Second, Kenya shows the same country can report two different gaps depending on how an account is defined. The World Bank's measure puts Kenya's gender gap at 7.4 points — wider than Egypt's. Kenya's own FinAccess household survey, built around mobile money accounts that need only a registered phone number to open, puts it at just 1.6 points (85.7% of men against 84.1% of women). A phone-based account removes obstacles, such as land or property registered in a man's name, that a bank account has traditionally assumed.",
     body3:
       "Globally the World Bank reports 77% of women holding an account, with the gender gap narrowed to four percentage points. Egypt is behind that benchmark, but the direction of travel across the last three survey waves is upward.",
   },
@@ -112,7 +112,7 @@ const en = {
     description:
       "MSMEs are around 90% of Egypt's private sector and roughly 43% of its GDP, yet formal credit reaches a small fraction of them.",
     primary: "Small Businesses",
-    secondary: "Egypt vs India",
+    secondary: "Egypt vs Kenya",
   },
 };
 
@@ -161,14 +161,14 @@ const ar: WomenDict = {
       egypt2024Note: "فجوة قدرها 5.7 نقطة مئوية.",
       egypt2021: "امتلاك الحسابات، مصر (2021)",
       egypt2021Note: "فجوة قدرها 6.4 نقطة مئوية — تضيق، لكن ببطء.",
-      india: "امتلاك الحسابات، الهند (2024)",
-      indiaNote:
-        "أغلقت الهند فجوتها بين الجنسين فعليًا؛ فامتلاك النساء يفوق امتلاك الرجال بفارق طفيف.",
+      kenya: "امتلاك الحسابات، كينيا (2024)",
+      kenyaNote:
+        "وفق هذا المقياس، فجوة كينيا أوسع قليلًا من فجوة مصر — بينما يروي مسحها الوطني للأسر قصة أضيق.",
     },
     body1:
       "أمران يستحقان الملاحظة. أولًا، ضاقت الفجوة المصرية قليلًا فقط بين 2021 و2024 — من 6.4 نقطة إلى 5.7 — رغم الارتفاع الحاد في امتلاك النساء والرجال معًا. فالنمو السريع رفع المجموعتين دون أن يغيّر المسافة بينهما جوهريًا.",
     body2:
-      "ثانيًا، تُظهر الهند أن الفجوة ليست ثابتة. فالنساء الهنديات يملكن اليوم حسابات بمعدل يفوق الرجال بفارق طفيف، بعد أن بدأن من فجوة أوسع بكثير. وقد جاء ذلك بعد برنامج وطني مقصود فُتحت فيه الحسابات على نطاق واسع بأسماء النساء كمستفيدات، ووُجهت التحويلات الحكومية عبرها.",
+      "ثانيًا، تُظهر كينيا أن البلد نفسه قد يسجّل فجوتين مختلفتين بحسب تعريف الحساب. فمقياس البنك الدولي يضع فجوة كينيا بين الجنسين عند 7.4 نقطة — أوسع من فجوة مصر. أما مسح فين-أكسس الوطني الكيني للأسر، المبني على حسابات محفظة الهاتف المحمول التي لا تحتاج سوى رقم هاتف مسجّل لفتحها، فيضع الفجوة عند 1.6 نقطة فقط (85.7% من الرجال مقابل 84.1% من النساء). فالحساب القائم على الهاتف يزيل عقبات، كملكية الأرض أو العقار باسم الرجل، طالما افترضها الحساب البنكي تقليديًا.",
     body3:
       "وعالميًا، يفيد البنك الدولي بأن 77% من النساء يملكن حسابًا، مع تقلص الفجوة بين الجنسين إلى أربع نقاط مئوية. ومصر متأخرة عن هذا المعيار، لكن اتجاه الحركة عبر موجات المسح الثلاث الأخيرة صاعد.",
   },
@@ -230,7 +230,7 @@ const ar: WomenDict = {
     description:
       "تمثل المشروعات الصغيرة نحو 90% من القطاع الخاص في مصر ونحو 43% من ناتجها المحلي، ومع ذلك لا يصل إليها الائتمان الرسمي إلا بنسبة ضئيلة.",
     primary: "المشروعات الصغيرة",
-    secondary: "مصر والهند",
+    secondary: "مصر وكينيا",
   },
 };
 

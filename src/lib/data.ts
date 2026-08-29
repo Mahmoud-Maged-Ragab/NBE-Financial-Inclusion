@@ -37,8 +37,8 @@ export const EGYPT_HEADLINE: Stat[] = [
       ar: "معدل الشمول المالي",
     },
     detail: {
-      en: "Share of Egyptians aged 15+ with an active account, on the Central Bank of Egypt's definition. Up from 77.6% at the end of 2025.",
-      ar: "نسبة المصريين من عمر 15 عامًا فأكثر ممن يملكون حسابًا نشطًا، وفق تعريف البنك المركزي المصري. ارتفاعًا من 77.6% في نهاية 2025.",
+      en: "The share of Egyptians aged 15+ with an active account, using the Central Bank's own definition — up from 77.6% at the end of 2025.",
+      ar: "نسبة المصريين من عمر 15 عامًا فأكثر الذين يملكون حسابًا نشطًا، وفق تعريف البنك المركزي نفسه — ارتفاعًا من 77.6% في نهاية 2025.",
     },
     source: "cbeInclusion2026",
   },
@@ -50,8 +50,8 @@ export const EGYPT_HEADLINE: Stat[] = [
       ar: "مواطنًا يملكون حسابات نشطة (بالمليون)",
     },
     detail: {
-      en: "Out of 71.4 million Egyptians aged 15 and above. An active account can be at a bank, at Egypt Post, a mobile wallet or a prepaid card.",
-      ar: "من إجمالي 71.4 مليون مصري من عمر 15 عامًا فأكثر. والحساب النشط قد يكون في بنك أو البريد المصري أو محفظة إلكترونية أو بطاقة مسبقة الدفع.",
+      en: "Out of 71.4 million Egyptians aged 15 and up. That account could be at a bank, at Egypt Post, a mobile wallet, or a prepaid card.",
+      ar: "من إجمالي 71.4 مليون مصري من عمر 15 عامًا فأكثر. وقد يكون هذا الحساب في بنك، أو في البريد المصري، أو محفظة إلكترونية، أو بطاقة مسبقة الدفع.",
     },
     source: "cbeInclusion2026",
     decimals: 1,
@@ -64,8 +64,8 @@ export const EGYPT_HEADLINE: Stat[] = [
       ar: "امتلاك الحسابات (البنك الدولي)",
     },
     detail: {
-      en: "The World Bank's survey-based measure, which counts a bank or mobile money account held by the respondent.",
-      ar: "المقياس المبني على المسح لدى البنك الدولي، ويحصي الحساب البنكي أو محفظة الهاتف التي يملكها المستجيب نفسه.",
+      en: "The World Bank's own measure, based on a survey — it counts anyone who told researchers they hold a bank account or a mobile money account.",
+      ar: "مقياس البنك الدولي القائم على المسح — يحصي كل من أخبر الباحثين بأنه يملك حسابًا بنكيًا أو محفظة هاتف محمول.",
     },
     source: "findex2025",
     decimals: 1,
@@ -78,8 +78,8 @@ export const EGYPT_HEADLINE: Stat[] = [
       ar: "نمو الشمول المالي منذ 2016",
     },
     detail: {
-      en: "Growth in the ownership and use of financial services between 2016 and June 2026, on the CBE's Financial Inclusion Data Hub.",
-      ar: "نمو امتلاك واستخدام الخدمات المالية بين 2016 ويونيو 2026، وفق منصة بيانات الشمول المالي بالبنك المركزي.",
+      en: "How much ownership and use of financial services grew between 2016 and June 2026, according to the CBE's Financial Inclusion Data Hub.",
+      ar: "مقدار نمو امتلاك الخدمات المالية واستخدامها بين 2016 ويونيو 2026، وفق منصة بيانات الشمول المالي التابعة للبنك المركزي.",
     },
     source: "cbeInclusion2026",
   },
@@ -89,13 +89,13 @@ export const EGYPT_HEADLINE: Stat[] = [
 export const ACCOUNT_OWNERSHIP_SERIES: {
   year: number;
   egypt: number;
-  india: number;
+  kenya: number;
 }[] = [
-  { year: 2011, egypt: 9.7, india: 35.2 },
-  { year: 2014, egypt: 14.1, india: 53.1 },
-  { year: 2017, egypt: 32.8, india: 79.9 },
-  { year: 2021, egypt: 27.4, india: 77.5 },
-  { year: 2024, egypt: 43.1, india: 89.0 },
+  { year: 2011, egypt: 9.7, kenya: 42.3 },
+  { year: 2014, egypt: 14.1, kenya: 74.7 },
+  { year: 2017, egypt: 32.8, kenya: 81.6 },
+  { year: 2021, egypt: 27.4, kenya: 79.2 },
+  { year: 2024, egypt: 43.1, kenya: 90.1 },
 ];
 
 /** Who is included, and who is left out — Egypt, Findex 2024. */
@@ -116,8 +116,8 @@ export const EGYPT_GAPS: {
       value: 49.8,
     },
     insight: {
-      en: "The widest single gap in the Egyptian data: 16.7 percentage points between the poorest 40% and the richest 60%.",
-      ar: "أوسع فجوة منفردة في البيانات المصرية: 16.7 نقطة مئوية بين الأفقر 40% والأغنى 60%.",
+      en: "This is the widest gap in the Egyptian data — 16.7 percentage points between the poorest 40% and the richest 60%.",
+      ar: "هذه أوسع فجوة في البيانات المصرية — 16.7 نقطة مئوية بين الأفقر 40% والأغنى 60%.",
     },
   },
   {
@@ -137,8 +137,8 @@ export const EGYPT_GAPS: {
       value: 48.3,
     },
     insight: {
-      en: "Adults with secondary education or more are almost 10 percentage points more likely to hold an account.",
-      ar: "احتمال امتلاك حساب لدى الحاصلين على تعليم ثانوي فأعلى يزيد بنحو 10 نقاط مئوية.",
+      en: "People with a secondary education or more are almost 10 percentage points more likely to have an account.",
+      ar: "من أنهوا تعليمهم الثانوي أو أعلى أقرب إلى امتلاك حساب بفارق يقارب 10 نقاط مئوية.",
     },
   },
   {
@@ -146,8 +146,8 @@ export const EGYPT_GAPS: {
     a: { label: { en: "Rural", ar: "الريف" }, value: 39.3 },
     b: { label: { en: "Urban", ar: "الحضر" }, value: 45.3 },
     insight: {
-      en: "A 6 percentage point rural–urban gap, in a country where most people live in rural areas.",
-      ar: "فجوة قدرها 6 نقاط مئوية بين الريف والحضر، في بلد يعيش أغلب سكانه في الريف.",
+      en: "A 6-point gap between rural and urban areas — and most Egyptians live in rural areas.",
+      ar: "فجوة 6 نقاط بين الريف والحضر، في بلد يعيش معظم سكانه في الريف.",
     },
   },
   {
@@ -155,8 +155,8 @@ export const EGYPT_GAPS: {
     a: { label: { en: "Women", ar: "النساء" }, value: 40.2 },
     b: { label: { en: "Men", ar: "الرجال" }, value: 46.0 },
     insight: {
-      en: "A 5.7 percentage point gender gap — narrower than the wider MENA region, but still present.",
-      ar: "فجوة بين الجنسين قدرها 5.7 نقطة مئوية — أضيق من متوسط منطقة الشرق الأوسط وشمال أفريقيا، لكنها قائمة.",
+      en: "A 5.7-point gap between men and women — narrower than the rest of the MENA region, but still there.",
+      ar: "فجوة 5.7 نقطة بين الرجال والنساء — أضيق من متوسط الشرق الأوسط وشمال أفريقيا، لكنها موجودة.",
     },
   },
 ];
@@ -300,8 +300,8 @@ export const WOMEN_STATS: Stat[] = [
       ar: "معدل الشمول المالي للمرأة في مصر",
     },
     detail: {
-      en: "At June 2026, up from 19.1% in 2016 — a 327% increase in the number of women included, on the CBE measure.",
-      ar: "في يونيو 2026، ارتفاعًا من 19.1% في 2016 — بزيادة 327% في عدد النساء المشمولات وفق مقياس البنك المركزي.",
+      en: "As of June 2026, up from 19.1% in 2016 — that's a 327% increase in the number of women included, on the CBE's own measure.",
+      ar: "حتى يونيو 2026، ارتفاعًا من 19.1% في 2016 — أي بزيادة 327% في عدد النساء المشمولات وفق مقياس البنك المركزي.",
     },
     source: "cbeInclusion2026",
     decimals: 1,
@@ -314,7 +314,7 @@ export const WOMEN_STATS: Stat[] = [
       ar: "نساء مصريات يملكن حسابًا",
     },
     detail: {
-      en: "World Bank survey measure, against 46.0% of Egyptian men.",
+      en: "On the World Bank's survey measure — against 46.0% of Egyptian men.",
       ar: "وفق مسح البنك الدولي، مقابل 46.0% من الرجال المصريين.",
     },
     source: "findexApi",
@@ -328,7 +328,7 @@ export const WOMEN_STATS: Stat[] = [
       ar: "الفجوة بين الجنسين في امتلاك الحسابات",
     },
     detail: {
-      en: "Percentage point difference between Egyptian men and women.",
+      en: "The percentage-point gap between Egyptian men and women.",
       ar: "الفارق بالنقاط المئوية بين الرجال والنساء في مصر.",
     },
     source: "findexApi",
@@ -392,8 +392,8 @@ export const SME_STATS: Stat[] = [
       ar: "من محافظ إقراض البنوك موجهة للمشروعات الصغيرة",
     },
     detail: {
-      en: "A regulatory target set by the Central Bank of Egypt, with at least 10% for small enterprises.",
-      ar: "مستهدف تنظيمي حدده البنك المركزي المصري، بما لا يقل عن 10% للمشروعات الصغيرة.",
+      en: "A target the Central Bank of Egypt set for banks, with at least 10% of it earmarked for small enterprises specifically.",
+      ar: "مستهدف حدده البنك المركزي المصري للبنوك، بما لا يقل عن 10% منه مخصص للمشروعات الصغيرة تحديدًا.",
     },
     source: "cbeMsme",
   },
@@ -405,8 +405,8 @@ export const SME_STATS: Stat[] = [
       ar: "من البالغين اقترضوا لبدء مشروع أو تشغيله",
     },
     detail: {
-      en: "Against 11.8% of adults in India.",
-      ar: "مقابل 11.8% من البالغين في الهند.",
+      en: "Kenya's Global Findex figure sits close by, at 7.5% — see the Egypt vs Kenya comparison.",
+      ar: "رقم كينيا في المؤشر العالمي للشمول المالي قريب من هذا، عند 7.5% — راجع المقارنة بين مصر وكينيا.",
     },
     source: "findexApi",
     decimals: 1,
@@ -414,98 +414,103 @@ export const SME_STATS: Stat[] = [
 ];
 
 /* ------------------------------------------------------------------
-   Egypt vs India
+   Egypt vs Kenya
    ------------------------------------------------------------------ */
 
 export interface ComparisonRow {
   metric: L;
   egypt: number;
-  india: number;
+  kenya: number;
   unit: string;
   note?: L;
 }
 
-export const EGYPT_INDIA_COMPARISON: ComparisonRow[] = [
+export const EGYPT_KENYA_COMPARISON: ComparisonRow[] = [
   {
     metric: { en: "Account ownership", ar: "امتلاك الحسابات" },
     egypt: 43.1,
-    india: 89.0,
+    kenya: 90.1,
     unit: "%",
   },
   {
     metric: { en: "Rural account ownership", ar: "امتلاك الحسابات في الريف" },
     egypt: 39.3,
-    india: 89.9,
+    kenya: 88.7,
     unit: "%",
     note: {
-      en: "In India rural account ownership is higher than urban — the reverse of Egypt.",
-      ar: "في الهند تفوق نسبة امتلاك الحسابات في الريف نظيرتها في الحضر — عكس الحال في مصر.",
+      en: "Kenya's rural rate sits only 6.3 points behind its urban rate (95.1%) — a far narrower gap than Egypt's.",
+      ar: "لا يقل معدل الريف في كينيا عن معدل الحضر (95.1%) سوى بفارق 6.3 نقطة — فجوة أضيق كثيرًا من فجوة مصر.",
     },
   },
   {
     metric: { en: "Women with an account", ar: "النساء اللاتي يملكن حسابًا" },
     egypt: 40.2,
-    india: 89.2,
+    kenya: 86.5,
     unit: "%",
     note: {
-      en: "India has effectively closed its gender gap; Egyptian women trail men by 5.7 points.",
-      ar: "أغلقت الهند فجوتها بين الجنسين فعليًا، بينما تتخلف النساء في مصر عن الرجال بـ5.7 نقطة.",
+      en: "Kenya's gender gap has narrowed to 7.4 points, against 5.7 points in Egypt — narrow on both sides, wide apart overall.",
+      ar: "ضاقت الفجوة بين الجنسين في كينيا إلى 7.4 نقطة، مقابل 5.7 نقطة في مصر — ضيقة في البلدين، لكن الفارق الكلي بينهما واسع.",
+    },
+  },
+  {
+    metric: { en: "Mobile money account", ar: "حساب محفظة الهاتف المحمول" },
+    egypt: 15.6,
+    kenya: 87.5,
+    unit: "%",
+    note: {
+      en: "In Kenya, mobile money is not a niche channel — it is nearly the whole of account ownership.",
+      ar: "في كينيا لا تمثل محفظة الهاتف قناة هامشية — بل هي تكاد تكون كل امتلاك الحسابات.",
     },
   },
   {
     metric: { en: "Digitally enabled account", ar: "حساب مفعَّل رقميًا" },
     egypt: 28.2,
-    india: 31.1,
+    kenya: 89.4,
     unit: "%",
   },
   {
     metric: { en: "Pay with a card or phone", ar: "الدفع ببطاقة أو هاتف" },
     egypt: 18.5,
-    india: 27.7,
+    kenya: 28.3,
     unit: "%",
   },
   {
     metric: {
-      en: "Saved at a financial institution",
-      ar: "الادخار لدى مؤسسة مالية",
+      en: "Saved money in the past year",
+      ar: "الادخار خلال العام الماضي",
     },
-    egypt: 13.8,
-    india: 27.0,
+    egypt: 23.0,
+    kenya: 70.2,
     unit: "%",
   },
   {
-    metric: { en: "Borrowed formally", ar: "الاقتراض الرسمي" },
-    egypt: 10.4,
-    india: 15.1,
-    unit: "%",
-  },
-  {
-    metric: {
-      en: "Utility bills paid in cash only",
-      ar: "فواتير المرافق المسددة نقدًا فقط",
-    },
-    egypt: 48.4,
-    india: 25.1,
+    metric: { en: "Borrowed money in the past year", ar: "الاقتراض خلال العام الماضي" },
+    egypt: 56.1,
+    kenya: 81.9,
     unit: "%",
   },
   {
     metric: { en: "Own a mobile phone", ar: "امتلاك هاتف محمول" },
     egypt: 84.6,
-    india: 66.5,
+    kenya: 92.7,
     unit: "%",
     note: {
-      en: "Egypt leads India on device ownership — the constraint is not the handset.",
-      ar: "تتقدم مصر على الهند في امتلاك الأجهزة — فالقيد ليس في الهاتف.",
+      en: "Kenya leads here too — the gap between the two countries is narrowest on devices, and widest on accounts.",
+      ar: "تتقدم كينيا هنا أيضًا — الفجوة بين البلدين أضيق ما تكون في الأجهزة، وأوسع ما تكون في الحسابات.",
     },
   },
   {
     metric: {
-      en: "Main phone is a smartphone",
-      ar: "الهاتف الأساسي هاتف ذكي",
+      en: "Smartphone ownership",
+      ar: "امتلاك هاتف ذكي",
     },
     egypt: 55.7,
-    india: 42.0,
+    kenya: 72.6,
     unit: "%",
+    note: {
+      en: "Kenya's figure is from the national telecoms regulator, not Global Findex, so treat it as indicative rather than strictly like-for-like.",
+      ar: "رقم كينيا صادر عن الهيئة الوطنية لتنظيم الاتصالات وليس من المؤشر العالمي للشمول المالي، لذا فهو إرشادي وليس متكافئًا تمامًا مع رقم مصر.",
+    },
   },
 ];
 

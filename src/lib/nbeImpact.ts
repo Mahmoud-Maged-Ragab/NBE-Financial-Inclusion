@@ -112,8 +112,8 @@ export const NBE_INCLUSION_STATS: DatedStat[] = [
       ar: "عميل غير متعامل مع البنوك سابقًا تم دمجهم",
     },
     detail: {
-      en: "Brought into the formal financial sector through the deployment of Meeza prepaid unified cards.",
-      ar: "تم دمجهم في القطاع المالي الرسمي من خلال طرح بطاقات ميزة الموحدة مسبقة الدفع.",
+      en: "Brought into the formal financial sector when NBE rolled out Meeza prepaid unified cards.",
+      ar: "دخلوا القطاع المالي الرسمي بعدما طرح البنك بطاقات ميزة الموحدة مسبقة الدفع.",
     },
     source: "nbeEsg2023",
   },
@@ -151,8 +151,8 @@ export const NBE_INCLUSION_STATS: DatedStat[] = [
       ar: "فرد تم التواصل معهم في المناسبات العالمية",
     },
     detail: {
-      en: "Engaged through targeted financial education programmes tied to global observance days.",
-      ar: "تم التواصل معهم عبر برامج تثقيف مالي موجهة مرتبطة بالمناسبات العالمية.",
+      en: "Reached through financial education events built around global observance days.",
+      ar: "تم التواصل معهم عبر فعاليات تثقيف مالي أُقيمت بمناسبة أيام عالمية.",
     },
     source: "nbeEsg2023",
   },
@@ -217,8 +217,8 @@ export const NBE_INCLUSIVE_BANKING: DatedStat[] = [
     year: "2023",
     label: { en: "of NBE customers are women", ar: "من عملاء البنك من النساء" },
     detail: {
-      en: "NBE reports 4 million female liabilities customers.",
-      ar: "يفيد البنك بوجود 4 ملايين عميلة في جانب الالتزامات.",
+      en: "NBE reports 4 million women among its deposit customers — the customers who keep their savings with the bank, as opposed to those who borrow from it.",
+      ar: "يفيد البنك بوجود 4 ملايين عميلة ضمن عملاء الودائع — أي العملاء الذين يحتفظون بمدخراتهم لدى البنك، مقابل من يقترضون منه.",
     },
     source: "nbeEsg2023",
   },
@@ -231,8 +231,8 @@ export const NBE_INCLUSIVE_BANKING: DatedStat[] = [
       ar: "من أصحاب الحسابات دون سن 35",
     },
     detail: {
-      en: "Youth liabilities customers aged 21 to 36 make up the same share of the base.",
-      ar: "يمثل عملاء الشباب في جانب الالتزامات من عمر 21 إلى 36 عامًا النسبة نفسها من القاعدة.",
+      en: "Young deposit customers aged 21 to 36 make up the same share of the base.",
+      ar: "يمثل عملاء الودائع الشباب من عمر 21 إلى 36 عامًا النسبة نفسها من القاعدة.",
     },
     source: "nbeEsg2023",
   },
@@ -544,8 +544,8 @@ export const NBE_TIMELINE: TimelineEntry[] = [
       ar: "إدارة متخصصة للتمويل المستدام",
     },
     body: {
-      en: "NBE's Board of Directors approves creating a sustainable finance and specialised programmes department within the Corporate Banking Group.",
-      ar: "وافق مجلس إدارة البنك على إنشاء إدارة للتمويل المستدام والبرامج المتخصصة ضمن مجموعة الخدمات المصرفية للشركات.",
+      en: "NBE's board approves a new sustainable finance and specialised programmes department, sitting within the Corporate Banking Group.",
+      ar: "وافق مجلس إدارة البنك على إنشاء إدارة جديدة للتمويل المستدام والبرامج المتخصصة، ضمن مجموعة الخدمات المصرفية للشركات.",
     },
     source: "nbeEsg2023",
   },
@@ -661,8 +661,8 @@ export const NBE_INITIATIVES: Initiative[] = [
       ar: "التوعية بالقرى ضمن حياة كريمة",
     },
     what: {
-      en: "Financial literacy sessions run in villages under the national Haya Karima initiative, with content adapted to each governorate.",
-      ar: "جلسات تثقيف مالي تُعقد في القرى ضمن مبادرة حياة كريمة الوطنية، بمحتوى مُكيَّف حسب كل محافظة.",
+      en: "Financial literacy sessions held in villages as part of the national Haya Karima initiative, with the content tailored to each governorate.",
+      ar: "جلسات تثقيف مالي تُعقد في القرى ضمن مبادرة حياة كريمة الوطنية، بمحتوى مُصمَّم خصيصًا لكل محافظة.",
     },
     why: {
       en: "NBE reports that financial literacy gaps are widest in rural areas, where branches are furthest away.",
@@ -700,8 +700,8 @@ export const NBE_INITIATIVES: Initiative[] = [
     icon: "creditCard",
     title: { en: "Meeza Unified card", ar: "بطاقة ميزة الموحدة" },
     what: {
-      en: "A card launched for university students that serves as both a student ID and a banking tool, supporting e-payments, contactless transactions and mobile wallet services.",
-      ar: "بطاقة أُطلقت لطلاب الجامعات تجمع بين الهوية الجامعية والأداة المصرفية، وتدعم المدفوعات الإلكترونية والمعاملات اللاتلامسية وخدمات المحفظة الإلكترونية.",
+      en: "A card launched for university students that works as both a student ID and a banking tool. It supports e-payments, contactless transactions and mobile wallet services.",
+      ar: "بطاقة أُطلقت لطلاب الجامعات تعمل كهوية جامعية وأداة مصرفية في آن واحد. وتدعم المدفوعات الإلكترونية والمعاملات اللاتلامسية وخدمات المحفظة الإلكترونية.",
     },
     why: {
       en: "It puts a first payment product in students' hands at the point where they are forming financial habits.",
@@ -721,8 +721,8 @@ export const NBE_INITIATIVES: Initiative[] = [
       ar: "قنوات تمويل لرائدات الأعمال",
     },
     what: {
-      en: "Dedicated MSMEDA funding channels of EGP 200 million for female-owned enterprises, plus an EGP 350 million agreement prioritising women entrepreneurs in microfinance.",
-      ar: "قنوات تمويل مخصصة عبر جهاز تنمية المشروعات بقيمة 200 مليون جنيه للمشروعات المملوكة للنساء، إضافة إلى اتفاق بقيمة 350 مليون جنيه يعطي الأولوية لرائدات الأعمال في التمويل متناهي الصغر.",
+      en: "MSMEDA runs a dedicated EGP 200 million funding channel for female-owned enterprises, plus a separate EGP 350 million agreement that prioritises women entrepreneurs in microfinance.",
+      ar: "يدير جهاز تنمية المشروعات قناة تمويل مخصصة بقيمة 200 مليون جنيه للمشروعات المملوكة للنساء، إلى جانب اتفاق منفصل بقيمة 350 مليون جنيه يعطي الأولوية لرائدات الأعمال في التمويل متناهي الصغر.",
     },
     why: {
       en: "Access to credit is one of the barriers that keeps women's businesses informal.",
@@ -813,3 +813,29 @@ export const NBE_INITIATIVES: Initiative[] = [
     source: "nbeEsg2023",
   },
 ];
+
+/* ------------------------------------------------------------------
+   Curated views used by the Solutions page.
+
+   These select entries already defined above rather than restating any
+   figure, so the Solutions page cannot drift away from the numbers on the
+   NBE Impact page.
+   ------------------------------------------------------------------ */
+
+/** Selects by English label, keeping the order the labels are given in. */
+function selectStats(list: DatedStat[], labels: string[]): DatedStat[] {
+  return labels.flatMap((label) => list.filter((s) => s.label.en === label));
+}
+
+/** Programme results that evidence the education and outreach solutions. */
+export const SOLUTIONS_PROGRAMME_STATS: DatedStat[] = selectStats(
+  NBE_INCLUSION_STATS,
+  [
+    "Individuals reached",
+    "Villages reached",
+    "University students reached",
+    "Previously unbanked customers integrated",
+    "Students at universities and educational institutes",
+    "Individuals engaged on observance days",
+  ],
+);

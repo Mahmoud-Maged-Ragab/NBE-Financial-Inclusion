@@ -116,8 +116,8 @@ export default async function EgyptPage({
                   color: "var(--color-brand-600)",
                 },
                 {
-                  key: "india",
-                  label: c.ui.india,
+                  key: "kenya",
+                  label: c.ui.kenya,
                   color: "var(--color-gold-500)",
                 },
               ]}
@@ -215,7 +215,7 @@ export default async function EgyptPage({
                 <p className="text-sm leading-relaxed text-ink-800">
                   {t.funnel.compareNote}{" "}
                   <Link
-                    href={localePath(locale, "/egypt-vs-india")}
+                    href={localePath(locale, "/egypt-vs-kenya")}
                     className="font-medium text-brand-700 underline underline-offset-4"
                   >
                     {t.funnel.compareLink}

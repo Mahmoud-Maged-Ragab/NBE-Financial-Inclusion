@@ -26,6 +26,7 @@ const en = {
     short: {
       home: "Home",
       basics: "Banking Basics",
+      solutions: "Solutions",
       understanding: "Financial Inclusion",
       banking: "Banking",
       egypt: "Egypt",
@@ -72,8 +73,8 @@ const en = {
       label: "Small Businesses",
       blurb: "MSMEs, credit access, and the cost of staying informal.",
     },
-    egyptVsIndia: {
-      label: "Egypt vs India",
+    egyptVsKenya: {
+      label: "Egypt vs Kenya",
       blurb: "A like-for-like comparison on ten indicators.",
     },
     future: {
@@ -87,6 +88,10 @@ const en = {
     basics: {
       label: "Banking Basics",
       blurb: "Never used a bank? Start with the plain-language explanations.",
+    },
+    solutions: {
+      label: "Financial Inclusion Solutions",
+      blurb: "The barriers, what can be done about them, and NBE's contribution.",
     },
     videos: {
       label: "Videos",
@@ -103,10 +108,10 @@ const en = {
   },
   footer: {
     description:
-      "An educational resource on how people, businesses and communities in Egypt connect to the financial system — built on published data from the World Bank, the Central Bank of Egypt, the IMF and Egyptian government bodies.",
+      "An educational resource on how people, businesses and communities in Egypt connect to the financial system. Everything here is built on published data from the World Bank, the Central Bank of Egypt, the IMF and Egyptian government bodies.",
     reviewSources: "Review every source",
     disclaimer:
-      "Educational project. Figures are reproduced from published sources. This site does not provide financial advice and does not promote any bank or provider.",
+      "This is an educational project. Every figure is reproduced from a published source, and the site doesn't offer financial advice or promote any bank or provider.",
     dataNote: "Data current as of the periods stated beside each figure.",
   },
   ui: {
@@ -125,7 +130,7 @@ const en = {
     before: "Before",
     after: "After",
     egypt: "Egypt",
-    india: "India",
+    kenya: "Kenya",
     women: "Women",
     men: "Men",
   },
@@ -136,7 +141,7 @@ const en = {
         "Learn how accounts, cards and digital payments actually work — then decide for yourself, with reliable information behind you.",
       exploreBanking: "Explore Banking",
       learnDigital: "Learn About Digital Finance",
-      compare: "Compare Egypt & India",
+      compare: "Compare Egypt & Kenya",
     },
     startJourney: "Start Your Financial Inclusion Journey",
     learnBeforeChoose: "Learn Before You Choose",
@@ -176,13 +181,13 @@ const en = {
     aboutEyebrow: "About this project",
     aboutTitle: "About This Project",
     aboutBody:
-      "This educational project was created by Credit Administration Interns at the National Bank of Egypt (NBE) to raise awareness about financial inclusion, digital finance, and the importance of access to formal financial services in Egypt.",
+      "This is an educational project built by Credit Administration interns at the National Bank of Egypt (NBE). The goal is simple: help people understand financial inclusion and digital finance, and why having access to formal financial services in Egypt actually matters.",
     notOfficial:
-      "This is an educational awareness project. It is not an official National Bank of Egypt banking platform, no account can be opened through it, and it does not provide financial advice or guarantee any financial outcome.",
+      "This is an educational project, not an official National Bank of Egypt banking platform. You can't open an account through it, and it doesn't give financial advice or guarantee any financial outcome.",
   },
   disclaimer: {
     short:
-      "This site is educational. It does not give financial advice, does not promote any bank, and cannot promise any financial outcome.",
+      "This site is for education only. It doesn't give financial advice, promote any bank, or promise any financial outcome.",
   },
 };
 
@@ -214,6 +219,7 @@ const ar: CommonDict = {
     short: {
       home: "الرئيسية",
       basics: "أساسيات البنوك",
+      solutions: "الحلول",
       understanding: "الشمول المالي",
       banking: "الخدمات المصرفية",
       egypt: "مصر",
@@ -260,8 +266,8 @@ const ar: CommonDict = {
       label: "المشروعات الصغيرة",
       blurb: "المشروعات متناهية الصغر والصغيرة والتمويل والقطاع غير الرسمي.",
     },
-    egyptVsIndia: {
-      label: "مصر والهند",
+    egyptVsKenya: {
+      label: "مصر وكينيا",
       blurb: "مقارنة متكافئة عبر عشرة مؤشرات.",
     },
     future: {
@@ -275,6 +281,10 @@ const ar: CommonDict = {
     basics: {
       label: "أساسيات البنوك",
       blurb: "أول مرة تتعامل مع بنك؟ ابدأ بالشرح المبسط.",
+    },
+    solutions: {
+      label: "حلول الشمول المالي",
+      blurb: "العوائق، وما يمكن عمله تجاهها، ومساهمة البنك الأهلي.",
     },
     videos: {
       label: "الفيديوهات",
@@ -291,10 +301,10 @@ const ar: CommonDict = {
   },
   footer: {
     description:
-      "مورد تعليمي يوضح كيف يرتبط الأفراد والمشروعات والمجتمعات في مصر بالنظام المالي — مبني على بيانات منشورة من البنك الدولي والبنك المركزي المصري وصندوق النقد الدولي وجهات حكومية مصرية.",
+      "مورد تعليمي يشرح كيف يتعامل الأفراد والمشروعات والمجتمعات في مصر مع النظام المالي. وكل ما تجده هنا مبني على بيانات منشورة من البنك الدولي، والبنك المركزي المصري، وصندوق النقد الدولي، وجهات حكومية مصرية.",
     reviewSources: "اطّلع على جميع المصادر",
     disclaimer:
-      "مشروع تعليمي. الأرقام منقولة عن مصادر منشورة. لا يقدم هذا الموقع استشارات مالية ولا يروّج لأي بنك أو جهة مقدمة للخدمة.",
+      "هذا مشروع تعليمي. كل رقم فيه منقول عن مصدر منشور، والموقع لا يقدّم استشارات مالية ولا يروّج لأي بنك أو جهة مقدمة للخدمة.",
     dataNote: "البيانات محدّثة حتى الفترات المذكورة بجوار كل رقم.",
   },
   ui: {
@@ -313,7 +323,7 @@ const ar: CommonDict = {
     before: "قبل",
     after: "بعد",
     egypt: "مصر",
-    india: "الهند",
+    kenya: "كينيا",
     women: "النساء",
     men: "الرجال",
   },
@@ -324,7 +334,7 @@ const ar: CommonDict = {
         "تعرّف على كيفية عمل الحسابات والبطاقات والمدفوعات الرقمية فعليًا — ثم قرّر بنفسك، مستندًا إلى معلومات موثوقة.",
       exploreBanking: "استكشف الخدمات المصرفية",
       learnDigital: "تعرّف على التمويل الرقمي",
-      compare: "قارن بين مصر والهند",
+      compare: "قارن بين مصر وكينيا",
     },
     startJourney: "ابدأ رحلتك نحو الشمول المالي",
     learnBeforeChoose: "تعلّم قبل أن تختار",
@@ -364,13 +374,13 @@ const ar: CommonDict = {
     aboutEyebrow: "عن المشروع",
     aboutTitle: "عن هذا المشروع",
     aboutBody:
-      "تم إعداد هذا المشروع التثقيفي بواسطة متدربي إدارة الائتمان في البنك الأهلي المصري (NBE) بهدف زيادة الوعي بالشمول المالي، والتمويل الرقمي، وأهمية الوصول إلى الخدمات المالية الرسمية في مصر.",
+      "هذا مشروع تثقيفي أعده متدربو إدارة الائتمان في البنك الأهلي المصري (NBE). والهدف بسيط: مساعدة الناس على فهم الشمول المالي والتمويل الرقمي، ولماذا يهم فعلًا أن يصل الجميع إلى خدمات مالية رسمية في مصر.",
     notOfficial:
-      "هذا مشروع تثقيفي توعوي. وهو ليس منصة مصرفية رسمية تابعة للبنك الأهلي المصري، ولا يمكن فتح حساب من خلاله، ولا يقدم استشارات مالية ولا يضمن أي نتيجة مالية.",
+      "هذا مشروع تثقيفي، وليس منصة مصرفية رسمية تابعة للبنك الأهلي المصري. لا يمكنك فتح حساب من خلاله، ولا يقدّم استشارات مالية، ولا يضمن أي نتيجة مالية.",
   },
   disclaimer: {
     short:
-      "هذا الموقع تعليمي. لا يقدّم استشارات مالية، ولا يروّج لأي بنك، ولا يمكنه أن يَعِد بأي نتيجة مالية.",
+      "هذا الموقع مخصص للتعليم فقط. لا يقدّم استشارات مالية، ولا يروّج لأي بنك، ولا يعد بأي نتيجة مالية.",
   },
 };
 

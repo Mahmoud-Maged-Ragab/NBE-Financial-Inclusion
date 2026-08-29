@@ -24,7 +24,7 @@ const en = {
     eyebrow: "Fourteen years",
     title: "Account ownership over time",
     description:
-      "Five survey waves of the World Bank Global Findex on a consistent definition, alongside India for scale. The dip between 2017 and 2021 is present in the published data and is discussed below.",
+      "Five survey waves of the World Bank Global Findex on a consistent definition, alongside Kenya for scale. The dip between 2017 and 2021 is present in the published data and is discussed below.",
     caption:
       "Adults aged 15+ with an account at a financial institution or mobile money provider.",
     periods: [
@@ -53,15 +53,15 @@ const en = {
     body1Pre: "Egypt is not held back by handsets. At",
     body1Mid: "mobile phone ownership and",
     body1Post:
-      "smartphone ownership, the country is ahead of India on both counts.",
+      "smartphone ownership, the shortfall is not in hardware. Kenya owns phones at a broadly similar rate and still reaches an account ownership rate more than double Egypt's.",
     body2:
       "The attrition happens after the device. Roughly half of adults with a phone have no account. Of those who do, many hold one that is not digitally enabled. And of those, many still do not use it to pay for anything.",
     body3:
       "This makes Egypt's situation more tractable than a low headline number suggests. The expensive layer — putting a connected device in people's hands — is largely built.",
-    compareNote: "Compare the same funnel for India on the",
-    compareLink: "Egypt vs India",
+    compareNote: "Compare the same funnel for Kenya on the",
+    compareLink: "Egypt vs Kenya",
     compareNoteEnd:
-      "page, where lower device ownership coexists with far higher account ownership.",
+      "page, where similar device ownership coexists with far higher account ownership.",
   },
   gaps: {
     eyebrow: "Distribution",
@@ -123,7 +123,7 @@ const ar: EgyptDict = {
     eyebrow: "أربعة عشر عامًا",
     title: "امتلاك الحسابات عبر الزمن",
     description:
-      "خمس موجات من المؤشر العالمي للشمول المالي وفق تعريف ثابت، إلى جانب الهند للمقارنة. والانخفاض بين 2017 و2021 موجود في البيانات المنشورة ويُناقَش أدناه.",
+      "خمس موجات من المؤشر العالمي للشمول المالي وفق تعريف ثابت، إلى جانب كينيا للمقارنة. والانخفاض بين 2017 و2021 موجود في البيانات المنشورة ويُناقَش أدناه.",
     caption:
       "البالغون من عمر 15 عامًا فأكثر ممن يملكون حسابًا لدى مؤسسة مالية أو مقدم خدمة محفظة إلكترونية.",
     periods: [
@@ -151,14 +151,15 @@ const ar: EgyptDict = {
       "بقراءة الأرقام من أعلى لأسفل، يظهر أهم نمط في البيانات المصرية. امتلاك الأجهزة مرتفع. وكل خطوة تالية — حساب، ثم حساب مفعَّل رقميًا، ثم دفعة رقمية فعلية — تفقد شريحة كبيرة من السكان.",
     body1Pre: "ليست الأجهزة ما يعيق مصر. فعند",
     body1Mid: "لامتلاك الهاتف المحمول و",
-    body1Post: "لامتلاك الهاتف الذكي، تتقدم البلاد على الهند في المؤشرين.",
+    body1Post:
+      "لامتلاك الهاتف الذكي، فالعجز ليس في الأجهزة. فكينيا تمتلك الهواتف بمعدل قريب نسبيًا، ومع ذلك تبلغ معدل امتلاك حسابات يفوق ضعف معدل مصر.",
     body2:
       "التسرب يحدث بعد الجهاز. فنحو نصف البالغين ممن يملكون هاتفًا لا يملكون حسابًا. ومن يملكونه، كثير منهم لديه حساب غير مفعَّل رقميًا. ومن هؤلاء، كثيرون لا يستخدمونه للدفع أصلًا.",
     body3:
       "وهذا يجعل وضع مصر أيسر مما يوحي به الرقم الرئيسي المنخفض. فالطبقة الأعلى كلفة — وضع جهاز متصل في يد الناس — مبنية إلى حد كبير.",
-    compareNote: "قارن القمع نفسه بالنسبة للهند في صفحة",
-    compareLink: "مصر والهند",
-    compareNoteEnd: "حيث يتعايش امتلاك أقل للأجهزة مع امتلاك أعلى بكثير للحسابات.",
+    compareNote: "قارن القمع نفسه بالنسبة لكينيا في صفحة",
+    compareLink: "مصر وكينيا",
+    compareNoteEnd: "حيث يتعايش امتلاك مشابه للأجهزة مع امتلاك أعلى بكثير للحسابات.",
   },
   gaps: {
     eyebrow: "التوزيع",

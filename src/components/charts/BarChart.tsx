@@ -76,7 +76,7 @@ interface ComparisonBarsProps {
   max?: number;
 }
 
-/** Paired bars for two-way comparisons such as Egypt against India. */
+/** Paired bars for two-way comparisons such as Egypt against Kenya. */
 export function ComparisonBars({
   rows,
   leftLabel,
