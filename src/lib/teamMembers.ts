@@ -79,7 +79,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
   {
     id: "member-3",
     name: "Ola Elgohary",
-    nameAr: " علا الجهاري",
+    nameAr: " علا الجوهري",
     university: "Cairo University",
     universityAr: "  الجامعة القاهرة",
     major: "Accounting",
@@ -94,7 +94,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
     universityAr: "جامعة عين شمس",
     major: "Economics",
     majorAr: "الاقتصاد",
-    image: "", // ← e.g. "/team/member-4.jpg"
+    image: SiefeImg, // ← e.g. "/team/member-4.jpg"
   },
 ];
 
