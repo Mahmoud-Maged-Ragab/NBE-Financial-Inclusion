@@ -59,7 +59,7 @@ export function FlowDiagram({
               // The list item sits between the tablist and its tabs, so it is
               // removed from the accessibility tree to keep the roles valid.
               role="presentation"
-              className="flex items-center gap-2 lg:flex-1"
+              className="flex flex-col items-center gap-2 lg:flex-1 lg:flex-row lg:items-stretch"
             >
               <button
                 id={`${baseId}-step-${i}`}
@@ -92,7 +92,7 @@ export function FlowDiagram({
               {i < steps.length - 1 ? (
                 <ChevronRight
                   aria-hidden="true"
-                  className="size-5 shrink-0 rotate-90 text-ink-300 lg:rotate-0 lg:rtl:rotate-180"
+                  className="size-5 shrink-0 rotate-90 self-center text-ink-300 lg:rotate-0 lg:rtl:rotate-180"
                 />
               ) : null}
             </li>

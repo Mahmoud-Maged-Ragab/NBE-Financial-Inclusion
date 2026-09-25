@@ -45,23 +45,22 @@ export const NAV_GROUPS: NavGroupKey[] = [
 /**
  * Links kept inline in the header.
  *
- * The full set only fits once there is room for it, so the lower-priority
- * links are held back until `xl`. Everything remains one tap away in the
- * Sections panel at every width.
+ * The header row is capped at the page container width (max-w-6xl), which
+ * leaves room for about six short links beside the logo and controls in either
+ * language. Adding more pushes the Sections button out of the row, so keep
+ * this list short. Everything remains one tap away in the Sections panel at
+ * every width, and the logo already links home.
  */
 export const PRIMARY_NAV: {
   href: string;
   short: keyof CommonDict["nav"]["short"];
-  /** Held back until xl, where the header has room for all seven. */
+  /** Held back until xl, where the header has room for one more link. */
   wideOnly?: boolean;
 }[] = [
-  { href: "/", short: "home", wideOnly: true },
   { href: "/basics", short: "basics" },
-  { href: "/understanding", short: "understanding", wideOnly: true },
   { href: "/solutions", short: "solutions" },
   { href: "/egypt", short: "egypt" },
   { href: "/digital-finance", short: "digitalFinance" },
   { href: "/videos", short: "videos" },
   { href: "/nbe-impact", short: "nbeImpact", wideOnly: true },
-  { href: "/team", short: "team", wideOnly: true },
 ];

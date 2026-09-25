@@ -57,7 +57,9 @@ export function TrendChart({
 
   return (
     <figure className="m-0">
-      <div className="overflow-x-auto">
+      {/* contain-inline-size keeps the plot's 520px floor from widening the
+          surrounding grid, so narrow screens scroll the chart, not the page. */}
+      <div className="overflow-x-auto contain-inline-size">
         <svg
           viewBox={`0 0 ${W} ${H}`}
           className="h-auto w-full min-w-[520px]"

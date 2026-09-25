@@ -37,7 +37,10 @@ export async function SourceBadge({
       title={`${entry.publisher[lang]} — ${entry.title}`}
       className={`group inline-flex max-w-full items-center gap-1.5 rounded-full border border-ink-200 bg-white px-2.5 py-1 text-[11px] leading-tight font-medium text-ink-600 transition-colors hover:border-brand-300 hover:text-brand-700 ${className}`}
     >
-      <span className="truncate">
+      {/* Wraps rather than truncating: a nowrap label makes the badge's
+          min-content width the full citation, which stretches any grid or
+          flex parent past a phone-width viewport. */}
+      <span className="min-w-0 break-words">
         {entry.short[lang]}
         {label ? ` · ${label}` : ""}
       </span>

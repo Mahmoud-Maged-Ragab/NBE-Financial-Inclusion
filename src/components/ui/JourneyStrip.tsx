@@ -21,14 +21,19 @@ export function JourneyStrip({
   const dark = tone === "dark";
 
   return (
-    <ol className="flex flex-wrap items-stretch gap-2 sm:gap-3">
+    // Phones wrap the steps and let each row fill; from sm up the steps share
+    // one row (with arrows), and from lg up they return to a fixed width.
+    <ol className="flex flex-wrap items-stretch gap-2 sm:flex-nowrap sm:gap-3">
       {steps.map((step, i) => {
         const Icon = ICONS[step.icon];
         const isLast = i === steps.length - 1;
         return (
-          <li key={step.label} className="flex items-center gap-2 sm:gap-3">
+          <li
+            key={step.label}
+            className="flex grow items-center gap-2 sm:flex-1 sm:gap-3 lg:flex-none"
+          >
             <div
-              className={`flex min-w-[104px] flex-1 flex-col items-center gap-2 rounded-xl border px-3 py-4 text-center sm:min-w-[128px] ${
+              className={`flex min-w-[104px] flex-1 flex-col items-center gap-2 rounded-xl border px-3 py-4 text-center sm:min-w-0 lg:min-w-[128px] ${
                 dark
                   ? isLast
                     ? "border-gold-400/50 bg-gold-400/10"

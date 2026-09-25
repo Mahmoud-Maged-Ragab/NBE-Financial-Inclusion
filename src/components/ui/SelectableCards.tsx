@@ -22,6 +22,9 @@ interface SelectableCardsProps {
 
 /**
  * A row of cards where selecting one opens a detail panel beneath.
+ * On phones the tabs shrink to a two-column grid of icon and title so the
+ * panel stays close to the tab that was tapped; the summary line returns from
+ * `sm` up, where the cards have room for it.
  * Implemented as a tablist so keyboard and screen reader users get the same
  * behaviour as pointer users.
  */
@@ -59,7 +62,7 @@ export function SelectableCards({
         role="tablist"
         aria-label={ariaLabel}
         onKeyDown={onKeyDown}
-        className={`grid grid-cols-1 gap-4 ${cols}`}
+        className={`grid grid-cols-2 gap-3 sm:gap-4 ${cols}`}
       >
         {items.map((item, i) => {
           const selected = i === active;
@@ -74,14 +77,14 @@ export function SelectableCards({
               aria-controls={`${baseId}-panel`}
               tabIndex={selected ? 0 : -1}
               onClick={() => setActive(i)}
-              className={`h-full rounded-xl border p-6 text-start transition-[transform,box-shadow,border-color,background-color] duration-300 hover:-translate-y-1 hover:shadow-[0_12px_32px_-12px_rgba(15,70,52,0.25)] ${
+              className={`h-full min-w-0 rounded-xl border p-4 text-start sm:p-6 transition-[transform,box-shadow,border-color,background-color] duration-300 hover:-translate-y-1 hover:shadow-[0_12px_32px_-12px_rgba(15,70,52,0.25)] ${
                 selected
                   ? "border-brand-700 bg-brand-700 text-white shadow-[0_12px_32px_-12px_rgba(15,70,52,0.4)]"
                   : "border-ink-200 bg-white hover:border-brand-200"
               }`}
             >
               <span
-                className={`inline-flex size-11 items-center justify-center rounded-lg transition-colors ${
+                className={`inline-flex size-10 items-center justify-center rounded-lg transition-colors sm:size-11 ${
                   selected
                     ? "bg-white/15 text-white"
                     : "bg-brand-50 text-brand-700"
@@ -90,14 +93,14 @@ export function SelectableCards({
                 <Icon aria-hidden="true" className="size-5" />
               </span>
               <span
-                className={`mt-4 block text-lg font-semibold ${
+                className={`mt-3 block text-base leading-snug font-semibold break-words sm:mt-4 sm:text-lg ${
                   selected ? "text-white" : "text-ink-900"
                 }`}
               >
                 {item.title}
               </span>
               <span
-                className={`mt-1.5 block text-sm leading-relaxed ${
+                className={`mt-1.5 hidden text-sm leading-relaxed sm:block ${
                   selected ? "text-brand-100" : "text-ink-600"
                 }`}
               >
